@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>신고 생활정보 사이트 모음 – 신고·민원·정보검색 통합 안내</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --green-dark:  #1B4D3E;
+  --green-mid:   #2E6B55;
+  --green-light: #E6F2ED;
+  --green-pale:  #F2F8F5;
+  --accent:      #27AE72;
+  --accent-dark: #1F8F5C;
+  --text-main:   #1A1A1A;
+  --text-sub:    #4A4A4A;
+  --text-muted:  #888;
+  --border:      #D8E6DF;
+  --border-mid:  #B5CFC5;
+  --surface:     #FFFFFF;
+  --surface-alt: #F7FAFA;
+  --radius-sm:   6px;
+  --radius-md:   10px;
+  --radius-lg:   14px;
+  --shadow-sm:   0 1px 4px rgba(0,0,0,.06);
+  --shadow-md:   0 4px 16px rgba(0,0,0,.08);
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: var(--surface-alt);
+  color: var(--text-main);
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* ── HEADER ── */
+header {
+  background: var(--green-dark);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,.18);
+}
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  gap: 32px;
+}
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+  flex-shrink: 0;
+}
+.logo span { color: var(--accent); }
+
+nav { display: flex; gap: 4px; flex: 1; }
+.nav-btn {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,.75);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background .15s, color .15s;
+  font-family: inherit;
+}
+.nav-btn:hover, .nav-btn.active {
+  background: rgba(255,255,255,.12);
+  color: #fff;
+}
+.nav-btn i { font-size: 16px; }
+
+.header-search {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 20px;
+  padding: 5px 12px;
+  gap: 7px;
+  flex-shrink: 0;
+}
+.header-search input {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+  width: 160px;
+  font-family: inherit;
+  outline: none;
+}
+.header-search input::placeholder { color: rgba(255,255,255,.5); }
+.header-search i { color: rgba(255,255,255,.6); font-size: 15px; }
+
+/* ── HERO ── */
+.hero {
+  background: linear-gradient(160deg, var(--green-dark) 0%, var(--green-mid) 100%);
+  padding: 52px 20px 44px;
+  text-align: center;
+  color: #fff;
+}
+.hero h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+.hero p {
+  font-size: 15px;
+  color: rgba(255,255,255,.75);
+  margin-bottom: 24px;
+}
+.menu-tabs {
+  display: inline-flex;
+  background: rgba(255,255,255,.12);
+  border-radius: 24px;
+  padding: 4px;
+  gap: 4px;
+}
+.menu-tab {
+  padding: 9px 24px;
+  border-radius: 20px;
+  border: none;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .18s;
+  color: rgba(255,255,255,.75);
+  background: none;
+}
+.menu-tab.active {
+  background: #fff;
+  color: var(--green-dark);
+}
+
+/* ── MAIN ── */
+.main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px 20px 60px;
+}
+
+/* ── WIZARD ── */
+.wizard-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 22px 24px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-sm);
+}
+.wizard-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--green-mid);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin-bottom: 12px;
+}
+.wizard-q {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: var(--text-main);
+}
+.chip-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip-main {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 16px;
+  border-radius: 24px;
+  border: 1.5px solid var(--border-mid);
+  background: var(--surface-alt);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .15s;
+  font-family: inherit;
+  color: var(--text-sub);
+}
+.chip-main:hover {
+  border-color: var(--accent);
+  background: var(--green-light);
+  color: var(--green-dark);
+}
+.chip-main.selected {
+  border-color: var(--accent);
+  background: var(--green-light);
+  color: var(--green-dark);
+}
+.chip-main i { font-size: 16px; }
+
+.wizard-step2 {
+  display: none;
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+.step2-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.back-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--border-mid);
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: var(--text-sub);
+  transition: background .12s;
+}
+.back-btn:hover { background: var(--green-light); }
+.step2-q { font-size: 15px; font-weight: 500; }
+.chip-sub {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--border-mid);
+  background: var(--surface-alt);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all .15s;
+  font-family: inherit;
+  color: var(--text-sub);
+}
+.chip-sub:hover {
+  border-color: var(--accent);
+  background: var(--green-light);
+  color: var(--green-dark);
+}
+
+/* ── FILTER BAR ── */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.tag-chips { display: flex; flex-wrap: wrap; gap: 6px; flex: 1; }
+.tag-chip {
+  padding: 5px 12px;
+  border-radius: 16px;
+  border: 1px solid var(--border-mid);
+  background: var(--surface);
+  font-size: 12px;
+  cursor: pointer;
+  transition: all .12s;
+  font-family: inherit;
+  color: var(--text-sub);
+}
+.tag-chip:hover { border-color: var(--accent); color: var(--green-dark); }
+.tag-chip.active {
+  background: var(--green-dark);
+  border-color: var(--green-dark);
+  color: #fff;
+}
+.search-wrap {
+  display: flex;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--border-mid);
+  border-radius: 20px;
+  padding: 6px 14px;
+  gap: 7px;
+  flex-shrink: 0;
+}
+.search-wrap i { color: var(--text-muted); font-size: 15px; }
+.search-wrap input {
+  border: none;
+  outline: none;
+  font-size: 13px;
+  font-family: inherit;
+  width: 180px;
+  color: var(--text-main);
+  background: none;
+}
+.filter-actions { display: flex; gap: 8px; align-items: center; }
+.btn-ghost {
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 18px;
+  border: 1px solid var(--border-mid);
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--text-sub);
+  transition: background .12s;
+}
+.btn-ghost:hover { background: var(--green-light); }
+.btn-tree {
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 18px;
+  border: 1px solid var(--accent);
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all .12s;
+}
+.btn-tree:hover { background: var(--green-light); }
+
+/* ── CARD GRID ── */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 14px;
+}
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 18px 18px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow .15s, border-color .15s;
+}
+.card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--border-mid);
+}
+.card-top { display: flex; justify-content: space-between; align-items: flex-start; }
+.badge {
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+.badge-gov  { background: #EBF3FB; color: #1B5FA3; }
+.badge-pub  { background: var(--green-light); color: var(--green-dark); }
+.badge-priv { background: #FEF3E8; color: #A0522D; }
+.fav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  color: var(--text-muted);
+  padding: 2px;
+  line-height: 1;
+  transition: color .12s;
+}
+.fav-btn:hover { color: #E6A817; }
+.card-name { font-size: 15px; font-weight: 700; color: var(--text-main); }
+.card-org  { font-size: 12px; color: var(--text-muted); margin-top: -4px; }
+.card-desc { font-size: 13px; color: var(--text-sub); line-height: 1.55; }
+.card-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+.card-tag  { font-size: 11px; background: var(--surface-alt); color: var(--text-muted); padding: 2px 9px; border-radius: 10px; border: 1px solid var(--border); }
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  margin-top: auto;
+}
+.card-phone {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-sub);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.card-phone i { font-size: 14px; color: var(--accent); }
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 18px;
+  background: var(--green-dark);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background .15s;
+}
+.card-link:hover { background: var(--green-mid); }
+.card-link i { font-size: 13px; }
+.card-link.lookup {
+  background: none;
+  border: 1.5px solid var(--green-dark);
+  color: var(--green-dark);
+}
+.card-link.lookup:hover { background: var(--green-light); }
+
+/* ── EMPTY STATE ── */
+.empty-state {
+  display: none;
+  text-align: center;
+  padding: 48px 20px;
+  color: var(--text-muted);
+}
+.empty-state i { font-size: 40px; display: block; margin-bottom: 12px; color: var(--border-mid); }
+.empty-state p { font-size: 14px; margin-bottom: 14px; }
+.empty-state button {
+  font-size: 13px;
+  padding: 8px 18px;
+  border-radius: 18px;
+  border: 1px solid var(--border-mid);
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--text-sub);
+}
+
+/* ── TREE VIEW ── */
+.tree-view { display: none; }
+.tree-section-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  margin: 20px 0 8px;
+}
+.tree-main-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--text-main);
+  margin-bottom: 4px;
+  transition: background .12s;
+}
+.tree-main-btn:hover { background: var(--green-light); }
+.tree-main-btn i { font-size: 16px; }
+.tree-main-btn .ti-chevron-down { font-size: 14px; transition: transform .2s; color: var(--text-muted); }
+.tree-main-btn.open .ti-chevron-down { transform: rotate(180deg); }
+.tree-sub-wrap {
+  display: none;
+  padding: 4px 0 8px 16px;
+}
+.tree-sub-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 8px 14px;
+  font-size: 13px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--text-sub);
+  border-radius: var(--radius-sm);
+  transition: background .1s;
+}
+.tree-sub-btn:hover { background: var(--green-light); color: var(--green-dark); }
+.tree-result { margin-top: 20px; }
+
+/* ── FOOTER ── */
+footer {
+  background: var(--green-dark);
+  color: rgba(255,255,255,.55);
+  text-align: center;
+  padding: 24px 20px;
+  font-size: 12px;
+  line-height: 1.8;
+}
+footer strong { color: rgba(255,255,255,.8); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 680px) {
+  .hero h1 { font-size: 22px; }
+  .header-search { display: none; }
+  nav { gap: 0; }
+  .card-grid { grid-template-columns: 1fr; }
+  .filter-bar { flex-direction: column; align-items: stretch; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">신고 생활정보<span> 사이트 모음</span></a>
+    <nav>
+      <button class="nav-btn active" data-menu="신고/민원" onclick="switchMenu('신고/민원',this)">
+        <i class="ti ti-alert-circle"></i>신고/민원
+      </button>
+      <button class="nav-btn" data-menu="정보검색" onclick="switchMenu('정보검색',this)">
+        <i class="ti ti-search"></i>정보검색
+      </button>
+    </nav>
+    <div class="header-search">
+      <i class="ti ti-search"></i>
+      <input type="text" placeholder="기관명, 키워드 검색" oninput="headerSearch(this.value)">
+    </div>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>신고·민원·정보검색을 한 곳에서</h1>
+  <p>정부·공공기관·민간의 신고센터와 정보검색 서비스를 빠르게 찾아드립니다</p>
+  <div class="menu-tabs">
+    <button class="menu-tab active" id="heroTabReport" onclick="switchMenu('신고/민원')">신고/민원</button>
+    <button class="menu-tab" id="heroTabInfo" onclick="switchMenu('정보검색')">정보검색</button>
+  </div>
+</div>
+
+<div class="main">
+
+  <!-- WIZARD -->
+  <div class="wizard-box" id="wizardBox">
+    <div class="wizard-label">빠른 찾기</div>
+    <div class="wizard-q" id="wizardQ">어떤 문제인가요?</div>
+    <div class="chip-grid" id="mainChips"></div>
+    <div class="wizard-step2" id="wizardStep2">
+      <div class="step2-header">
+        <button class="back-btn" onclick="backStep()" aria-label="이전으로">
+          <i class="ti ti-arrow-left"></i>
+        </button>
+        <span class="step2-q">구체적으로 어떤 경우인가요?</span>
+      </div>
+      <div class="chip-grid" id="subChips"></div>
+    </div>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar" id="filterBar">
+    <div class="tag-chips" id="tagChips"></div>
+    <div class="filter-actions">
+      <div class="search-wrap">
+        <i class="ti ti-search"></i>
+        <input id="searchInput" type="text" placeholder="기관명, 키워드 검색" oninput="onSearch(this.value)">
+      </div>
+      <button class="btn-ghost" onclick="resetAll()">초기화</button>
+      <button class="btn-tree" id="treeBtn" onclick="toggleTree()">
+        <i class="ti ti-list-tree"></i>트리 보기
+      </button>
+    </div>
+  </div>
+
+  <!-- CARD GRID -->
+  <div class="card-grid" id="cardGrid"></div>
+  <div class="empty-state" id="emptyState">
+    <i class="ti ti-search-off"></i>
+    <p>일치하는 항목이 없습니다.</p>
+    <button onclick="resetAll()">전체 보기로 돌아가기</button>
+  </div>
+
+  <!-- TREE VIEW -->
+  <div class="tree-view" id="treeView">
+    <div id="treeContainer"></div>
+    <div class="tree-result card-grid" id="treeResult"></div>
+  </div>
+
+</div>
+
+<footer>
+  <strong>신고 생활정보 사이트 모음 (singo.kr) / yenuri337@gmail.com</strong><br>
+  본 사이트는 정부·공공기관·민간의 신고·민원·정보검색 서비스를 안내하는 민간 큐레이션 사이트입니다.<br>
+  공식 기관 사이트가 아니며, 각 서비스는 해당 기관에서 직접 운영합니다.
+</footer>
+
+<script>
+const DATA = [
+  {menu:"신고/민원",main:"인터넷/디지털 정보 신고",sub:"불법유해정보",org:"방송미디어통신심의위원회",name:"인터넷 불법·유해정보 신고",desc:"인터넷상 불법·유해정보 신고",phone:"1377",url:"https://report.kocsc.or.kr/report/auth/illegalInfo",tags:["인터넷","불법정보"],type:"공공",stype:"신고"},
+  {menu:"신고/민원",main:"인터넷/디지털 정보 신고",sub:"디지털성범죄",org:"방송미디어통신심의위원회",name:"디지털 성범죄정보 신고",desc:"디지털 성범죄 정보 신고",phone:"1377",url:"https://report.kocsc.or.kr/report/auth/digitalSexualAssault",tags:["디지털성범죄"],type:"공공",stype:"신고"},
+  {menu:"신고/민원",main:"인터넷/디지털 정보 신고",sub:"인터넷 피해구제",org:"방송미디어통신심의위원회",name:"인터넷 피해구제 신고",desc:"명예훼손, 모욕 등 인터넷 피해구제",phone:"1377",url:"https://remedy.kocsc.or.kr",tags:["명예훼손","피해구제"],type:"공공",stype:"신고"},
+  {menu:"신고/민원",main:"인터넷/디지털 정보 신고",sub:"개인정보·해킹",org:"한국인터넷진흥원",name:"118 사이버민원센터",desc:"해킹, 개인정보침해, 불법스팸 신고",phone:"118",url:"https://www.118.or.kr",tags:["해킹","개인정보"],type:"공공",stype:"신고"},
+  {menu:"신고/민원",main:"인터넷/디지털 정보 신고",sub:"불법복제물",org:"한국저작권보호원",name:"인터넷 불법복제물 신고",desc:"인터넷 불법복제물 신고",phone:"1666-0011",url:"https://www.kcopa.or.kr",tags:["저작권","불법복제"],type:"공공",stype:"신고"},
+
+  {menu:"신고/민원",main:"아동·청소년 관련 신고",sub:"학교폭력",org:"교육부",name:"117 학교폭력 신고센터",desc:"학교폭력 신고·상담",phone:"117",url:"https://www.117.or.kr",tags:["학교폭력","24시간"],type:"정부",stype:"신고"},
+  {menu:"신고/민원",main:"아동·청소년 관련 신고",sub:"아동학대",org:"보건복지부",name:"아동학대 신고",desc:"아동학대 의심사례 신고",phone:"112",url:"https://www.korea1391.go.kr",tags:["아동학대","24시간"],type:"정부",stype:"신고"},
+
+  {menu:"신고/민원",main:"금융피해 신고",sub:"불법사금융",org:"금융감독원",name:"불법사금융피해신고센터",desc:"불법채권추심, 고금리, 대출사기 신고",phone:"1332",url:"https://www.fss.or.kr",tags:["불법사금융"],type:"공공",stype:"신고"},
+  {menu:"신고/민원",main:"금융피해 신고",sub:"보이스피싱",org:"금융감독원",name:"보이스피싱 피해 연락처",desc:"보이스피싱 피해 신고·지급정지",phone:"1332",url:"https://www.fss.or.kr",tags:["보이스피싱"],type:"공공",stype:"신고"},
+  {menu:"신고/민원",main:"금융피해 신고",sub:"증권·투자",org:"금융감독원",name:"증권불공정거래 신고",desc:"시세조종, 미공개정보 이용 등 신고",phone:"1332",url:"https://www.fss.or.kr",tags:["투자사기","증권"],type:"공공",stype:"신고"},
+  {menu:"신고/민원",main:"금융피해 신고",sub:"보험",org:"금융감독원",name:"보험사기 신고센터",desc:"보험사기, 보험모집질서 위반 신고",phone:"1332",url:"https://www.fss.or.kr",tags:["보험사기"],type:"공공",stype:"신고"},
+
+  {menu:"신고/민원",main:"사기범죄 신고",sub:"온라인사기",org:"경찰청 사이버수사국",name:"사이버범죄 신고시스템(ECRM)",desc:"온라인 사기, 사이버범죄 신고·상담",phone:"112",url:"https://ecrm.police.go.kr",tags:["온라인신고","24시간"],type:"정부",stype:"신고"},
+  {menu:"신고/민원",main:"사기범죄 신고",sub:"사기 피해사례 조회",org:"더치트",name:"사기 피해사례 조회",desc:"사기 피해사례(계좌, 전화번호) 조회",phone:"-",url:"https://www.thecheat.co.kr",tags:["사기","조회"],type:"민간",stype:"조회"},
+  {menu:"신고/민원",main:"사기범죄 신고",sub:"해외직구·쇼핑몰",org:"공정거래위원회(소비자24)",name:"해외직구 사기의심사이트",desc:"해외직구 사기의심사이트·민원다발 쇼핑몰 조회",phone:"1372",url:"https://www.consumer.go.kr",tags:["해외직구","조회"],type:"공공",stype:"조회"},
+
+  {menu:"신고/민원",main:"불법 식의약 신고",sub:"온라인 불법유통",org:"식품의약품안전처",name:"온라인 불법유통 신고",desc:"의약품·식품·화장품 등 온라인 불법유통·허위광고 신고",phone:"110",url:"https://www.mfds.go.kr",tags:["식의약"],type:"정부",stype:"신고"},
+  {menu:"신고/민원",main:"불법 식의약 신고",sub:"부정·불량식품",org:"식품안전나라",name:"부정·불량식품 신고",desc:"부정·불량식품 신고",phone:"1399",url:"https://www.foodsafetykorea.go.kr",tags:["식품","위생"],type:"정부",stype:"신고"},
+  {menu:"신고/민원",main:"불법 식의약 신고",sub:"의약품 불법행위",org:"식품의약품안전처",name:"의약품 클린신고센터",desc:"의약품 제조·품질 불법행위 신고",phone:"110",url:"https://www.mfds.go.kr",tags:["의약품"],type:"정부",stype:"신고"},
+
+  {menu:"신고/민원",main:"마약 신고",sub:"마약 범죄",org:"대검찰청",name:"마약범죄 신고",desc:"마약류 투약·매매·재배 등 범죄 신고",phone:"1301",url:"https://www.spo.go.kr",tags:["마약","형사신고"],type:"정부",stype:"신고"},
+  {menu:"신고/민원",main:"마약 신고",sub:"마약 상담",org:"한국마약퇴치운동본부",name:"마약류 오남용 예방 상담",desc:"마약 중독·오남용 예방 상담 및 신고 연계",phone:"02-2677-2245",url:"https://www.drugfree.or.kr",tags:["마약","상담"],type:"민간",stype:"신고"},
+
+  {menu:"신고/민원",main:"노동 관련 신고",sub:"임금체불·부당해고",org:"고용노동부",name:"고용노동부 민원마당",desc:"임금체불, 부당해고 신고·진정",phone:"1350",url:"https://minwon.moel.go.kr",tags:["노동","임금체불"],type:"정부",stype:"신고"},
+  {menu:"신고/민원",main:"노동 관련 신고",sub:"산업안전",org:"안전보건공단",name:"산업안전 신고센터",desc:"산업안전 위반, 중대재해 신고",phone:"1644-0001",url:"https://www.kosha.or.kr",tags:["산업안전"],type:"공공",stype:"신고"},
+
+  {menu:"신고/민원",main:"특허·저작권 침해 신고",sub:"저작권",org:"한국저작권보호원",name:"저작권 침해 신고센터",desc:"불법복제, 콘텐츠 무단유포 신고",phone:"1666-0011",url:"https://www.kcopa.or.kr",tags:["저작권"],type:"공공",stype:"신고"},
+  {menu:"신고/민원",main:"특허·저작권 침해 신고",sub:"특허·상표",org:"특허청",name:"특허·상표 침해 신고",desc:"위조상품, 상표권 침해 신고",phone:"1544-8080",url:"https://www.kipo.go.kr",tags:["특허","위조상품"],type:"정부",stype:"신고"},
+
+  {menu:"신고/민원",main:"생활불편 신고",sub:"도로·시설",org:"국민안전처",name:"안전신문고",desc:"불법주정차, 도로파손 등 생활불편 신고",phone:"110",url:"https://www.safetyreport.go.kr",tags:["생활불편"],type:"정부",stype:"신고"},
+  {menu:"신고/민원",main:"생활불편 신고",sub:"환경·소음",org:"환경부",name:"환경신고센터",desc:"환경오염, 악취, 소음 신고",phone:"128",url:"https://www.me.go.kr",tags:["환경","소음"],type:"정부",stype:"신고"},
+  {menu:"신고/민원",main:"생활불편 신고",sub:"소비자 피해",org:"한국소비자원",name:"1372 소비자상담센터",desc:"부당요금, 환불 거부 등 소비자 피해 상담",phone:"1372",url:"https://www.kca.go.kr",tags:["소비자","환불"],type:"공공",stype:"신고"},
+
+  {menu:"정보검색",main:"법령·판례 조회",sub:"법령",org:"법제처",name:"국가법령정보센터",desc:"법령, 판례, 결정례, 법령해석 조회",phone:"-",url:"https://www.law.go.kr",tags:["법령","판례"],type:"정부",stype:"조회"},
+  {menu:"정보검색",main:"법령·판례 조회",sub:"법원 판례",org:"대한민국 법원",name:"종합법률정보",desc:"판례 등 종합법률정보 검색",phone:"-",url:"https://glaw.scourt.go.kr",tags:["판례"],type:"정부",stype:"조회"},
+  {menu:"정보검색",main:"법령·판례 조회",sub:"생활 법령",org:"법제처",name:"찾기 쉬운 생활법령정보",desc:"생활밀착형 법령 해설",phone:"-",url:"https://easylaw.go.kr",tags:["생활법령"],type:"정부",stype:"조회"},
+  {menu:"정보검색",main:"법령·판례 조회",sub:"지식재산 판례",org:"한국지식재산보호원",name:"지식재산권 판례",desc:"지식재산권 관련 판례 조회",phone:"-",url:"https://www.ip-navi.or.kr",tags:["지식재산권","판례"],type:"공공",stype:"조회"},
+  {menu:"정보검색",main:"법령·판례 조회",sub:"노동 판정례",org:"중앙노동위원회",name:"노동위원회 판정·결정례",desc:"노동위원회 판정·결정례 조회",phone:"-",url:"https://www.nlrc.go.kr",tags:["노동","판정례"],type:"정부",stype:"조회"},
+
+  {menu:"정보검색",main:"고전·문헌정보",sub:"한국 고전",org:"한국고전번역원",name:"한국고전종합DB",desc:"한국고전 원문, 번역문 검색",phone:"-",url:"https://db.itkc.or.kr",tags:["고전","한국학"],type:"공공",stype:"검색"},
+  {menu:"정보검색",main:"고전·문헌정보",sub:"동양 고전",org:"전통문화연구회",name:"동양고전종합DB",desc:"동양 고전 원문, 번역문 검색",phone:"-",url:"https://db.cyberseodang.or.kr",tags:["고전","동양학"],type:"민간",stype:"검색"},
+  {menu:"정보검색",main:"고전·문헌정보",sub:"한의학 고전",org:"한국의학연구원",name:"한의학고전DB",desc:"한의학 고전 자료 검색",phone:"-",url:"https://mediclassics.kr",tags:["고전","한의학"],type:"공공",stype:"검색"},
+  {menu:"정보검색",main:"고전·문헌정보",sub:"한국학 자료",org:"한국학중앙연구원",name:"한국학자료포털",desc:"한국학 관련 자료 검색",phone:"-",url:"https://kostma.aks.ac.kr",tags:["한국학"],type:"공공",stype:"검색"},
+
+  {menu:"정보검색",main:"학술정보",sub:"논문 검색",org:"한국교육학술정보원",name:"RISS",desc:"국내외 학술논문 검색",phone:"-",url:"https://www.riss.kr",tags:["논문"],type:"공공",stype:"검색"},
+  {menu:"정보검색",main:"학술정보",sub:"논문 검색",org:"누리미디어",name:"DBpia",desc:"국내 학술논문 검색",phone:"-",url:"https://www.dbpia.co.kr",tags:["논문"],type:"민간",stype:"검색"},
+  {menu:"정보검색",main:"학술정보",sub:"학술지 인용색인",org:"한국연구재단",name:"KCI",desc:"학술지 인용색인 조회",phone:"-",url:"https://www.kci.go.kr",tags:["학술지","인용"],type:"공공",stype:"검색"},
+  {menu:"정보검색",main:"학술정보",sub:"연구과제·보고서",org:"과학기술정보통신부",name:"NTIS 국가과학기술지식정보서비스",desc:"국가 연구개발 과제·보고서 검색",phone:"-",url:"https://www.ntis.go.kr",tags:["연구","보고서"],type:"정부",stype:"검색"},
+
+  {menu:"정보검색",main:"공공데이터·통계",sub:"공공데이터",org:"행정안전부",name:"공공데이터포털",desc:"공공데이터 통합 검색·다운로드",phone:"-",url:"https://www.data.go.kr",tags:["공공데이터"],type:"정부",stype:"검색"},
+  {menu:"정보검색",main:"공공데이터·통계",sub:"국가 통계",org:"통계청",name:"국가통계포털(KOSIS)",desc:"국가 통계 데이터 조회",phone:"-",url:"https://kosis.kr",tags:["통계"],type:"정부",stype:"검색"},
+  {menu:"정보검색",main:"공공데이터·통계",sub:"경제·금융 통계",org:"한국은행",name:"경제통계시스템(ECOS)",desc:"금융·경제 통계 데이터 제공",phone:"-",url:"https://ecos.bok.or.kr",tags:["통계","금융"],type:"공공",stype:"검색"},
+  {menu:"정보검색",main:"공공데이터·통계",sub:"지도·공간정보",org:"국토교통부",name:"브이월드",desc:"공간정보·지도 데이터 제공",phone:"-",url:"https://www.vworld.kr",tags:["공간정보","지도"],type:"정부",stype:"검색"}
+];
+
+const MAIN_CATS = {
+  "신고/민원":[
+    {key:"인터넷/디지털 정보 신고",icon:"ti-device-laptop"},
+    {key:"아동·청소년 관련 신고",icon:"ti-baby-carriage"},
+    {key:"금융피해 신고",icon:"ti-coin"},
+    {key:"사기범죄 신고",icon:"ti-alert-triangle"},
+    {key:"불법 식의약 신고",icon:"ti-pill"},
+    {key:"마약 신고",icon:"ti-flask"},
+    {key:"노동 관련 신고",icon:"ti-briefcase"},
+    {key:"특허·저작권 침해 신고",icon:"ti-copyright"},
+    {key:"생활불편 신고",icon:"ti-home"}
+  ],
+  "정보검색":[
+    {key:"법령·판례 조회",icon:"ti-gavel"},
+    {key:"고전·문헌정보",icon:"ti-book"},
+    {key:"학술정보",icon:"ti-school"},
+    {key:"공공데이터·통계",icon:"ti-database"}
+  ]
+};
+
+let currentMenu="신고/민원", activeTags=new Set(), activeMain=null, searchQuery="", treeOpen=false;
+
+function uniqueSubs(menu,main){return[...new Set(DATA.filter(d=>d.menu===menu&&d.main===main).map(d=>d.sub))];}
+
+function switchMenu(menu,btn){
+  currentMenu=menu;
+  document.querySelectorAll('.nav-btn').forEach(b=>{b.classList.toggle('active',b.dataset.menu===menu);});
+  document.getElementById('heroTabReport').classList.toggle('active',menu==='신고/민원');
+  document.getElementById('heroTabInfo').classList.toggle('active',menu==='정보검색');
+  activeMain=null; activeTags.clear(); searchQuery='';
+  document.getElementById('searchInput').value='';
+  document.getElementById('wizardStep2').style.display='none';
+  if(treeOpen)toggleTree();
+  renderMainChips(); renderTagChips(); renderGrid();
+}
+
+function renderMainChips(){
+  const el=document.getElementById('mainChips');
+  document.getElementById('wizardQ').textContent=currentMenu==='신고/민원'?'어떤 문제인가요?':'무엇을 찾으시나요?';
+  el.innerHTML=MAIN_CATS[currentMenu].map(c=>`
+    <button class="chip-main" data-main="${c.key}" onclick="selectMain('${c.key}')">
+      <i class="ti ${c.icon}"></i>${c.key}
+    </button>`).join('');
+}
+
+function selectMain(main){
+  activeMain=main;
+  document.querySelectorAll('.chip-main').forEach(b=>b.classList.toggle('selected',b.dataset.main===main));
+  const subs=uniqueSubs(currentMenu,main);
+  document.getElementById('subChips').innerHTML=subs.map(s=>`<button class="chip-sub" onclick="selectSub('${s}')">${s}</button>`).join('');
+  document.getElementById('wizardStep2').style.display='block';
+  activeTags.clear(); searchQuery=''; document.getElementById('searchInput').value='';
+  renderTagChips(); renderGrid();
+}
+
+function selectSub(sub){
+  activeTags.clear(); searchQuery=''; document.getElementById('searchInput').value='';
+  const filtered=DATA.filter(d=>d.menu===currentMenu&&d.main===activeMain&&d.sub===sub);
+  renderCards(filtered); renderTagChips();
+}
+
+function backStep(){
+  document.getElementById('wizardStep2').style.display='none';
+  document.querySelectorAll('.chip-main').forEach(b=>b.classList.remove('selected'));
+  activeMain=null; activeTags.clear(); renderTagChips(); renderGrid();
+}
+
+function allTags(){return[...new Set(DATA.filter(d=>d.menu===currentMenu).flatMap(d=>d.tags))];}
+
+function renderTagChips(){
+  const el=document.getElementById('tagChips');
+  const tags=allTags();
+  el.innerHTML=`<button class="tag-chip${activeTags.size===0?' active':''}" onclick="clearTags()">전체</button>`
+    +tags.map(t=>`<button class="tag-chip${activeTags.has(t)?' active':''}" onclick="toggleTag('${t}')">#${t}</button>`).join('');
+}
+
+function toggleTag(t){
+  if(activeTags.has(t))activeTags.delete(t);else activeTags.add(t);
+  renderTagChips(); renderGrid();
+}
+function clearTags(){ activeTags.clear(); renderTagChips(); renderGrid(); }
+
+function matchFilter(d){
+  if(d.menu!==currentMenu) return false;
+  if(activeMain && d.main!==activeMain) return false;
+  if(activeTags.size>0 && !d.tags.some(t=>activeTags.has(t))) return false;
+  if(searchQuery){
+    const q=searchQuery.toLowerCase();
+    if(![d.org,d.name,d.desc,...d.tags].some(x=>x.toLowerCase().includes(q))) return false;
+  }
+  return true;
+}
+
+function onSearch(v){ searchQuery=v; renderGrid(); }
+function headerSearch(v){ searchQuery=v; document.getElementById('searchInput').value=v; renderGrid(); }
+function resetAll(){ activeTags.clear(); searchQuery=''; activeMain=null; document.getElementById('searchInput').value=''; document.getElementById('wizardStep2').style.display='none'; document.querySelectorAll('.chip-main').forEach(b=>b.classList.remove('selected')); renderTagChips(); renderGrid(); }
+
+function cardHTML(d){
+  const badgeClass=d.type==='정부'?'badge-gov':d.type==='공공'?'badge-pub':'badge-priv';
+  const isLookup=d.stype!=='신고';
+  const footer=d.phone&&d.phone!=='-'
+    ?`<span class="card-phone"><i class="ti ti-phone"></i>${d.phone}</span>`
+    :`<span style="font-size:12px;color:var(--text-muted);">${d.stype}형 서비스</span>`;
+  return`<div class="card">
+    <div class="card-top">
+      <span class="badge ${badgeClass}">${d.type}</span>
+      <button class="fav-btn" aria-label="즐겨찾기" title="즐겨찾기"><i class="ti ti-star"></i></button>
+    </div>
+    <div>
+      <div class="card-name">${d.name}</div>
+      <div class="card-org">${d.org}</div>
+    </div>
+    <div class="card-desc">${d.desc}</div>
+    <div class="card-tags">${d.tags.map(t=>`<span class="card-tag">#${t}</span>`).join('')}</div>
+    <div class="card-footer">
+      ${footer}
+      <a class="card-link${isLookup?' lookup':''}" href="${d.url}" target="_blank" rel="noopener">
+        ${isLookup?'조회·검색':'바로가기'}<i class="ti ti-external-link"></i>
+      </a>
+    </div>
+  </div>`;
+}
+
+function renderCards(list){
+  const grid=document.getElementById('cardGrid'), empty=document.getElementById('emptyState');
+  if(list.length===0){grid.style.display='none';empty.style.display='block';}
+  else{grid.style.display='grid';empty.style.display='none';grid.innerHTML=list.map(cardHTML).join('');}
+}
+
+function renderGrid(){ renderCards(DATA.filter(matchFilter)); }
+
+function toggleTree(){
+  treeOpen=!treeOpen;
+  document.getElementById('treeView').style.display=treeOpen?'block':'none';
+  document.getElementById('cardGrid').style.display=treeOpen?'none':'grid';
+  document.getElementById('emptyState').style.display='none';
+  document.getElementById('wizardBox').style.display=treeOpen?'none':'block';
+  document.getElementById('filterBar').style.display=treeOpen?'none':'flex';
+  const btn=document.getElementById('treeBtn');
+  btn.innerHTML=treeOpen?'<i class="ti ti-layout-grid"></i>카드 보기':'<i class="ti ti-list-tree"></i>트리 보기';
+  if(treeOpen) renderTree();
+}
+
+function renderTree(){
+  const c=document.getElementById('treeContainer');
+  c.innerHTML=Object.keys(MAIN_CATS).map(menu=>`
+    <div class="tree-section-title">${menu}</div>`
+    +MAIN_CATS[menu].map(cat=>{
+      const subs=uniqueSubs(menu,cat.key);
+      const id=`tw_${menu}_${cat.key}`.replace(/[^a-z0-9_]/gi,'_');
+      return`<button class="tree-main-btn" onclick="toggleTreeMain(this,'${id}')">
+        <span><i class="ti ${cat.icon}"></i> ${cat.key}</span>
+        <i class="ti ti-chevron-down"></i>
+      </button>
+      <div class="tree-sub-wrap" id="${id}">
+        ${subs.map(s=>`<button class="tree-sub-btn" onclick="treeSelect('${menu}','${cat.key}','${s}')">${s}</button>`).join('')}
+      </div>`;
+    }).join('')
+  ).join('');
+}
+
+function toggleTreeMain(btn,id){
+  const wrap=document.getElementById(id);
+  const open=wrap.style.display==='block';
+  wrap.style.display=open?'none':'block';
+  btn.classList.toggle('open',!open);
+}
+
+function treeSelect(menu,main,sub){
+  const filtered=DATA.filter(d=>d.menu===menu&&d.main===main&&d.sub===sub);
+  const r=document.getElementById('treeResult');
+  r.className='tree-result card-grid';
+  r.innerHTML=filtered.map(cardHTML).join('');
+}
+
+switchMenu('신고/민원');
+</script>
+</body>
+</html>
