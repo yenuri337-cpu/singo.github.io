@@ -29,6 +29,11 @@
 - 전세사기 특별법 유효기간이 **2027년 5월 31일**까지 연장됐고(2025.5.2 국회 통과), **2026년 11월 13일**부터 최소지원금·선지급-후정산 제도가 시행되는 것을 카드에 반영했습니다.
 - 유실·유기동물 전용 신고번호 **1577-0954**(2026.3.18 신설, 온라인 신고는 24시간)와 동물보호상담센터 운영시간을 반영했습니다.
 
+### 표기와 화면
+
+- **기관 이름을 줄임말 없이 정식 명칭 `방송미디어통신심의위원회`로 통일**했습니다. 기관명(`org`)뿐 아니라 카드의 '이럴 땐 여기!'와 안내 문장까지 같은 이름으로 맞췄습니다.
+- 헤더 탭(`신고/민원`·`정보검색`)의 **아이콘과 글자 사이 간격을 6px로 띄우고 아이콘 상자 크기를 16px로 고정**했습니다. 창 폭이 좁아져 탭이 줄어들어도 아이콘이 글자 위로 올라타지 않습니다. 히어로의 `신고/민원`·`정보검색` 알약 탭도 같은 방식(아이콘·글자 가로 정렬)으로 맞춰 두었습니다.
+
 확인에 쓴 자료: [경찰민원24 교통법규 위반 공익신고](https://minwon24.police.go.kr/epeople/trfcLwrgVltnDclr.do) · [국세청 탈세제보](https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=109155&mi=135744) · [국세청 현금영수증 발급거부(미발급)신고](https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7797&mi=2472) · [HUG 전세피해 및 예방지원센터](https://www.khug.or.kr/jeonse/web/s01/s010001.jsp) · [국토부 전세사기 특별법 2년 연장 보도자료(2025.5.2)](https://www.korea.kr/news/policyNewsView.do?newsId=148942753) · [국토부 최소보장·선지급-후정산 시행 보도자료(2026.10.6)](https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784399) · [국가인권위원회 인권e](https://case.humanrights.go.kr) · [국가동물보호정보시스템](https://www.animal.go.kr)
 
 ## 2.0에서 달라진 점
@@ -74,7 +79,7 @@
 | `robots.txt`, `sitemap.xml` | 검색엔진용 |
 | `.nojekyll` | GitHub Pages가 Jekyll 없이 파일을 그대로 올리도록 |
 | `README.md` | 이 문서 |
-| `_build/build.py` | `data.json` + `_build/index.template.html` → `index.html` 재생성 |
+| `_build/build.py` | `data.json` + `_build/index.template.html` → `index.html` 재생성 (저장소에는 올리지 않음) |
 | `_build/index.template.html` | HTML 원본 템플릿(`__SINGO_DATA__` 자리에 데이터가 들어감) |
 
 ### 데이터가 두 곳에 있는 이유
@@ -85,14 +90,20 @@ cd singo
 python3 _build/build.py     # index.html 재생성
 ```
 
-## 배포 방법 (아직 push하지 않았습니다)
+## 배포 (2026-11-23 2.1 배포 완료)
 
-1. <https://github.com/yenuri337-cpu/singo.github.io> 저장소를 엽니다.
-2. `Add file → Upload files`로 아래 7개를 **저장소 최상단**에 올립니다.
-   `index.html`, `data.json`, `CNAME`, `README.md`, `robots.txt`, `sitemap.xml`, `.nojekyll`
-3. Commit 하면 1~2분 뒤 <https://singo.kr> 에 반영됩니다. (CNAME이 그대로라 도메인 설정은 건드릴 필요 없습니다.)
+<https://github.com/yenuri337-cpu/singo.github.io> 의 `main` 브랜치에 이 폴더의 7개 파일을 올려 두었고, 지금 <https://singo.kr> 이 그 버전입니다.
+
+`index.html`, `data.json`, `CNAME`, `README.md`, `robots.txt`, `sitemap.xml`, `.nojekyll` — 모두 저장소 **최상단**에 있습니다.
+`_build/`(빌드 스크립트와 템플릿)와 `_original/`(2.0 이전 파일)은 저장소에 올리지 않고 이 작업 공간(`projects/singo/`)에만 둡니다. GitHub Pages는 올린 파일을 그대로 서빙하므로 `_build/`가 없어도 사이트는 똑같이 동작합니다.
+
+다시 올릴 때:
+
+1. `data.json`을 고친 뒤 `python3 _build/build.py`로 `index.html`을 다시 만듭니다.
+2. 7개 파일을 저장소 최상단에 올리고 `main`에 커밋합니다(웹의 `Add file → Upload files` 또는 `gh api`).
+3. 1~2분 뒤 <https://singo.kr> 에 반영됩니다. CNAME이 그대로라 도메인 설정은 건드릴 필요가 없습니다.
 4. 확인할 것: 첫 화면 · 검색(예: `먹튀`) · 즐겨찾기 별 · 트리 보기 ↔ 카드 보기 · 전화 링크 · 신고 내용 정리 도우미 복사.
-5. 문제가 있으면 예전 `index.html`만 되돌리면 됩니다(이전 파일은 `projects/singo/_original/`에 보관).
+5. 문제가 있으면 `index.html`만 되돌리면 됩니다(2.0 이전 파일은 `_original/index.html`에 보관).
 
 ## 데이터 고치기
 
