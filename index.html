@@ -3,12 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>신고 생활정보 사이트 모음 – 신고·민원·정보검색 통합 안내</title>
+<title>신고 생활정보 사이트 모음 – 상황으로 찾는 신고·민원·정보검색 안내</title>
+<meta name="description" content="중고거래 사기·먹튀, 임금체불, 층간소음, 스미싱, 악플, 불법주차… 내 상황에 맞는 신고·민원 기관과 전화번호를 한 곳에서 찾으세요. 전화·문자 바로 연결, 신고 전 준비물 체크리스트 제공.">
+<meta name="keywords" content="신고,민원,신고처,중고거래 사기,먹튀,임금체불,퇴직금,층간소음,스미싱,보이스피싱,악플,불법주차,소비자상담,1372,118,117,1332,110">
+<meta name="author" content="singo.kr">
+<meta name="theme-color" content="#1B4D3E">
+<link rel="canonical" href="https://singo.kr/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="신고 생활정보 사이트 모음">
+<meta property="og:title" content="신고 생활정보 사이트 모음 – 상황으로 찾는 신고·민원 안내">
+<meta property="og:description" content="중고거래 사기, 임금체불, 층간소음, 스미싱… 내 상황에 맞는 신고처와 전화번호를 한 곳에서. 전화·문자 바로 연결.">
+<meta property="og:url" content="https://singo.kr">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="신고 생활정보 사이트 모음">
+<meta name="twitter:description" content="상황으로 찾는 신고·민원·정보검색 기관 안내. 전화·문자 바로 연결.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231B4D3E'/%3E%3Cpath d='M32 12l16 6v13c0 10-6.7 17.2-16 21-9.3-3.8-16-11-16-21V18z' fill='%2327AE72'/%3E%3Cpath d='M23 32.5l6.4 6.4L41 25' fill='none' stroke='%23fff' stroke-width='4.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231B4D3E'/%3E%3Cpath d='M32 12l16 6v13c0 10-6.7 17.2-16 21-9.3-3.8-16-11-16-21V18z' fill='%2327AE72'/%3E%3Cpath d='M23 32.5l6.4 6.4L41 25' fill='none' stroke='%23fff' stroke-width='4.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"신고 생활정보 사이트 모음","url":"https://singo.kr","description":"상황으로 찾는 신고·민원·정보검색 기관 안내","inLanguage":"ko-KR"}
+</script>
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+[hidden] { display: none !important; }
 
 :root {
   --green-dark:  #1B4D3E;
@@ -19,25 +40,47 @@
   --accent-dark: #1F8F5C;
   --text-main:   #1A1A1A;
   --text-sub:    #4A4A4A;
-  --text-muted:  #888;
+  --text-muted:  #7C8A84;
   --border:      #D8E6DF;
   --border-mid:  #B5CFC5;
   --surface:     #FFFFFF;
   --surface-alt: #F7FAFA;
+  --warm:        #A6382B;
+  --warm-soft:   #FDF1EE;
+  --warm-border: #F0C9C1;
+  --gold:        #E0A21A;
   --radius-sm:   6px;
   --radius-md:   10px;
   --radius-lg:   14px;
   --shadow-sm:   0 1px 4px rgba(0,0,0,.06);
   --shadow-md:   0 4px 16px rgba(0,0,0,.08);
+  --shadow-lg:   0 18px 48px rgba(0,0,0,.22);
 }
 
+html { -webkit-text-size-adjust: 100%; }
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Malgun Gothic', sans-serif;
   background: var(--surface-alt);
   color: var(--text-main);
   line-height: 1.6;
   font-size: 15px;
+  word-break: keep-all;
 }
+body.modal-open { overflow: hidden; }
+button { font-family: inherit; font-size: inherit; }
+a { color: inherit; }
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+.skip-link {
+  position: absolute; left: 8px; top: -48px; z-index: 300;
+  background: #fff; color: var(--green-dark); padding: 10px 16px;
+  border-radius: 0 0 var(--radius-md) var(--radius-md); font-weight: 700;
+  text-decoration: none; box-shadow: var(--shadow-md);
+}
+.skip-link:focus { top: 0; }
+:focus-visible { outline: 3px solid #7FD4AC; outline-offset: 2px; }
 
 /* ── HEADER ── */
 header {
@@ -54,38 +97,30 @@ header {
   display: flex;
   align-items: center;
   height: 56px;
-  gap: 32px;
+  gap: 24px;
 }
 .logo {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 700;
   color: #fff;
   text-decoration: none;
   letter-spacing: -0.5px;
   flex-shrink: 0;
+  white-space: nowrap;
 }
 .logo span { color: var(--accent); }
+.logo small { display: block; font-size: 10px; font-weight: 400; letter-spacing: 0; color: rgba(255,255,255,.45); line-height: 1; }
 
 nav { display: flex; gap: 4px; flex: 1; }
 .nav-btn {
-  background: none;
-  border: none;
-  color: rgba(255,255,255,.75);
-  font-size: 14px;
-  font-weight: 500;
-  padding: 8px 14px;
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 5px;
+  background: none; border: none; color: rgba(255,255,255,.72);
+  font-size: 14px; font-weight: 500; padding: 8px 14px;
+  border-radius: var(--radius-sm); cursor: pointer;
+  display: flex; align-items: center; gap: 5px;
   transition: background .15s, color .15s;
-  font-family: inherit;
+  white-space: nowrap;
 }
-.nav-btn:hover, .nav-btn.active {
-  background: rgba(255,255,255,.12);
-  color: #fff;
-}
+.nav-btn:hover, .nav-btn.active { background: rgba(255,255,255,.12); color: #fff; }
 .nav-btn i { font-size: 16px; }
 
 .header-search {
@@ -97,238 +132,220 @@ nav { display: flex; gap: 4px; flex: 1; }
   padding: 5px 12px;
   gap: 7px;
   flex-shrink: 0;
+  transition: background .15s, border-color .15s;
 }
+.header-search:focus-within { background: rgba(255,255,255,.2); border-color: rgba(255,255,255,.5); }
 .header-search input {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 13px;
-  width: 160px;
-  font-family: inherit;
-  outline: none;
+  background: none; border: none; color: #fff; font-size: 13px;
+  width: 190px; outline: none; font-family: inherit;
 }
-.header-search input::placeholder { color: rgba(255,255,255,.5); }
+.header-search input::placeholder { color: rgba(255,255,255,.55); }
+.header-search input::-webkit-search-cancel-button { -webkit-appearance: none; }
 .header-search i { color: rgba(255,255,255,.6); font-size: 15px; }
+
+/* ── SOS BAR ── */
+.sos-bar {
+  background: var(--warm-soft);
+  border-bottom: 1px solid var(--warm-border);
+  font-size: 12.5px;
+}
+.sos-inner {
+  max-width: 1100px; margin: 0 auto; padding: 6px 20px;
+  display: flex; align-items: center; gap: 10px;
+  overflow-x: auto; scrollbar-width: none;
+}
+.sos-inner::-webkit-scrollbar { display: none; }
+.sos-label {
+  display: inline-flex; align-items: center; gap: 4px;
+  color: var(--warm); font-weight: 700; flex-shrink: 0;
+  letter-spacing: -0.2px;
+}
+.sos-label i { font-size: 14px; }
+.sos-group {
+  display: inline-flex; align-items: center; gap: 4px; flex-shrink: 0;
+  color: var(--text-sub);
+}
+.sos-group b { font-weight: 500; color: #6E4A44; }
+.sos-chip {
+  display: inline-flex; align-items: center; gap: 3px; flex-shrink: 0;
+  white-space: nowrap;
+}
+.sos-chip > span { color: #6E4A44; margin-right: 2px; }
+.sos-chip a, .sos-link {
+  display: inline-flex; align-items: center; gap: 3px;
+  padding: 2px 8px; border-radius: 10px;
+  background: #fff; border: 1px solid var(--warm-border);
+  color: var(--warm); font-weight: 700; text-decoration: none;
+  white-space: nowrap;
+}
+.sos-chip a:hover, .sos-link:hover { background: #fff; border-color: var(--warm); }
+.sos-sep { width: 1px; height: 14px; background: var(--warm-border); flex-shrink: 0; }
 
 /* ── HERO ── */
 .hero {
   background: linear-gradient(160deg, var(--green-dark) 0%, var(--green-mid) 100%);
-  padding: 52px 20px 44px;
+  padding: 40px 20px 34px;
   text-align: center;
   color: #fff;
 }
-.hero h1 {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 8px;
-  letter-spacing: -0.5px;
-}
-.hero p {
-  font-size: 15px;
-  color: rgba(255,255,255,.75);
-  margin-bottom: 24px;
-}
+.hero h1 { font-size: 27px; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.6px; }
+.hero p { font-size: 14.5px; color: rgba(255,255,255,.78); margin-bottom: 20px; }
 .menu-tabs {
-  display: inline-flex;
-  background: rgba(255,255,255,.12);
-  border-radius: 24px;
-  padding: 4px;
-  gap: 4px;
+  display: inline-flex; background: rgba(255,255,255,.12);
+  border-radius: 24px; padding: 4px; gap: 4px;
 }
 .menu-tab {
-  padding: 9px 24px;
-  border-radius: 20px;
-  border: none;
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all .18s;
-  color: rgba(255,255,255,.75);
-  background: none;
+  padding: 9px 24px; border-radius: 20px; border: none;
+  font-size: 14px; font-weight: 500; cursor: pointer;
+  transition: all .18s; color: rgba(255,255,255,.78); background: none;
 }
-.menu-tab.active {
-  background: #fff;
-  color: var(--green-dark);
+.menu-tab.active { background: #fff; color: var(--green-dark); }
+.hero-notes {
+  margin-top: 16px; display: flex; justify-content: center;
+  flex-wrap: wrap; gap: 6px 16px; font-size: 12px; color: rgba(255,255,255,.6);
 }
+.hero-notes span { display: inline-flex; align-items: center; gap: 4px; }
+.hero-notes i { font-size: 13px; }
 
 /* ── MAIN ── */
-.main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 28px 20px 60px;
-}
+.main { max-width: 1100px; margin: 0 auto; padding: 24px 20px 64px; }
 
 /* ── WIZARD ── */
 .wizard-box {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 22px 24px;
-  margin-bottom: 24px;
+  padding: 20px 22px;
+  margin-bottom: 18px;
   box-shadow: var(--shadow-sm);
 }
+.wizard-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
 .wizard-label {
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--green-mid);
-  text-transform: uppercase;
-  letter-spacing: .05em;
-  margin-bottom: 12px;
+  font-size: 11.5px; font-weight: 700; color: var(--accent-dark);
+  letter-spacing: .08em; text-transform: uppercase;
 }
-.wizard-q {
-  font-size: 17px;
-  font-weight: 700;
-  margin-bottom: 14px;
-  color: var(--text-main);
+.wizard-q { font-size: 17px; font-weight: 700; margin-bottom: 12px; color: var(--text-main); }
+.wizard-head .wizard-label { margin-bottom: 0; }
+.wizard-help {
+  font-size: 12px; color: var(--text-muted); background: none; border: none;
+  cursor: pointer; text-decoration: underline; text-underline-offset: 2px;
+  white-space: nowrap;
 }
+.wizard-help:hover { color: var(--green-dark); }
 .chip-grid { display: flex; flex-wrap: wrap; gap: 8px; }
 .chip-main {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  padding: 9px 16px;
-  border-radius: 24px;
-  border: 1.5px solid var(--border-mid);
-  background: var(--surface-alt);
-  font-size: 13px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all .15s;
-  font-family: inherit;
-  color: var(--text-sub);
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 8px 15px; border-radius: 22px;
+  border: 1.5px solid var(--border-mid); background: var(--surface-alt);
+  font-size: 13px; font-weight: 500; cursor: pointer;
+  transition: all .15s; color: var(--text-sub);
 }
-.chip-main:hover {
-  border-color: var(--accent);
-  background: var(--green-light);
-  color: var(--green-dark);
-}
-.chip-main.selected {
-  border-color: var(--accent);
-  background: var(--green-light);
-  color: var(--green-dark);
-}
-.chip-main i { font-size: 16px; }
+.chip-main:hover { border-color: var(--accent); background: var(--green-light); color: var(--green-dark); }
+.chip-main.selected { border-color: var(--accent); background: var(--green-light); color: var(--green-dark); }
+.chip-main i { font-size: 15px; opacity: .8; }
 
-.wizard-step2 {
-  display: none;
-  margin-top: 18px;
-  padding-top: 18px;
-  border-top: 1px solid var(--border);
-}
-.step2-header {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 12px;
-}
+.wizard-step2 { display: none; margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); }
+.step2-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
 .back-btn {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  border: 1px solid var(--border-mid);
-  background: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 15px;
-  color: var(--text-sub);
-  transition: background .12s;
+  width: 28px; height: 28px; border-radius: 50%;
+  border: 1px solid var(--border-mid); background: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 15px; color: var(--text-sub); transition: background .12s;
 }
 .back-btn:hover { background: var(--green-light); }
-.step2-q { font-size: 15px; font-weight: 500; }
+.step2-q { font-size: 14px; font-weight: 500; }
 .chip-sub {
-  padding: 8px 16px;
-  border-radius: 20px;
-  border: 1px solid var(--border-mid);
-  background: var(--surface-alt);
-  font-size: 13px;
-  cursor: pointer;
-  transition: all .15s;
-  font-family: inherit;
-  color: var(--text-sub);
+  padding: 7px 15px; border-radius: 18px;
+  border: 1px solid var(--border-mid); background: var(--surface-alt);
+  font-size: 12.5px; cursor: pointer; transition: all .15s; color: var(--text-sub);
 }
-.chip-sub:hover {
-  border-color: var(--accent);
-  background: var(--green-light);
-  color: var(--green-dark);
+.chip-sub:hover, .chip-sub.selected { border-color: var(--accent); background: var(--green-light); color: var(--green-dark); }
+
+/* ── VIEW BAR (항상 보이는 도구 모음) ── */
+.viewbar {
+  display: flex; align-items: center; gap: 12px;
+  flex-wrap: wrap; margin-bottom: 12px;
 }
+.result-count { font-size: 13px; color: var(--text-muted); }
+.result-count b { color: var(--green-dark); font-size: 15px; }
+.viewbar-actions { display: flex; gap: 6px; margin-left: auto; flex-wrap: wrap; }
+.tool-btn {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 12.5px; padding: 7px 13px; border-radius: 18px;
+  border: 1px solid var(--border-mid); background: var(--surface);
+  cursor: pointer; color: var(--text-sub); transition: all .12s;
+  white-space: nowrap;
+}
+.tool-btn:hover { background: var(--green-light); border-color: var(--accent); color: var(--green-dark); }
+.tool-btn i { font-size: 14px; }
+.tool-btn[aria-pressed="true"] {
+  background: var(--green-dark); border-color: var(--green-dark); color: #fff;
+}
+.tool-btn .cnt {
+  font-size: 10.5px; background: rgba(0,0,0,.08); border-radius: 8px;
+  padding: 0 5px; min-width: 16px; text-align: center;
+}
+.tool-btn[aria-pressed="true"] .cnt { background: rgba(255,255,255,.22); }
+.tool-btn.fav[aria-pressed="true"] { background: var(--gold); border-color: var(--gold); color: #23180A; }
+.tool-btn.tree { border-color: var(--accent); color: var(--accent-dark); }
 
 /* ── FILTER BAR ── */
 .filter-bar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: center;
-  margin-bottom: 16px;
+  display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-md); padding: 12px 14px; margin-bottom: 12px;
 }
-.tag-chips { display: flex; flex-wrap: wrap; gap: 6px; flex: 1; }
+.tag-chips { display: flex; flex-wrap: wrap; gap: 6px; flex: 1; min-width: 200px; }
 .tag-chip {
-  padding: 5px 12px;
-  border-radius: 16px;
-  border: 1px solid var(--border-mid);
-  background: var(--surface);
-  font-size: 12px;
-  cursor: pointer;
-  transition: all .12s;
-  font-family: inherit;
-  color: var(--text-sub);
+  padding: 4px 11px; border-radius: 14px;
+  border: 1px solid var(--border-mid); background: var(--surface);
+  font-size: 11.5px; cursor: pointer; transition: all .12s; color: var(--text-sub);
 }
 .tag-chip:hover { border-color: var(--accent); color: var(--green-dark); }
-.tag-chip.active {
-  background: var(--green-dark);
-  border-color: var(--green-dark);
-  color: #fff;
-}
+.tag-chip.active { background: var(--green-dark); border-color: var(--green-dark); color: #fff; }
+.filter-actions { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
 .search-wrap {
-  display: flex;
-  align-items: center;
-  background: var(--surface);
-  border: 1px solid var(--border-mid);
-  border-radius: 20px;
-  padding: 6px 14px;
-  gap: 7px;
-  flex-shrink: 0;
+  display: flex; align-items: center; background: var(--surface);
+  border: 1px solid var(--border-mid); border-radius: 20px;
+  padding: 5px 13px; gap: 6px; transition: border-color .12s;
 }
+.search-wrap:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(39,174,114,.12); }
 .search-wrap i { color: var(--text-muted); font-size: 15px; }
 .search-wrap input {
-  border: none;
-  outline: none;
-  font-size: 13px;
-  font-family: inherit;
-  width: 180px;
-  color: var(--text-main);
-  background: none;
+  border: none; outline: none; font-size: 13px; width: 200px;
+  color: var(--text-main); background: none; font-family: inherit;
 }
-.filter-actions { display: flex; gap: 8px; align-items: center; }
+.search-wrap input::-webkit-search-cancel-button { -webkit-appearance: none; }
 .btn-ghost {
-  font-size: 13px;
-  padding: 6px 14px;
-  border-radius: 18px;
-  border: 1px solid var(--border-mid);
-  background: none;
-  cursor: pointer;
-  font-family: inherit;
-  color: var(--text-sub);
-  transition: background .12s;
+  font-size: 12.5px; padding: 6px 13px; border-radius: 16px;
+  border: 1px solid var(--border-mid); background: none; cursor: pointer;
+  color: var(--text-sub); transition: background .12s; white-space: nowrap;
 }
 .btn-ghost:hover { background: var(--green-light); }
-.btn-tree {
-  font-size: 13px;
-  padding: 6px 14px;
-  border-radius: 18px;
-  border: 1px solid var(--accent);
-  background: none;
-  cursor: pointer;
-  font-family: inherit;
-  color: var(--accent);
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  transition: all .12s;
+.cross-toggle {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 12px; padding: 5px 11px; border-radius: 14px;
+  border: 1px dashed var(--border-mid); background: none; cursor: pointer;
+  color: var(--text-muted); white-space: nowrap;
 }
-.btn-tree:hover { background: var(--green-light); }
+.cross-toggle[aria-pressed="true"] {
+  border-style: solid; border-color: var(--accent);
+  background: var(--green-light); color: var(--green-dark); font-weight: 500;
+}
+
+/* ── SEARCH NOTICE ── */
+.search-notice {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  font-size: 12.5px; color: var(--green-dark);
+  background: var(--green-light); border: 1px solid var(--border);
+  border-radius: var(--radius-md); padding: 8px 14px; margin-bottom: 12px;
+}
+.search-notice i { font-size: 14px; }
+.search-notice button {
+  margin-left: auto; background: none; border: 1px solid var(--border-mid);
+  border-radius: 12px; padding: 3px 10px; font-size: 11.5px; cursor: pointer;
+  color: var(--green-dark);
+}
 
 /* ── CARD GRID ── */
 .card-grid {
@@ -340,215 +357,423 @@ nav { display: flex; gap: 4px; flex: 1; }
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 18px 18px 14px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  padding: 16px 17px 13px;
+  display: flex; flex-direction: column; gap: 8px;
   box-shadow: var(--shadow-sm);
-  transition: box-shadow .15s, border-color .15s;
+  transition: box-shadow .15s, border-color .15s, transform .15s;
 }
-.card:hover {
-  box-shadow: var(--shadow-md);
-  border-color: var(--border-mid);
-}
-.card-top { display: flex; justify-content: space-between; align-items: flex-start; }
-.badge {
-  font-size: 11px;
-  padding: 3px 9px;
-  border-radius: 12px;
-  font-weight: 500;
-}
+.card:hover { box-shadow: var(--shadow-md); border-color: var(--border-mid); }
+.card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+.card-badges { display: flex; gap: 5px; flex-wrap: wrap; }
+.badge { font-size: 10.5px; padding: 2px 8px; border-radius: 10px; font-weight: 500; }
 .badge-gov  { background: #EBF3FB; color: #1B5FA3; }
 .badge-pub  { background: var(--green-light); color: var(--green-dark); }
 .badge-priv { background: #FEF3E8; color: #A0522D; }
+.badge-menu { background: #F2EFFA; color: #5B4B8A; }
+.badge-fav  { background: #FFF6DF; color: #8A6610; }
 .fav-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 17px;
-  color: var(--text-muted);
-  padding: 2px;
-  line-height: 1;
-  transition: color .12s;
+  background: none; border: none; cursor: pointer; font-size: 18px;
+  color: #C9D6D0; padding: 2px; line-height: 1; transition: color .12s, transform .12s;
+  flex-shrink: 0;
 }
-.fav-btn:hover { color: #E6A817; }
-.card-name { font-size: 15px; font-weight: 700; color: var(--text-main); }
-.card-org  { font-size: 12px; color: var(--text-muted); margin-top: -4px; }
-.card-desc { font-size: 13px; color: var(--text-sub); line-height: 1.55; }
-.card-tags { display: flex; flex-wrap: wrap; gap: 5px; }
-.card-tag  { font-size: 11px; background: var(--surface-alt); color: var(--text-muted); padding: 2px 9px; border-radius: 10px; border: 1px solid var(--border); }
+.fav-btn:hover { color: var(--gold); transform: scale(1.1); }
+.fav-btn[aria-pressed="true"] { color: var(--gold); }
+.card-name {
+  font-size: 15.5px; font-weight: 700; color: var(--text-main);
+  background: none; border: none; padding: 0; text-align: left; cursor: pointer;
+  line-height: 1.35; letter-spacing: -0.3px;
+}
+.card-name:hover { color: var(--accent-dark); text-decoration: underline; text-underline-offset: 3px; }
+.card-org { font-size: 11.5px; color: var(--text-muted); margin-top: -4px; }
+.card-desc { font-size: 12.8px; color: var(--text-sub); line-height: 1.55; }
+.card-methods { display: flex; flex-wrap: wrap; gap: 4px; }
+.m-badge {
+  font-size: 10.5px; padding: 2px 7px; border-radius: 8px;
+  border: 1px solid var(--border); background: var(--surface-alt);
+  color: #5A6B64; display: inline-flex; align-items: center; gap: 3px;
+}
+.m-badge::before {
+  content: ""; width: 5px; height: 5px; border-radius: 50%; background: var(--border-mid);
+}
+.m-24 { background: #EAF7F0; border-color: #BFE4D2; color: var(--green-dark); font-weight: 500; }
+.m-24::before { background: var(--accent); }
+.m-app { background: #EDF3FB; border-color: #CFE0F5; color: #24578F; }
+.m-app::before { background: #5B93D6; }
+.m-phone { background: #FFF6E8; border-color: #F2DDBA; color: #8A6118; }
+.m-phone::before { background: var(--gold); }
+
+.card-tip {
+  background: var(--green-pale);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 7px 10px;
+  font-size: 12px; color: #2C5E4A; line-height: 1.5;
+}
+.card-tip b { display: inline-flex; align-items: center; gap: 3px; font-size: 11px; color: var(--accent-dark); margin-right: 4px; }
+.card-tip i { font-size: 12px; }
+.card-tip ul { list-style: none; margin-top: 4px; display: grid; gap: 2px; }
+.card-tip li { font-size: 11.5px; color: #3E6A58; }
+.card-tip li span { color: var(--text-muted); }
+.card-tip li em { font-style: normal; font-weight: 700; color: var(--green-dark); }
+
+.card-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+.card-tag { font-size: 10.5px; background: var(--surface-alt); color: var(--text-muted); padding: 1px 8px; border-radius: 9px; border: 1px solid var(--border); }
+mark { background: #FFF1A8; color: inherit; border-radius: 2px; padding: 0 1px; }
+
+details.prep { font-size: 12px; }
+details.prep summary {
+  cursor: pointer; color: var(--green-dark); font-weight: 500;
+  list-style: none; display: inline-flex; align-items: center; gap: 4px;
+  padding: 2px 0; border-radius: 4px;
+}
+details.prep summary::-webkit-details-marker { display: none; }
+details.prep summary i { font-size: 13px; }
+details.prep summary .caret { font-size: 11px; transition: transform .15s; color: var(--text-muted); }
+details.prep[open] summary .caret { transform: rotate(180deg); }
+details.prep ul { margin: 6px 0 0; padding-left: 0; list-style: none; display: grid; gap: 3px; }
+details.prep li {
+  font-size: 11.5px; color: var(--text-sub); padding-left: 16px; position: relative;
+}
+details.prep li::before {
+  content: "✓"; position: absolute; left: 1px; color: var(--accent); font-size: 11px; font-weight: 700;
+}
+
 .card-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 10px;
-  border-top: 1px solid var(--border);
-  margin-top: auto;
+  display: flex; justify-content: space-between; align-items: center; gap: 8px;
+  padding-top: 9px; border-top: 1px solid var(--border); margin-top: auto;
 }
-.card-phone {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--text-sub);
-  display: flex;
-  align-items: center;
-  gap: 5px;
+.card-phones { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+.tel-link {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 13px; font-weight: 700; color: var(--green-dark);
+  text-decoration: none; padding: 3px 8px; border-radius: 12px;
+  background: var(--green-pale); border: 1px solid var(--border);
 }
-.card-phone i { font-size: 14px; color: var(--accent); }
+.tel-link:hover { background: var(--green-light); border-color: var(--accent); }
+.tel-link i { font-size: 13px; }
+.sms-link {
+  display: inline-flex; align-items: center; gap: 3px;
+  font-size: 11.5px; color: var(--text-sub); text-decoration: none;
+  padding: 3px 7px; border-radius: 10px; border: 1px solid var(--border-mid);
+}
+.sms-link:hover { background: var(--green-light); color: var(--green-dark); }
 .card-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 13px;
-  padding: 6px 14px;
-  border-radius: 18px;
-  background: var(--green-dark);
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background .15s;
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 12.5px; padding: 6px 13px; border-radius: 16px;
+  background: var(--green-dark); color: #fff; text-decoration: none; font-weight: 500;
+  transition: background .15s; white-space: nowrap;
 }
 .card-link:hover { background: var(--green-mid); }
-.card-link i { font-size: 13px; }
-.card-link.lookup {
-  background: none;
-  border: 1.5px solid var(--green-dark);
-  color: var(--green-dark);
-}
+.card-link i { font-size: 12px; }
+.card-link.lookup { background: none; border: 1.5px solid var(--green-dark); color: var(--green-dark); }
 .card-link.lookup:hover { background: var(--green-light); }
 
-/* ── EMPTY STATE ── */
-.empty-state {
-  display: none;
-  text-align: center;
-  padding: 48px 20px;
-  color: var(--text-muted);
+/* ── EMPTY ── */
+.empty-state { text-align: center; padding: 34px 20px 10px; color: var(--text-muted); }
+.empty-state i { font-size: 34px; display: block; margin-bottom: 8px; color: var(--border-mid); }
+.empty-state p { font-size: 14px; margin-bottom: 12px; }
+.empty-state strong { color: var(--text-main); }
+
+/* ── FALLBACK ── */
+.fallback-panel {
+  margin-top: 18px; background: var(--surface);
+  border: 1px solid var(--border); border-left: 4px solid var(--accent);
+  border-radius: var(--radius-lg); padding: 20px 22px; box-shadow: var(--shadow-sm);
 }
-.empty-state i { font-size: 40px; display: block; margin-bottom: 12px; color: var(--border-mid); }
-.empty-state p { font-size: 14px; margin-bottom: 14px; }
-.empty-state button {
-  font-size: 13px;
-  padding: 8px 18px;
-  border-radius: 18px;
-  border: 1px solid var(--border-mid);
-  background: none;
-  cursor: pointer;
-  font-family: inherit;
-  color: var(--text-sub);
+.fallback-head { margin-bottom: 14px; }
+.fallback-head h2 { font-size: 16px; font-weight: 700; margin-bottom: 4px; letter-spacing: -0.3px; }
+.fallback-head p { font-size: 12.5px; color: var(--text-muted); }
+.fallback-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+.fb-card {
+  border: 1px solid var(--border); border-radius: var(--radius-md);
+  padding: 13px 14px; background: var(--surface-alt);
+  display: flex; flex-direction: column; gap: 5px;
+}
+.fb-card h3 { font-size: 14px; font-weight: 700; }
+.fb-card .fb-org { font-size: 11px; color: var(--text-muted); margin-top: -3px; }
+.fb-card p { font-size: 12px; color: var(--text-sub); line-height: 1.5; flex: 1; }
+.fb-card .fb-note { font-size: 11px; color: var(--text-muted); }
+.fb-actions { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-top: 2px; }
+.fb-phone { font-size: 15px; font-weight: 700; color: var(--green-dark); text-decoration: none; }
+a.fb-phone:hover { text-decoration: underline; }
+.fb-more {
+  font-size: 11.5px; color: var(--green-dark); text-decoration: none;
+  border-bottom: 1px solid var(--border-mid);
+}
+.fb-btn {
+  border: 1px solid var(--accent); background: var(--green-light);
+  color: var(--green-dark); font-weight: 600; font-size: 12px;
+  padding: 7px 12px; border-radius: 14px; cursor: pointer; text-align: left;
 }
 
-/* ── TREE VIEW ── */
-.tree-view { display: none; }
-.tree-section-title {
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--accent);
-  text-transform: uppercase;
-  letter-spacing: .06em;
-  margin: 20px 0 8px;
+/* ── TREE ── */
+.tree-view { padding-top: 4px; }
+.tree-hint {
+  font-size: 12px; color: var(--text-muted); background: var(--green-pale);
+  border: 1px solid var(--border); border-radius: var(--radius-md);
+  padding: 9px 14px; margin-bottom: 12px;
 }
+.tree-section-title {
+  font-size: 11.5px; font-weight: 700; color: var(--accent-dark);
+  letter-spacing: .08em; margin: 18px 0 7px; text-transform: uppercase;
+}
+.tree-section-title:first-of-type { margin-top: 0; }
 .tree-main-btn {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 16px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  font-family: inherit;
-  color: var(--text-main);
-  margin-bottom: 4px;
-  transition: background .12s;
+  width: 100%; display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 16px; background: var(--surface);
+  border: 1px solid var(--border); border-radius: var(--radius-md);
+  font-size: 14px; font-weight: 600; cursor: pointer; color: var(--text-main);
+  margin-bottom: 4px; transition: background .12s;
 }
 .tree-main-btn:hover { background: var(--green-light); }
-.tree-main-btn i { font-size: 16px; }
-.tree-main-btn .ti-chevron-down { font-size: 14px; transition: transform .2s; color: var(--text-muted); }
-.tree-main-btn.open .ti-chevron-down { transform: rotate(180deg); }
-.tree-sub-wrap {
-  display: none;
-  padding: 4px 0 8px 16px;
-}
+.tree-main-btn .tm-label { display: inline-flex; align-items: center; gap: 7px; }
+.tree-main-btn i { font-size: 15px; }
+.tree-main-btn .caret { font-size: 13px; transition: transform .2s; color: var(--text-muted); }
+.tree-main-btn[aria-expanded="true"] .caret { transform: rotate(180deg); }
+.tree-sub-wrap { display: none; padding: 2px 0 10px 14px; }
+.tree-sub-wrap.open { display: block; }
 .tree-sub-btn {
-  display: block;
-  width: 100%;
-  text-align: left;
-  padding: 8px 14px;
-  font-size: 13px;
-  border: none;
-  background: none;
-  cursor: pointer;
-  font-family: inherit;
-  color: var(--text-sub);
-  border-radius: var(--radius-sm);
-  transition: background .1s;
+  display: flex; align-items: center; justify-content: space-between;
+  width: 100%; text-align: left; padding: 8px 13px; font-size: 13px;
+  border: none; background: none; cursor: pointer; color: var(--text-sub);
+  border-radius: var(--radius-sm); transition: background .1s;
 }
-.tree-sub-btn:hover { background: var(--green-light); color: var(--green-dark); }
-.tree-result { margin-top: 20px; }
+.tree-sub-btn:hover, .tree-sub-btn.active { background: var(--green-light); color: var(--green-dark); }
+.tree-sub-btn .n { font-size: 11px; color: var(--text-muted); }
+.tree-result { margin-top: 18px; scroll-margin-top: 80px; }
 
 /* ── FOOTER ── */
 footer {
-  background: var(--green-dark);
-  color: rgba(255,255,255,.55);
-  text-align: center;
-  padding: 24px 20px;
-  font-size: 12px;
-  line-height: 1.8;
+  background: var(--green-dark); color: rgba(255,255,255,.6);
+  padding: 26px 20px 30px; font-size: 12px; line-height: 1.8;
 }
-footer strong { color: rgba(255,255,255,.8); }
+.footer-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
+footer strong { color: rgba(255,255,255,.9); }
+.footer-links {
+  display: flex; justify-content: center; flex-wrap: wrap; gap: 8px;
+  margin: 14px 0 10px;
+}
+.footer-btn {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 12px; padding: 7px 13px; border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.25); background: rgba(255,255,255,.06);
+  color: #fff; text-decoration: none; cursor: pointer;
+  transition: background .12s, border-color .12s;
+}
+.footer-btn:hover { background: rgba(255,255,255,.14); border-color: rgba(255,255,255,.45); }
+.footer-btn i { font-size: 13px; }
+.footer-meta { color: rgba(255,255,255,.4); font-size: 11px; margin-top: 8px; }
+.footer-disclaimer { color: rgba(255,255,255,.45); font-size: 11.5px; max-width: 720px; margin: 10px auto 0; }
+
+/* ── MODAL ── */
+.modal {
+  position: fixed; inset: 0; z-index: 200;
+  background: rgba(16,32,26,.55);
+  display: flex; align-items: flex-start; justify-content: center;
+  padding: 40px 16px; overflow-y: auto;
+  -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px);
+}
+.modal-card {
+  background: var(--surface); border-radius: var(--radius-lg);
+  width: 100%; max-width: 620px; box-shadow: var(--shadow-lg);
+  padding: 22px 24px 20px; position: relative; margin: auto 0;
+}
+.modal-card.wide { max-width: 680px; }
+.modal-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 6px; }
+.modal-title { font-size: 19px; font-weight: 700; letter-spacing: -0.4px; line-height: 1.35; }
+.modal-org { font-size: 12.5px; color: var(--text-muted); margin-top: 2px; }
+.modal-close {
+  background: none; border: none; cursor: pointer; color: var(--text-muted);
+  font-size: 20px; line-height: 1; padding: 4px; border-radius: 50%; flex-shrink: 0;
+}
+.modal-close:hover { background: var(--green-light); color: var(--green-dark); }
+.modal-body { display: flex; flex-direction: column; gap: 12px; margin-top: 10px; }
+.modal-section-title {
+  font-size: 11px; font-weight: 700; color: var(--accent-dark);
+  letter-spacing: .06em; text-transform: uppercase; margin-bottom: 5px;
+}
+.modal-desc { font-size: 14px; color: var(--text-sub); }
+.modal-tip {
+  background: var(--green-pale); border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 11px 13px; font-size: 13px; color: #2C5E4A; line-height: 1.6;
+}
+.modal-tip b { color: var(--accent-dark); }
+.cmp-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.cmp-table th, .cmp-table td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--border); }
+.cmp-table th { font-size: 11px; color: var(--text-muted); font-weight: 500; }
+.cmp-table td:last-child { font-weight: 700; color: var(--green-dark); white-space: nowrap; }
+.modal-list { list-style: none; display: grid; gap: 5px; }
+.modal-list li { font-size: 13px; color: var(--text-sub); padding-left: 20px; position: relative; }
+.modal-list li::before {
+  content: "✓"; position: absolute; left: 2px; color: var(--accent); font-weight: 700;
+}
+.kw-chips { display: flex; flex-wrap: wrap; gap: 4px; }
+.kw-chip { font-size: 11px; background: var(--surface-alt); border: 1px solid var(--border); color: var(--text-muted); padding: 1px 8px; border-radius: 9px; }
+.modal-actions { display: flex; gap: 8px; flex-wrap: wrap; padding-top: 4px; }
+.btn-primary, .btn-secondary, .btn-warm {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  font-size: 13px; font-weight: 600; padding: 9px 16px; border-radius: 20px;
+  cursor: pointer; text-decoration: none; border: 1px solid transparent;
+}
+.btn-primary { background: var(--green-dark); color: #fff; }
+.btn-primary:hover { background: var(--green-mid); }
+.btn-secondary { background: none; border-color: var(--border-mid); color: var(--text-sub); }
+.btn-secondary:hover { background: var(--green-light); color: var(--green-dark); }
+.btn-warm { background: var(--warm); color: #fff; }
+.btn-warm:hover { background: #8F2C21; }
+.btn-primary i, .btn-secondary i, .btn-warm i { font-size: 14px; }
+
+/* ── DRAFT ── */
+.draft-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.field { display: flex; flex-direction: column; gap: 4px; }
+.field.full { grid-column: 1 / -1; }
+.field label { font-size: 11.5px; font-weight: 600; color: var(--text-sub); }
+.field label span { font-weight: 400; color: var(--text-muted); }
+.field input, .field textarea {
+  font-family: inherit; font-size: 13px; color: var(--text-main);
+  border: 1px solid var(--border-mid); border-radius: var(--radius-sm);
+  padding: 8px 10px; background: var(--surface); width: 100%;
+  transition: border-color .12s, box-shadow .12s;
+}
+.field input:focus, .field textarea:focus {
+  outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(39,174,114,.12);
+}
+.field textarea { resize: vertical; min-height: 62px; line-height: 1.5; }
+.privacy-note {
+  display: flex; gap: 6px; align-items: flex-start;
+  background: var(--green-pale); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); padding: 9px 11px;
+  font-size: 11.5px; color: #3E6A58; line-height: 1.5;
+}
+.privacy-note i { font-size: 13px; flex-shrink: 0; margin-top: 1px; }
+.draft-preview-wrap { display: flex; flex-direction: column; gap: 5px; }
+.draft-preview {
+  font-family: 'Noto Sans KR', ui-monospace, monospace;
+  font-size: 12px; line-height: 1.65; color: var(--text-sub);
+  background: var(--surface-alt); border: 1px dashed var(--border-mid);
+  border-radius: var(--radius-sm); padding: 12px; margin: 0;
+  white-space: pre-wrap; word-break: break-word; max-height: 210px; overflow-y: auto;
+}
+.draft-actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.draft-actions .spacer { flex: 1; }
+
+/* ── TOAST ── */
+.toast {
+  position: fixed; left: 50%; bottom: 26px; transform: translateX(-50%) translateY(8px);
+  background: #12332A; color: #fff; font-size: 13px; font-weight: 500;
+  padding: 11px 20px; border-radius: 22px; z-index: 300;
+  box-shadow: 0 10px 28px rgba(0,0,0,.28); opacity: 0;
+  transition: opacity .18s, transform .18s; pointer-events: none;
+  max-width: calc(100vw - 32px); text-align: center;
+}
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
 /* ── RESPONSIVE ── */
-@media (max-width: 680px) {
-  .hero h1 { font-size: 22px; }
-  .header-search { display: none; }
-  nav { gap: 0; }
+@media (max-width: 860px) {
+  .header-inner { height: auto; flex-wrap: wrap; padding: 8px 14px 10px; gap: 8px; }
+  .logo { font-size: 17px; }
+  .logo small { display: none; }
+  nav { order: 2; margin-left: auto; flex: 0 1 auto; }
+  .nav-btn { padding: 7px 10px; font-size: 13px; }
+  .header-search { order: 3; flex: 1 0 100%; }
+  .header-search input { width: 100%; }
+  .hero { padding: 26px 16px 24px; }
+  .hero h1 { font-size: 21px; }
+  .hero p { font-size: 13px; }
+  .hero-notes { display: none; }
+  .main { padding: 16px 14px 48px; }
+  .viewbar { gap: 8px; }
+  .viewbar-actions {
+    margin-left: 0; width: 100%; overflow-x: auto; flex-wrap: nowrap;
+    scrollbar-width: none; padding-bottom: 2px;
+  }
+  .viewbar-actions::-webkit-scrollbar { display: none; }
   .card-grid { grid-template-columns: 1fr; }
   .filter-bar { flex-direction: column; align-items: stretch; }
+  .filter-actions { justify-content: stretch; }
+  .search-wrap { flex: 1; }
+  .search-wrap input { width: 100%; }
+  .modal { padding: 16px 10px; }
+  .modal-card { padding: 18px 16px 16px; }
+  .draft-grid { grid-template-columns: 1fr; }
+  .card-footer { flex-wrap: wrap; }
+}
+@media (max-width: 420px) {
+  .logo span { display: none; }
+  .hero h1 { font-size: 19px; }
+  .menu-tab { padding: 8px 18px; font-size: 13px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+@media print {
+  header, .sos-bar, .hero, .viewbar, .filter-bar, footer, .modal, .toast { display: none !important; }
+  .card { break-inside: avoid; }
 }
 </style>
 </head>
 <body>
+<noscript>
+  <div style="background:#FFF6DF;border-bottom:1px solid #E8D9A8;padding:12px 16px;font-size:13px;color:#6B5518;text-align:center;line-height:1.7">
+    <b>자바스크립트를 켜면 검색·즐겨찾기·전화 연결을 모두 쓸 수 있습니다.</b><br>
+    지금은 대표 연락처만 보여드립니다 — 국민신문고 <a href="https://www.epeople.go.kr">epeople.go.kr</a> ·
+    정부민원안내 <a href="tel:110">110</a> · 보이스피싱 <a href="tel:112">112</a>/<a href="tel:1332">1332</a> ·
+    사이버사기 <a href="https://ecrm.police.go.kr">ECRM</a> · 해킹·개인정보 <a href="tel:118">118</a> · 학교폭력 <a href="tel:117">117</a>
+  </div>
+</noscript>
+<a class="skip-link" href="#main">본문으로 바로가기</a>
 
 <header>
   <div class="header-inner">
-    <a href="#" class="logo">신고 생활정보<span> 사이트 모음</span></a>
-    <nav>
-      <button class="nav-btn active" data-menu="신고/민원" onclick="switchMenu('신고/민원',this)">
-        <i class="ti ti-alert-circle"></i>신고/민원
+    <a href="./" class="logo">신고 생활정보<span> 사이트 모음</span><small>singo.kr</small></a>
+    <nav aria-label="주 메뉴">
+      <button class="nav-btn active" data-action="menu" data-menu="신고/민원" aria-pressed="true">
+        <i class="ti ti-alert-circle" aria-hidden="true"></i>신고/민원
       </button>
-      <button class="nav-btn" data-menu="정보검색" onclick="switchMenu('정보검색',this)">
-        <i class="ti ti-search"></i>정보검색
+      <button class="nav-btn" data-action="menu" data-menu="정보검색" aria-pressed="false">
+        <i class="ti ti-search" aria-hidden="true"></i>정보검색
       </button>
     </nav>
     <div class="header-search">
-      <i class="ti ti-search"></i>
-      <input type="text" placeholder="기관명, 키워드 검색" oninput="headerSearch(this.value)">
+      <i class="ti ti-search" aria-hidden="true"></i>
+      <label class="sr-only" for="searchTop">기관명이나 상황 검색</label>
+      <input id="searchTop" type="search" placeholder="상황으로 검색 (예: 먹튀, 월급, 층간소음)" autocomplete="off" enterkeyhint="search">
     </div>
   </div>
 </header>
 
+<div class="sos-bar" role="region" aria-label="긴급 상황 빠른 연락">
+  <div class="sos-inner" id="sosBar"></div>
+</div>
+
 <div class="hero">
   <h1>신고·민원·정보검색을 한 곳에서</h1>
-  <p>정부·공공기관·민간의 신고센터와 정보검색 서비스를 빠르게 찾아드립니다</p>
-  <div class="menu-tabs">
-    <button class="menu-tab active" id="heroTabReport" onclick="switchMenu('신고/민원')">신고/민원</button>
-    <button class="menu-tab" id="heroTabInfo" onclick="switchMenu('정보검색')">정보검색</button>
+  <p>내 상황에 맞는 기관을 찾고, 전화·문자로 바로 연결하세요</p>
+  <div class="menu-tabs" role="tablist" aria-label="메뉴 선택">
+    <button class="menu-tab active" id="heroTabReport" data-action="menu" data-menu="신고/민원" role="tab" aria-selected="true">신고/민원</button>
+    <button class="menu-tab" id="heroTabInfo" data-action="menu" data-menu="정보검색" role="tab" aria-selected="false">정보검색</button>
+  </div>
+  <div class="hero-notes">
+    <span><i class="ti ti-phone-call" aria-hidden="true"></i>전화번호를 누르면 바로 연결</span>
+    <span><i class="ti ti-checklist" aria-hidden="true"></i>신고 전 준비물 안내</span>
+    <span><i class="ti ti-shield-lock" aria-hidden="true"></i>개인정보는 브라우저에만</span>
   </div>
 </div>
 
-<div class="main">
+<main class="main" id="main">
 
-  <!-- WIZARD -->
   <div class="wizard-box" id="wizardBox">
-    <div class="wizard-label">빠른 찾기</div>
+    <div class="wizard-head">
+      <div class="wizard-label">빠른 찾기</div>
+      <button class="wizard-help" data-action="fallback">어디인지 모르겠어요</button>
+    </div>
     <div class="wizard-q" id="wizardQ">어떤 문제인가요?</div>
     <div class="chip-grid" id="mainChips"></div>
     <div class="wizard-step2" id="wizardStep2">
       <div class="step2-header">
-        <button class="back-btn" onclick="backStep()" aria-label="이전으로">
-          <i class="ti ti-arrow-left"></i>
+        <button class="back-btn" data-action="back" aria-label="이전 단계로">
+          <i class="ti ti-arrow-left" aria-hidden="true"></i>
         </button>
         <span class="step2-q">구체적으로 어떤 경우인가요?</span>
       </div>
@@ -556,278 +781,981 @@ footer strong { color: rgba(255,255,255,.8); }
     </div>
   </div>
 
-  <!-- FILTER BAR -->
-  <div class="filter-bar" id="filterBar">
-    <div class="tag-chips" id="tagChips"></div>
-    <div class="filter-actions">
-      <div class="search-wrap">
-        <i class="ti ti-search"></i>
-        <input id="searchInput" type="text" placeholder="기관명, 키워드 검색" oninput="onSearch(this.value)">
-      </div>
-      <button class="btn-ghost" onclick="resetAll()">초기화</button>
-      <button class="btn-tree" id="treeBtn" onclick="toggleTree()">
-        <i class="ti ti-list-tree"></i>트리 보기
+  <div class="viewbar">
+    <div class="result-count" id="resultCount" aria-live="polite">불러오는 중…</div>
+    <div class="viewbar-actions" role="group" aria-label="보기 설정">
+      <button class="tool-btn fav" id="favFilterBtn" data-action="fav-only" aria-pressed="false">
+        <i class="ti ti-star" aria-hidden="true"></i>즐겨찾기 <span class="cnt" id="favCount">0</span>
+      </button>
+      <button class="tool-btn" data-action="fallback">
+        <i class="ti ti-help-circle" aria-hidden="true"></i>어디인지 모르겠어요
+      </button>
+      <button class="tool-btn" data-action="draft">
+        <i class="ti ti-notes" aria-hidden="true"></i>신고 내용 정리
+      </button>
+      <button class="tool-btn tree" id="treeBtn" data-action="tree" aria-pressed="false">
+        <i class="ti ti-list-tree" aria-hidden="true"></i><span id="treeBtnLabel">트리 보기</span>
       </button>
     </div>
   </div>
 
-  <!-- CARD GRID -->
-  <div class="card-grid" id="cardGrid"></div>
-  <div class="empty-state" id="emptyState">
-    <i class="ti ti-search-off"></i>
-    <p>일치하는 항목이 없습니다.</p>
-    <button onclick="resetAll()">전체 보기로 돌아가기</button>
+  <div class="filter-bar" id="filterBar">
+    <div class="tag-chips" id="tagChips" role="group" aria-label="태그 필터"></div>
+    <div class="filter-actions">
+      <div class="search-wrap">
+        <i class="ti ti-search" aria-hidden="true"></i>
+        <label class="sr-only" for="searchInput">기관명이나 상황 검색</label>
+        <input id="searchInput" type="search" placeholder="기관명·상황 검색" autocomplete="off" enterkeyhint="search">
+      </div>
+      <button class="cross-toggle" id="crossToggle" data-action="cross" aria-pressed="true" title="검색할 때 두 탭을 함께 검색합니다">
+        <i class="ti ti-arrows-shuffle" aria-hidden="true"></i>전체 탭 검색
+      </button>
+      <button class="btn-ghost" data-action="reset">초기화</button>
+    </div>
   </div>
 
-  <!-- TREE VIEW -->
-  <div class="tree-view" id="treeView">
+  <div class="search-notice" id="searchNotice" hidden></div>
+
+  <div class="card-grid" id="cardGrid"></div>
+
+  <div class="empty-state" id="emptyState" hidden>
+    <i class="ti ti-search-off" aria-hidden="true"></i>
+    <p><strong>일치하는 항목이 없습니다.</strong><br>기관 이름 대신 상황을 짧게 적어보세요. (예: 먹튀, 환불, 소음)</p>
+  </div>
+
+  <section class="fallback-panel" id="fallbackPanel" hidden aria-labelledby="fallbackTitle">
+    <div class="fallback-head">
+      <h2 id="fallbackTitle">어디에 신고해야 할지 모르겠다면</h2>
+      <p>한 곳에만 접수해도 담당 기관으로 이송됩니다. 아래 셋 중 하나로 시작하세요.</p>
+    </div>
+    <div class="fallback-grid" id="fallbackGrid"></div>
+  </section>
+
+  <div class="tree-view" id="treeView" hidden>
+    <div class="tree-hint">
+      <i class="ti ti-info-circle" aria-hidden="true"></i>
+      메뉴를 펼쳐 하위 항목을 고르면 해당 카드만 모아 보여줍니다. 언제든 위의 <b>카드 보기</b>로 돌아올 수 있습니다.
+    </div>
     <div id="treeContainer"></div>
     <div class="tree-result card-grid" id="treeResult"></div>
   </div>
 
-</div>
+  <div id="bootError" hidden class="empty-state" style="display:block">
+    <p>자료를 불러오지 못했습니다. 새로고침을 해보시고, 계속되면 아래 이메일로 알려주세요.</p>
+  </div>
+
+</main>
 
 <footer>
-  <strong>신고 생활정보 사이트 모음 (singo.kr) / yenuri337@gmail.com</strong><br>
-  본 사이트는 정부·공공기관·민간의 신고·민원·정보검색 서비스를 안내하는 민간 큐레이션 사이트입니다.<br>
-  공식 기관 사이트가 아니며, 각 서비스는 해당 기관에서 직접 운영합니다.
+  <div class="footer-inner">
+    <strong>신고 생활정보 사이트 모음 (singo.kr)</strong> · <span id="footerEmail"></span>
+    <div class="footer-links" id="footerLinks"></div>
+    <p class="footer-disclaimer">
+      본 사이트는 정부·공공기관·민간의 신고·민원·정보검색 서비스를 안내하는 민간 큐레이션 사이트입니다.
+      공식 기관 사이트가 아니며, 각 서비스는 해당 기관에서 직접 운영합니다. 안내 정보는 확인 후 수정하지만
+      제도와 연락처는 바뀔 수 있으니, 중요한 신고 전에는 기관 홈페이지에서 한 번 더 확인하세요.
+    </p>
+    <p class="footer-meta" id="footerMeta"></p>
+  </div>
 </footer>
 
+<div class="modal" id="detailModal" hidden role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+  <div class="modal-card" id="detailCard"></div>
+</div>
+
+<div class="modal" id="draftModal" hidden role="dialog" aria-modal="true" aria-labelledby="draftTitle">
+  <div class="modal-card wide">
+    <div class="modal-head">
+      <div>
+        <div class="modal-title" id="draftTitle">신고 내용 정리 도우미</div>
+        <div class="modal-org">일시·장소·상대방·피해 내용을 적으면 신고서에 붙여 넣을 문장으로 정리해 드립니다.</div>
+      </div>
+      <button class="modal-close" data-action="close-modal" aria-label="닫기"><i class="ti ti-x" aria-hidden="true"></i></button>
+    </div>
+    <div class="modal-body">
+      <div class="draft-grid">
+        <div class="field">
+          <label for="dWhen">언제 <span>(일시)</span></label>
+          <input id="dWhen" type="text" placeholder="예: 11월 20일 오후 7시경" data-draft="when">
+        </div>
+        <div class="field">
+          <label for="dWhere">어디서 <span>(장소·플랫폼)</span></label>
+          <input id="dWhere" type="text" placeholder="예: 당근마켓 / 서울 강남구" data-draft="where">
+        </div>
+        <div class="field full">
+          <label for="dWho">누가 <span>(상대방 계좌·전화·아이디)</span></label>
+          <input id="dWho" type="text" placeholder="예: 계좌 000-000-000000, 카톡 ID abc" data-draft="who">
+        </div>
+        <div class="field full">
+          <label for="dWhat">무엇을 <span>(피해 내용)</span></label>
+          <textarea id="dWhat" placeholder="예: 12만원을 송금했는데 물건을 보내지 않고 연락이 끊김" data-draft="what"></textarea>
+        </div>
+        <div class="field full">
+          <label for="dHow">어떻게 <span>(경위, 선택)</span></label>
+          <textarea id="dHow" placeholder="예: 판매글을 보고 채팅으로 거래를 정한 뒤 계좌이체함" data-draft="how"></textarea>
+        </div>
+        <div class="field">
+          <label for="dWant">원하는 조치 <span>(선택)</span></label>
+          <input id="dWant" type="text" placeholder="예: 환불, 수사, 삭제 요청" data-draft="want">
+        </div>
+        <div class="field">
+          <label for="dProof">증빙자료 <span>(선택)</span></label>
+          <input id="dProof" type="text" placeholder="예: 대화 캡처 3장, 이체확인증" data-draft="proof">
+        </div>
+      </div>
+      <div class="privacy-note">
+        <i class="ti ti-shield-lock" aria-hidden="true"></i>
+        <span>입력한 내용은 <b>서버로 전송되지 않습니다.</b> 이 브라우저 안에만 남고, 창을 닫거나 '내용 지우기'를 누르면 사라집니다. 공용 기기에서는 사용 후 지워주세요.</span>
+      </div>
+      <div class="draft-preview-wrap">
+        <div class="modal-section-title">정리된 내용 미리보기</div>
+        <pre class="draft-preview" id="draftPreview"></pre>
+      </div>
+      <div class="draft-actions">
+        <button class="btn-primary" data-action="draft-copy"><i class="ti ti-copy" aria-hidden="true"></i>정리된 내용 복사</button>
+        <button class="btn-secondary" data-action="draft-clear"><i class="ti ti-eraser" aria-hidden="true"></i>내용 지우기</button>
+        <span class="spacer"></span>
+        <button class="btn-secondary" data-action="close-modal">닫기</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script type="application/json" id="inlineData">{"site":{"version":"2.1","updated":"2026-11-23","name":"신고 생활정보 사이트 모음","url":"https://singo.kr","email":"yenuri337@gmail.com","repo":"https://github.com/yenuri337-cpu/singo.github.io","description":"중고거래 사기, 임금체불, 층간소음, 스미싱, 악플… 상황으로 찾는 신고·민원·정보검색 기관 안내"},"sos":[{"label":"보이스피싱","phones":["112","1332"]},{"label":"사이버사기","name":"ECRM","url":"https://ecrm.police.go.kr"},{"label":"해킹·개인정보","phones":["118"]},{"label":"학교폭력","phones":["117"]}],"fallback":[{"name":"국민신문고","org":"국민권익위원회","desc":"어느 기관에 넣어야 할지 모를 때 한 번만 접수하면 담당 기관으로 이송됩니다.","phone":"110","url":"https://www.epeople.go.kr","linkLabel":"epeople.go.kr"},{"name":"국민콜110","org":"정부민원안내콜센터","desc":"365일 24시간 무료 상담. 상황을 말하면 담당 기관 전화번호를 찾아 연결해 줍니다.","phone":"110","url":"https://www.110.go.kr","linkLabel":"110.go.kr"},{"name":"우리 동네 민원","org":"지방자치단체","desc":"지역번호 + 120. 시·군·구 민원 상담으로, 지역번호를 앞에 붙여 걸면 됩니다.","phoneText":"지역번호 + 120","note":"예: 서울 02-120, 부산 051-120"}],"menus":{"신고/민원":[{"key":"인터넷/디지털 정보 신고","icon":"ti-device-laptop"},{"key":"아동·청소년·여성 보호","icon":"ti-heart-handshake"},{"key":"금융피해 신고","icon":"ti-coin"},{"key":"사기범죄 신고","icon":"ti-alert-triangle"},{"key":"불법 식의약 신고","icon":"ti-pill"},{"key":"마약 신고","icon":"ti-flask"},{"key":"노동 관련 신고","icon":"ti-briefcase"},{"key":"특허·저작권 침해 신고","icon":"ti-copyright"},{"key":"생활불편 신고","icon":"ti-home"},{"key":"마음건강·생활 상담","icon":"ti-mood-heart"},{"key":"통합 민원·안내","icon":"ti-building-community"}],"정보검색":[{"key":"법령·판례 조회","icon":"ti-gavel"},{"key":"고전·문헌정보","icon":"ti-book"},{"key":"학술정보","icon":"ti-school"},{"key":"공공데이터·통계","icon":"ti-database"}]},"items":[{"id":"kocsc-illegal","menu":"신고/민원","main":"인터넷/디지털 정보 신고","sub":"불법유해정보","org":"방송미디어통신심의위원회","name":"인터넷 불법·유해정보 신고","desc":"음란물, 불법도박·사행성 사이트 등 인터넷 불법·유해정보 신고","phone":"1377","url":"https://report.kocsc.or.kr/report/auth/illegalInfo","tags":["인터넷","불법정보"],"type":"공공","stype":"신고","methods":["온라인 접수","전화 상담"],"keywords":["음란물","야동","불법도박","도박사이트","사행성","불법정보","유해사이트","성인사이트","게시글 신고","불법 사이트"],"checklist":["문제 페이지 주소(URL)","화면 캡처 이미지","발견한 날짜·시간"],"tip":"사이트 주소(URL)가 정확해야 심의가 됩니다. 같은 사이트라도 페이지마다 따로 신고해야 합니다.","compare":[]},{"id":"kocsc-digital","menu":"신고/민원","main":"인터넷/디지털 정보 신고","sub":"디지털성범죄","org":"방송미디어통신심의위원회","name":"디지털 성범죄정보 신고","desc":"불법촬영물, 딥페이크 등 디지털 성범죄정보 삭제·차단 신고","phone":"1377","url":"https://report.kocsc.or.kr/report/auth/digitalSexualAssault","tags":["디지털성범죄","24시간"],"type":"공공","stype":"신고","methods":["24시간","온라인 접수","전화 상담","채팅 상담"],"keywords":["불법촬영","몰카","성착취물","n번방","리벤지포르노","딥페이크","지인능욕","허위영상물","유포 협박","삭제 요청","몰래카메라"],"checklist":["유포된 페이지 URL","화면 캡처","본인 확인 자료(피해 당사자인 경우)"],"tip":"삭제가 급하면 1377(24시간)로 신속심의를 요청하세요. 촬영·유포한 사람의 처벌은 경찰(112·ECRM)에 따로 신고해야 합니다.","compare":[{"case":"유포된 영상·사진을 빨리 지우고 싶다","go":"방심위 1377"},{"case":"찍거나 유포한 사람을 처벌하고 싶다","go":"경찰 112·ECRM"}]},{"id":"kocsc-remedy","menu":"신고/민원","main":"인터넷/디지털 정보 신고","sub":"인터넷 피해구제","org":"방송미디어통신심의위원회","name":"인터넷 피해구제","desc":"악플·명예훼손·모욕 게시글의 삭제 요청과 피해 상담","phone":"1377","url":"https://remedy.kocsc.or.kr","tags":["명예훼손","피해구제","악플"],"type":"공공","stype":"신고","methods":["온라인 접수","전화 상담","방문 접수"],"keywords":["악플","악성 댓글","댓글","명예훼손","모욕","사이버 모욕","게시글 삭제","임시조치","신상 공개","카페 글","커뮤니티 비방","허위 사실"],"checklist":["게시글 URL","화면 캡처","본인 확인 자료"],"tip":"게시 중단은 방심위, 처벌은 경찰입니다. 급하면 방심위에 삭제를, 동시에 ECRM에 수사를 넣으세요.","compare":[{"case":"악플·비방 글을 지우고 싶다","go":"방심위 1377"},{"case":"고소·수사를 원한다","go":"경찰 ECRM"}]},{"id":"kisa-118","menu":"신고/민원","main":"인터넷/디지털 정보 신고","sub":"개인정보·해킹","org":"한국인터넷진흥원","name":"118 사이버민원센터","desc":"해킹, 개인정보 침해, 명의도용, 불법스팸 신고·상담","phone":"118","url":"https://www.kisa.or.kr/118","tags":["해킹","개인정보","스팸","24시간"],"type":"공공","stype":"신고","methods":["24시간","전화 상담","온라인 접수"],"keywords":["해킹","개인정보 유출","아이디 도용","명의도용","스미싱","피싱","악성코드","랜섬웨어","스팸 문자","불법스팸","계정 탈취","와이파이 해킹","사이트 해킹","주민번호 유출","문자 사기","택배 사칭"],"checklist":["피해 화면 캡처","스미싱 문자 원문(발신 번호 포함)","감염된 기기·계정 정보"],"tip":"문자만 왔고 피해가 없으면 118(스팸 신고)로 충분합니다. 문자 속 링크를 눌러 돈이 빠져나갔으면 112 신고 후 1332 지급정지가 먼저입니다.","compare":[{"case":"광고·스팸 문자만 받았다","go":"KISA 118"},{"case":"링크를 눌러 앱이 깔리거나 결제됐다","go":"112 + 1332 지급정지"},{"case":"내 계정으로 남이 로그인했다","go":"KISA 118 + 해당 서비스 비밀번호 변경"}]},{"id":"kcopa-illegal","menu":"신고/민원","main":"인터넷/디지털 정보 신고","sub":"불법복제물","org":"한국저작권보호원","name":"인터넷 불법복제물 신고","desc":"불법 다운로드·스트리밍 사이트 등 온라인 불법복제물 신고","phone":"1666-0011","url":"https://portal.kcopa.or.kr/web/lay1/S1T18C27/contents.do","tags":["저작권","불법복제"],"type":"공공","stype":"신고","methods":["온라인 접수","전화 상담"],"keywords":["불법다운로드","토렌트","불법 스트리밍","웹툰 불법유통","영화 불법다운","저작권 침해","불법 복제","짝퉁 굿즈","음원 불법"],"checklist":["침해 사이트 URL","원저작물 정보(제목·등록번호)","화면 캡처"],"tip":"내 저작물이 무단 유포된 경우 권리 증빙(원본 파일, 등록증)을 함께 내면 차단이 빨라집니다.","compare":[]},{"id":"safe182-117","menu":"신고/민원","main":"아동·청소년·여성 보호","sub":"학교폭력","org":"교육부","name":"117 학교폭력 신고센터","desc":"학교폭력·사이버폭력 신고와 상담, 익명 신고 가능","phone":"117","url":"https://www.safe182.go.kr/pot/PotRptRegistCreateForm.do","tags":["학교폭력","24시간"],"type":"정부","stype":"신고","methods":["24시간","온라인 접수","전화 상담","문자 상담"],"keywords":["학교폭력","학폭","왕따","따돌림","사이버폭력","단톡방 욕설","갈취","금품 갈취","학교 폭행","친구 협박","학폭 신고","교실 폭력"],"checklist":["일시와 장소","가해·피해 학생 정보(학년·반)","목격자·증거(캡처, 녹음)"],"tip":"익명으로도 신고할 수 있습니다. 학교에 알리기 어려우면 117로 바로 신고하면 교육청이 개입합니다.","compare":[]},{"id":"childabuse-112","menu":"신고/민원","main":"아동·청소년·여성 보호","sub":"아동학대","org":"보건복지부","name":"아동학대 신고","desc":"아동학대·방임 의심 사례 신고 (112 긴급, 129 상담)","phone":"112","url":"https://www.korea1391.go.kr","tags":["아동학대","24시간"],"type":"정부","stype":"신고","methods":["24시간","전화 상담"],"keywords":["아동학대","아동 방임","학대 의심","아이 방치","아이 울음","아동 학대 신고","어린이 학대"],"checklist":["발생 장소","아이의 상태·나이","목격한 상황"],"tip":"아이가 지금 위험하면 112, 보호·복지 연계 상담은 129로도 가능합니다.","compare":[{"case":"지금 아이가 다치거나 위험하다","go":"112"},{"case":"학대가 의심되지만 급하지 않다","go":"112 신고 또는 129 상담"}]},{"id":"women-1366","menu":"신고/민원","main":"아동·청소년·여성 보호","sub":"여성·가정폭력","org":"성평등가족부·한국여성인권진흥원","name":"여성긴급전화 1366","desc":"가정폭력·스토킹·성폭력 피해 상담과 긴급 보호","phone":"1366","url":"https://www.women1366.kr","tags":["가정폭력","스토킹","24시간"],"type":"정부","stype":"신고","methods":["24시간","전화 상담","채팅 상담"],"keywords":["가정폭력","데이트폭력","교제폭력","성폭력","스토킹","성희롱","디지털성폭력","몰카","쉼터","긴급보호","남편 폭력","협박","따라다님","여성가족부"],"checklist":["현재 안전한지 여부","상대방과의 관계","피해 일시·장소"],"tip":"지금 다치거나 위험하면 112, 상담·쉼터·보호 연계가 필요하면 1366입니다. 365일 24시간 통화됩니다.","compare":[{"case":"지금 폭력이 진행 중이다","go":"112"},{"case":"상담·쉼터·법률 지원이 필요하다","go":"1366"}]},{"id":"fss-illegal-finance","menu":"신고/민원","main":"금융피해 신고","sub":"불법사금융","org":"금융감독원","name":"불법사금융피해신고센터","desc":"불법채권추심, 고금리, 미등록 대부업, 대출사기 신고","phone":"1332","url":"https://www.fss.or.kr","tags":["불법사금융","채권추심"],"type":"공공","stype":"신고","methods":["전화 상담","온라인 접수"],"keywords":["불법 사금융","고금리","미등록 대부업","불법 채권추심","빚 독촉","작업대출","대출 사기","선이자","보증금 사기","지인 대출 사칭","불법 대부"],"checklist":["계약서·차용증","입출금 내역","독촉 문자·통화 기록"],"tip":"미등록 업체에 이자를 보냈다면 1332에 신고하세요. 협박·감금·불법 추심이 있으면 112가 먼저입니다.","compare":[]},{"id":"fss-voicephishing","menu":"신고/민원","main":"금융피해 신고","sub":"보이스피싱","org":"금융감독원","name":"보이스피싱 피해 연락처","desc":"보이스피싱 신고와 계좌 지급정지 요청","phone":"1332","url":"https://www.fss.or.kr","tags":["보이스피싱","지급정지"],"type":"공공","stype":"신고","methods":["24시간","전화 상담"],"keywords":["보이스피싱","전화 사기","검찰 사칭","경찰 사칭","가족 사칭","대출 빙자","계좌 이체 사기","지급정지","송금 사기","은행 사칭","카드 배송 사칭","돈 보냈는데 사기"],"checklist":["이체확인증(거래 내역)","상대 계좌번호","통화·문자 기록"],"tip":"돈을 보낸 직후라면 112 신고 후 1332 지급정지가 가장 빠릅니다. 은행 앱의 '지급정지' 메뉴로도 신청할 수 있습니다.","compare":[{"case":"돈을 보낸 직후다","go":"112 + 1332 지급정지"},{"case":"전화만 받고 돈은 안 보냈다","go":"118 스팸 신고 / 1332 상담"}]},{"id":"fss-securities","menu":"신고/민원","main":"금융피해 신고","sub":"증권·투자","org":"금융감독원","name":"증권불공정거래 신고","desc":"주가조작, 미공개정보 이용, 리딩방 투자사기 신고","phone":"1332","url":"https://www.fss.or.kr","tags":["투자사기","증권"],"type":"공공","stype":"신고","methods":["전화 상담","온라인 접수"],"keywords":["주식 리딩방","주가조작","미공개정보","선행매매","코인 사기","투자 사기","폰지 사기","리딩방 사기","가상자산 사기","비상장주 사기"],"checklist":["단체방 대화 캡처","입금 계좌","거래 내역"],"tip":"리딩방에서 특정 종목을 사라고 하면 그 자체가 신호입니다. 입금 전이라면 1332에 먼저 확인하세요.","compare":[]},{"id":"fss-insurance","menu":"신고/민원","main":"금융피해 신고","sub":"보험","org":"금융감독원","name":"보험사기 신고센터","desc":"보험사기, 허위 입원, 고의 사고 제보","phone":"1332","url":"https://www.fss.or.kr","tags":["보험사기"],"type":"공공","stype":"신고","methods":["전화 상담","온라인 접수"],"keywords":["보험사기","허위 입원","고의 사고","보험금 편취","나이롱 환자","차량 사고 꾸미기","보험 사기 제보"],"checklist":["사고 관련 서류","진단서·영수증 사본","제보 내용 정리"],"tip":"","compare":[]},{"id":"ecrm","menu":"신고/민원","main":"사기범죄 신고","sub":"온라인사기","org":"경찰청 사이버수사국","name":"사이버범죄 신고시스템(ECRM)","desc":"중고거래 사기·먹튀, 온라인 사기, 사이버범죄 신고","phone":"112","url":"https://ecrm.police.go.kr","tags":["온라인신고","24시간","중고거래"],"type":"정부","stype":"신고","methods":["24시간","온라인 접수","전화 상담"],"keywords":["당근 사기","중고거래 사기","먹튀","물건 안 보냄","입금 후 잠수","티켓 사기","리셀 사기","게임 아이템 사기","로맨스 스캠","부업 사기","쇼핑몰 사기","인터넷 사기","사기 신고","악플 처벌","계정 해킹 신고","번개장터 사기","당근마켓","당근","카톡 사기","채팅 사기","전세 사기","전세보증금 사기"],"checklist":["판매글·프로필 캡처","대화 내역(카톡·문자)","상대 계좌번호·전화번호","이체확인증"],"tip":"돈만 보내고 물건을 못 받은 중고거래 사기는 ECRM(경찰)입니다. 물건은 받았는데 환불·교환·AS가 문제면 소비자원 1372입니다.","compare":[{"case":"중고거래·직거래 사기(먹튀)","go":"경찰 ECRM"},{"case":"쇼핑몰 환불·교환 거부","go":"소비자원 1372"},{"case":"방금 송금했고 취소가 급하다","go":"112 + 1332 지급정지"},{"case":"전세 보증금을 못 받았다","go":"HUG 1533-8119 · 국토부 결정신청"}]},{"id":"thecheat","menu":"신고/민원","main":"사기범죄 신고","sub":"사기 피해사례 조회","org":"더치트","name":"사기 피해사례 조회","desc":"거래 전 상대 계좌·전화번호의 사기 이력 조회","phone":"-","url":"https://www.thecheat.co.kr","tags":["사기","조회"],"type":"민간","stype":"조회","methods":["온라인 조회"],"keywords":["계좌 조회","사기꾼 조회","먹튀 조회","전화번호 조회","사기 이력","거래 전 확인","사기 계좌"],"checklist":[],"tip":"조회 결과가 없다고 안전한 것은 아닙니다. 처음 거래하는 상대라면 안전결제를 쓰세요.","compare":[]},{"id":"consumer-overseas","menu":"신고/민원","main":"사기범죄 신고","sub":"해외직구·쇼핑몰","org":"공정거래위원회·소비자24","name":"해외직구 사기의심사이트 조회","desc":"해외직구 사기의심사이트·민원다발 쇼핑몰 조회","phone":"1372","url":"https://www.consumer.go.kr","tags":["해외직구","조회"],"type":"공공","stype":"조회","methods":["온라인 조회","전화 상담"],"keywords":["해외직구","사기 사이트","민원다발 쇼핑몰","해외 쇼핑몰","직구 사기","결제만 하고 배송 안 됨","구매대행 사기"],"checklist":["사이트 주소","결제 내역","주문 확인 메일"],"tip":"결제 전에 '국제거래 소비자포털'에서 사이트 이력을 확인하세요.","compare":[]},{"id":"hug-jeonse-center","menu":"신고/민원","main":"사기범죄 신고","sub":"전세사기","org":"주택도시보증공사(HUG)·국토교통부","name":"전세피해 및 예방지원센터","desc":"전세사기 피해 상담, 무료 법률상담, 긴급 주거·금융 지원","phone":"1533-8119","url":"https://www.khug.or.kr/jeonse/web/s01/s010001.jsp","tags":["전세사기","법률상담","피해지원"],"type":"공공","stype":"상담","methods":["전화 상담","온라인 상담","방문 접수"],"keywords":["전세사기","전세 사기","전세 사기 피해","보증금 못 받음","보증금 안 돌려줌","보증금 반환","집주인 잠수","집주인 연락 두절","깡통전세","깡통 전세","전세피해확인서","피해확인서","긴급주거","임시거처","전세대출","버팀목","전세자금 대환","전세보증금반환보증","HUG","주택도시보증공사","안심전세","임차권등기","전세 계약 만료","보증금 미반환"],"checklist":["임대차계약서 사본","등기부등본","보증금 이체 내역","주민등록초본·등본","계약 해지 통보·내용증명"],"tip":"상담과 법률지원은 무료입니다. 상담은 평일 10~17시(점심 12~13시)이고 주말·공휴일은 쉽니다. 특별법상 '피해자 결정'(경·공매 유예, LH 매입 등)은 HUG가 아니라 국토교통부 전세사기피해자 지원관리시스템에서 신청합니다.","compare":[{"case":"보증금을 못 받았거나 못 받을 것 같다","go":"HUG 1533-8119"},{"case":"특별법 피해자 결정(경매유예·LH 매입)","go":"jeonse.kgeop.go.kr"},{"case":"임대인을 사기로 고소하고 싶다","go":"경찰 112 신고·경찰서 방문"}]},{"id":"moit-jeonse-victim","menu":"신고/민원","main":"사기범죄 신고","sub":"전세사기","org":"국토교통부","name":"전세사기피해자등 결정신청","desc":"특별법상 피해자 결정 신청, 경·공매 유예·LH 매입·공공임대 지원","phone":"1600-9640","url":"https://jeonse.kgeop.go.kr","tags":["전세사기","피해자 결정","온라인신청"],"type":"정부","stype":"민원","methods":["온라인 접수","방문 접수"],"keywords":["전세사기피해자","전세사기 피해자","피해자 결정","결정신청","전세사기 특별법","특별법","경매 유예","공매 유예","경공매 유예","우선매수권","LH 매입","공공임대","조세채권 안분","최소지원금","선지급","결정문","이의신청","전세사기피해 지원관리시스템"],"checklist":["결정신청서","임대차계약서 사본","주민등록표 초본","개인정보 동의서","경·공매 통지서(있는 경우)","판결·지급명령 등(있는 경우)"],"tip":"온라인 신청은 PC 크롬 환경을 권장하며 모바일 신청·결정문 출력은 지원되지 않습니다. 특별법 유효기간이 2027년 5월 31일까지 연장돼 그전에 신청할 수 있고, 2025년 5월 31일 이전에 처음 맺은 계약이 대상입니다. 2026년 11월 13일부터는 최소지원금·선지급-후정산 제도도 시행됩니다.","compare":[{"case":"특별법상 피해자 결정을 받고 싶다","go":"jeonse.kgeop.go.kr"},{"case":"당장 상담·법률·주거 지원이 필요하다","go":"HUG 1533-8119"},{"case":"임대인 사기 형사고소","go":"경찰 112 신고·경찰서 방문"}]},{"id":"mfds-online","menu":"신고/민원","main":"불법 식의약 신고","sub":"온라인 불법유통","org":"식품의약품안전처","name":"온라인 불법유통 신고","desc":"의약품·식품·화장품 온라인 불법판매·허위광고 신고","phone":"1577-1255","url":"https://www.mfds.go.kr/wpge/m_660/de010410l001.do","tags":["식의약","불법유통"],"type":"정부","stype":"신고","methods":["온라인 접수","전화 상담"],"keywords":["가짜 약","불법 의약품","다이어트 약","효능 과대광고","허위 광고","불법 화장품","의료기기 오인 광고","온라인 약 판매","가짜 체험단","탈모 치료제 광고"],"checklist":["판매 페이지 URL","광고 캡처","구매·결제 내역"],"tip":"식약처 상담은 1577-1255(평일 9~18시)가 바로 연결됩니다. 정부민원안내 110으로도 안내받을 수 있습니다.","compare":[]},{"id":"foodsafety-1399","menu":"신고/민원","main":"불법 식의약 신고","sub":"부정·불량식품","org":"식품안전나라","name":"부정·불량식품 신고","desc":"불량식품, 이물질, 위생 불량, 원산지 거짓 표시 신고","phone":"1399","url":"https://www.foodsafetykorea.go.kr","tags":["식품","위생"],"type":"정부","stype":"신고","methods":["24시간","전화 상담","온라인 접수"],"keywords":["불량식품","이물질","식중독","위생 불량","유통기한 변조","음식점 위생","배달 음식 이물","원산지 거짓","상한 음식"],"checklist":["영수증·주문 내역","제품 사진(이물질 포함)","업소명·주소"],"tip":"식중독 의심으로 여러 명이 아프면 1399와 함께 관할 보건소에 알려야 역학조사가 빨라집니다.","compare":[{"case":"음식에서 이물질·식중독","go":"1399 식품안전"},{"case":"허위·과대 광고","go":"식약처 1577-1255"}]},{"id":"mfds-drug-clean","menu":"신고/민원","main":"불법 식의약 신고","sub":"의약품 불법행위","org":"식품의약품안전처","name":"의약품 클린신고센터","desc":"의약품 제조·유통·품질 불법행위 신고","phone":"1577-1255","url":"https://www.mfds.go.kr","tags":["의약품"],"type":"정부","stype":"신고","methods":["온라인 접수","전화 상담"],"keywords":["의약품 불법","가짜 약","의약품 리베이트","불법 의약품 제조","약국 신고","처방전 없이 판매"],"checklist":["제품 사진","구매 경로","업소 정보"],"tip":"","compare":[]},{"id":"spo-1301","menu":"신고/민원","main":"마약 신고","sub":"마약 범죄","org":"공소청","name":"마약범죄 신고 (공소청 콜센터)","desc":"마약 투약·매매·재배 등 마약류 범죄 신고","phone":"1301","url":"https://www.spo.go.kr","tags":["마약","형사신고"],"type":"정부","stype":"신고","methods":["전화 상담","온라인 접수"],"keywords":["마약","대마","필로폰","약물","투약","마약 판매","마약 신고","클럽 마약","물뽕","최음제","검찰","대검찰청","검찰청"],"checklist":["거래 장소·시간","상대방 정보(닉네임·연락처)","보관·거래 정황"],"tip":"마약 사범 신고는 1301(공소청 콜센터), 중독 상담·치료 연계는 1342입니다.","compare":[{"case":"판매·투약 사실을 신고한다","go":"1301 공소청 콜센터"},{"case":"중독 상담·치료를 원한다","go":"1342"}]},{"id":"drugfree-1342","menu":"신고/민원","main":"마약 신고","sub":"마약 상담","org":"한국마약퇴치운동본부","name":"용기한걸음 1342 마약류 상담","desc":"마약류 중독·오남용 예방 24시간 전화 상담","phone":"1342","url":"https://www.drugfree.or.kr","tags":["마약","상담","24시간"],"type":"민간","stype":"상담","methods":["24시간","전화 상담","온라인 상담"],"keywords":["마약 상담","약물 중독","중독 치료","단약","오남용","마약 가족","치료 병원","금단 증상"],"checklist":["상담할 내용 메모"],"tip":"이름을 밝히지 않고 상담할 수 있습니다. 신고가 목적이면 1301(공소청)로 전화하세요.","compare":[]},{"id":"moel-1350","menu":"신고/민원","main":"노동 관련 신고","sub":"임금체불·부당해고","org":"고용노동부","name":"고용노동부 민원마당","desc":"임금체불·퇴직금·부당해고 진정과 노동 상담","phone":"1350","url":"https://minwon.moel.go.kr","tags":["노동","임금체불","퇴직금"],"type":"정부","stype":"신고","methods":["온라인 접수","전화 상담","방문 접수"],"keywords":["월급 안 줌","임금체불","퇴직금","주휴수당","최저임금","부당해고","해고 예고","연장수당","야근수당","직장 내 괴롭힘","근로계약서","실업급여","알바 월급","진정서","퇴직금 안 줌"],"checklist":["근로계약서","급여명세서·입금 내역","출퇴근 기록","사장님과의 문자·카톡"],"tip":"임금체불은 1350(노동청)에 진정하세요. 퇴직 후 3년이 지나면 청구가 어려우니 서두르는 게 좋습니다.","compare":[{"case":"월급·퇴직금을 못 받았다","go":"고용노동부 1350"},{"case":"일하다 다쳤다(산재)","go":"1350 + 안전보건공단 1644-0001"}]},{"id":"kosha-1644","menu":"신고/민원","main":"노동 관련 신고","sub":"산업안전","org":"안전보건공단","name":"산업안전 신고센터","desc":"산업안전 위반, 위험 작업, 중대재해 신고","phone":"1644-0001","url":"https://www.kosha.or.kr","tags":["산업안전","중대재해"],"type":"공공","stype":"신고","methods":["전화 상담","온라인 접수"],"keywords":["산업재해","안전사고","위험 작업","중대재해","보호구 미지급","추락 위험","끼임 사고","작업 중 부상","산재 신청","안전난간 없음"],"checklist":["작업장 사진·영상","사업장명·주소","사고 일시·경위"],"tip":"사람이 다쳤으면 119 구조 후 1350(노동청)에 산재·중대재해를 신고하고, 위험 요인 제보는 1644-0001입니다.","compare":[]},{"id":"kcopa-copyright","menu":"신고/민원","main":"특허·저작권 침해 신고","sub":"저작권","org":"한국저작권보호원","name":"저작권 침해 신고센터","desc":"불법복제, 콘텐츠·이미지 무단유포 신고","phone":"1666-0011","url":"https://www.kcopa.or.kr","tags":["저작권"],"type":"공공","stype":"신고","methods":["온라인 접수","전화 상담"],"keywords":["저작권 침해","불법복제","콘텐츠 무단유포","이미지 도용","음원 불법","표절","무단 사용","사진 도용"],"checklist":["침해물 URL","원본 제작 증빙","캡처"],"tip":"","compare":[]},{"id":"kipo-1544","menu":"신고/민원","main":"특허·저작권 침해 신고","sub":"특허·상표","org":"지식재산처","name":"특허·상표 침해 신고","desc":"위조상품, 상표권·디자인권 침해 신고","phone":"1544-8080","url":"https://www.kipo.go.kr","tags":["특허","위조상품"],"type":"정부","stype":"신고","methods":["온라인 접수","전화 상담"],"keywords":["짝퉁","위조품","가품","상표 도용","상표권 침해","디자인 침해","특허 침해","병행수입","명품 짝퉁","특허청"],"checklist":["위조품 사진","판매처 정보","정품 등록 증빙"],"tip":"온라인 위조상품은 지식재산처 신고와 판매 플랫폼 신고를 함께 하면 차단이 빠릅니다.","compare":[]},{"id":"safetyreport","menu":"신고/민원","main":"생활불편 신고","sub":"도로·시설","org":"행정안전부","name":"안전신문고","desc":"불법주정차, 도로파손, 가로등·시설물 위험 신고","phone":"1600-7395","url":"https://www.safetyreport.go.kr","tags":["생활불편","불법주차","시설물"],"type":"정부","stype":"신고","methods":["전용 앱","온라인 접수"],"keywords":["불법주차","불법주정차","주차 위반","도로파손","포장 파임","가로등 고장","맨홀","시설물 위험","쓰레기 무단투기","공사장 위험","어린이보호구역","신호등 고장","스쿨존","주차장 막고"],"checklist":["현장 사진(위치 확인 가능하게)","주소·위치 설명","발견 일시"],"tip":"안전신문고는 전화 접수를 받지 않습니다. 앱이나 홈페이지로 접수하면 담당 기관이 지정됩니다. 긴급 위험은 112·119.","compare":[{"case":"불법 주정차·도로 파손·시설 고장","go":"안전신문고"},{"case":"층간소음","go":"이웃사이센터 1661-2642"},{"case":"악취·폐수·매연","go":"환경신고 128"}]},{"id":"me-128","menu":"신고/민원","main":"생활불편 신고","sub":"환경·소음","org":"기후에너지환경부","name":"환경신고센터","desc":"환경오염, 악취, 매연, 폐수, 소음 신고","phone":"128","url":"https://www.me.go.kr","tags":["환경","소음"],"type":"정부","stype":"신고","methods":["24시간","전화 상담","온라인 접수"],"keywords":["환경오염","악취","매연","폐수","불법 소각","소음","쓰레기 투기","물오염","대기오염","공장 굴뚝","공사장 소음","새벽 소음","환경부"],"checklist":["현장 사진","위치·시간","사업장명(있는 경우)"],"tip":"밤낮없이 128로 신고할 수 있습니다. 사진과 위치를 함께 주면 처리 기관이 빨리 정해집니다.","compare":[]},{"id":"floor-noise-1661","menu":"신고/민원","main":"생활불편 신고","sub":"층간소음","org":"기후에너지환경부·한국환경공단","name":"층간소음 이웃사이센터","desc":"층간소음 상담, 방문 진단, 소음 측정 신청","phone":"1661-2642","url":"https://floor.noiseinfo.or.kr/floornoise","tags":["층간소음","이웃갈등"],"type":"공공","stype":"상담","methods":["전화 상담","온라인 접수","방문 진단"],"keywords":["층간소음","윗집 소음","발소리","쿵쿵","아이 뛰는 소리","층간 갈등","이웃 소음","공동주택 소음","윗집 애","피아노 소리","환경부"],"checklist":["소음 발생 시간대","녹음·영상(날짜 확인 가능하게)","관리사무소 상담 기록"],"tip":"평일 9~18시 상담. 아파트·다가구·오피스텔(주거용) 모두 무료 상담과 방문 진단을 신청할 수 있습니다. 직접 말하기 부담되면 관리사무소를 통해 신청하세요.","compare":[{"case":"층간소음 상담·측정","go":"이웃사이센터 1661-2642"},{"case":"공사장·도로 소음","go":"환경신고 128"},{"case":"이웃이 협박·폭행한다","go":"112"}]},{"id":"kca-1372","menu":"신고/민원","main":"생활불편 신고","sub":"소비자 피해","org":"한국소비자원","name":"1372 소비자상담센터","desc":"환불 거부, AS 지연, 계약 해지 등 소비자 피해 상담","phone":"1372","url":"https://www.kca.go.kr","tags":["소비자","환불","택배"],"type":"공공","stype":"상담","methods":["전화 상담","온라인 상담"],"keywords":["환불 거부","환불 안 됨","교환","AS 거부","수리비 과다","쇼핑몰 환불","계약 해지","위약금","다이어트 보조제","택배 파손","택배 분실","중고거래 환불","헬스장 환불","상조 해지","예약금 환불"],"checklist":["영수증·결제 내역","계약서·약관","판매자와의 대화 기록"],"tip":"판매자와 연락이 끊기고 돈만 떼였다면 1372가 아니라 경찰 ECRM입니다. 물건은 받았는데 환불·교환·AS로 다투는 문제가 1372입니다.","compare":[{"case":"쇼핑몰·업체와 환불 분쟁","go":"소비자원 1372"},{"case":"돈만 보내고 잠적(사기)","go":"경찰 ECRM"},{"case":"택배 파손·분실","go":"1372 상담 + 택배사 접수"}]},{"id":"nts-tax-evasion","menu":"신고/민원","main":"생활불편 신고","sub":"세금·현금영수증","org":"국세청","name":"탈세제보 · 차명계좌 신고","desc":"개인·법인의 탈세, 차명계좌, 현금거래 은닉 제보","phone":"126","url":"https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=109155\u0026mi=135744","tags":["탈세","제보","24시간"],"type":"정부","stype":"신고","methods":["24시간","온라인 접수","전화 상담"],"keywords":["탈세","탈세제보","탈세 제보","세금 탈루","세금 안 냄","차명계좌","차명 거래","현금거래 은닉","사업자 탈세","포상금","탈세 포상금","부동산 탈세","양도세 탈루","상속·증여세 탈루","전문직 현금","고소득자 탈세"],"checklist":["탈세자 인적사항(상호·대표·주소)","탈세 사실과 정황","거래 내역·계좌·증빙","제보자 신원(비밀 보장)"],"tip":"126 → 4번 → 1번으로 24시간 제보·상담이 됩니다. 추징세액의 5~20%(최대 40억원)를 포상금으로 받을 수 있고, 제보자 신원은 접수·처리 단계마다 비밀이 보장됩니다. 홈택스 [상담·불복·제보]에서도 제보할 수 있습니다.","compare":[{"case":"사업자가 세금을 안 내고 탈세한다","go":"국세청 126"},{"case":"현금영수증을 안 준다","go":"국세청 현금영수증 신고"},{"case":"불법 사금융·고금리","go":"금융감독원 1332"}]},{"id":"nts-cash-receipt","menu":"신고/민원","main":"생활불편 신고","sub":"세금·현금영수증","org":"국세청","name":"현금영수증 미발급·발급거부 신고","desc":"현금영수증 발급 거부, 10만원 이상 현금거래 미발급 신고","phone":"126","url":"https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7797\u0026mi=2472","tags":["현금영수증","미발급","포상금"],"type":"정부","stype":"신고","methods":["온라인 접수","전용 앱","전화 상담"],"keywords":["현금영수증","현금영수증 거부","현금영수증 안 줌","현금영수증 미발급","발급거부","현금영수증 발급 거부","카드 안 받음","카드 거부","현금만 받음","포상금","소득공제","병원 현금영수증","식당 현금영수증","현금거래 확인"],"checklist":["거래 일시·금액","사업자 상호·주소","영수증·계약서·이체내역","포상금 받을 계좌"],"tip":"발급거부는 거래일부터 5년 안에 신고하며, 포상금은 거부금액의 20%(1만~25만원, 연 100만원 한도)입니다. 의무발행업종이 10만원 이상 현금거래에서 안 준 '미발급'은 제3자도 신고할 수 있습니다. 홈택스 [상담·불복·제보]→[현금영수증·신용카드 미발급/발급거부]에서 접수합니다.","compare":[{"case":"가게가 현금영수증을 안 준다","go":"국세청 126"},{"case":"세금계산서를 안 주고 탈세가 의심된다","go":"탈세제보 126"},{"case":"카드결제를 거부한다","go":"국세청 신용카드결제거부 신고"}]},{"id":"police-traffic-report","menu":"신고/민원","main":"생활불편 신고","sub":"교통 위반","org":"경찰청","name":"교통법규 위반 공익신고","desc":"신호위반·끼어들기·불법유턴·이륜차 인도주행 등 영상 신고","phone":"182","url":"https://minwon24.police.go.kr/epeople/trfcLwrgVltnDclr.do","tags":["교통위반","영상신고","온라인신고"],"type":"정부","stype":"신고","methods":["온라인 접수","전화 상담"],"keywords":["교통법규 위반","교통 위반 신고","교통법규위반 신고","신호위반","신호 위반","끼어들기","불법유턴","중앙선 침범","진로변경 위반","이륜차 인도주행","오토바이 인도","안전모 미착용","난폭운전","보복운전","갓길 통행","버스전용차로","어린이보호구역","스쿨존","경찰민원24"],"checklist":["위반 장면 영상(위반 전·후, 번호판 식별)","위반 일시(분 단위)·장소","위반 항목","신고자 휴대전화"],"tip":"위반일로부터 2일 안에만 신고할 수 있고, 번호판과 위반 전·후 장면이 담긴 영상이 필요합니다. 불법 주·정차는 경찰이 아닌 지자체 사무라 안전신문고 앱으로 신고하세요. 지금 위험한 난폭·보복운전은 112입니다.","compare":[{"case":"신호위반·끼어들기·불법유턴","go":"경찰민원24 182"},{"case":"불법 주·정차","go":"지자체·안전신문고 앱"},{"case":"난폭·보복운전, 지금 위험하다","go":"112 신고"}]},{"id":"animal-1577","menu":"신고/민원","main":"생활불편 신고","sub":"동물 학대·유기","org":"농림축산식품부·농림축산검역본부","name":"동물보호 상담센터 · 유실·유기동물 신고","desc":"동물학대·유기동물 신고, 반려동물 보호 상담","phone":"1577-0954","url":"https://www.animal.go.kr","tags":["동물학대","유기동물","반려동물"],"type":"정부","stype":"신고","methods":["온라인 접수","전화 상담"],"keywords":["동물학대","동물 학대","학대 신고","동물 학대 신고","유기견","유기묘","유기동물","유실동물","잃어버린 강아지","길고양이","길에서 개","목줄 없이","반려동물 학대","동물 죽이는","동물보호법","동물 구조","동물보호센터","맹견","개 물림","동물보호 상담센터"],"checklist":["발견 장소·시간","동물 종류·외형","사진·영상(온라인 신고는 사진 필수)","구조 여부"],"tip":"유실·유기동물은 1577-0954(평일 9~18시)로 전화하면 발견 지역 담당자에게 연결되고, animal.go.kr 온라인 신고는 24시간 접수됩니다(사진 필수). 동물학대는 지자체 동물보호 담당부서나 경찰(112)에 신고해야 하며, 학대 영상이 있으면 경찰 신고가 빠릅니다.","compare":[{"case":"길에 버려졌거나 잃어버린 동물","go":"동물보호 상담센터 1577-0954"},{"case":"동물을 때리거나 죽이는 현장","go":"112 · 지자체 동물보호부서"},{"case":"개에게 물렸다","go":"119 응급 · 지자체·112"}]},{"id":"mohw-129","menu":"신고/민원","main":"마음건강·생활 상담","sub":"복지 상담","org":"보건복지부","name":"보건복지상담센터 129","desc":"복지·긴급복지·정신건강·아동학대 상담","phone":"129","url":"https://www.129.go.kr","tags":["복지","상담","24시간"],"type":"정부","stype":"상담","methods":["24시간","전화 상담","온라인 상담"],"keywords":["복지 상담","기초생활수급","긴급복지","아동학대","노인학대","정신건강","의료비 지원","생계 지원","돌봄"],"checklist":["상담할 상황 정리"],"tip":"갑자기 생활이 어려워졌을 때 긴급복지 신청 상담은 129에서 시작합니다.","compare":[]},{"id":"youth-1388","menu":"신고/민원","main":"마음건강·생활 상담","sub":"청소년 상담","org":"성평등가족부·한국청소년상담복지개발원","name":"청소년전화 1388","desc":"청소년 고민 상담, 가출·쉼터 안내 (24시간)","phone":"1388","url":"https://www.cyber1388.kr","tags":["청소년","상담","24시간"],"type":"정부","stype":"상담","methods":["24시간","전화 상담","문자 상담","채팅 상담"],"keywords":["청소년 상담","가출","학교 고민","친구 관계","자해","고민 상담","쉼터","학업 스트레스","부모 갈등","여성가족부"],"checklist":[],"tip":"청소년이 직접 전화해도 되고, 부모·교사가 상담해도 됩니다. 가출 청소년은 쉼터로 연결됩니다.","compare":[]},{"id":"suicide-109","menu":"신고/민원","main":"마음건강·생활 상담","sub":"위기 상담","org":"보건복지부","name":"자살예방상담전화 109","desc":"힘들 때 24시간 마음 상담, 위기 개입","phone":"109","url":"https://www.129.go.kr/109/index.do","tags":["마음건강","위기상담","24시간"],"type":"정부","stype":"상담","methods":["24시간","전화 상담","온라인 상담"],"keywords":["자살","죽고 싶다","극단적 선택","우울","마음 상담","위기 상담","힘들다","불안","공황"],"checklist":[],"tip":"지금 위험한 상황이면 112 또는 119에 먼저 연락하세요. 109는 24시간 상담하고 필요하면 지역 정신건강복지센터로 연결합니다.","compare":[]},{"id":"epeople","menu":"신고/민원","main":"통합 민원·안내","sub":"통합 민원","org":"국민권익위원회","name":"국민신문고","desc":"어느 기관에 넣을지 몰라도 한 번에 접수되는 통합 민원","phone":"110","url":"https://www.epeople.go.kr","tags":["통합민원","고충민원"],"type":"정부","stype":"민원","methods":["온라인 접수","전화 상담"],"keywords":["어디에 신고","민원 신청","고충민원","국민제안","여러 기관","통합 민원","담당 기관 모름","민원 넣기","진정","어디다 말해야"],"checklist":["민원 내용 정리","관련 사진·서류","답변 받을 연락처"],"tip":"담당 기관이 아니면 알아서 이송됩니다. 공개 민원은 다른 사람에게도 보이니 개인정보가 있으면 '비공개'로 신청하세요.","compare":[]},{"id":"call110","menu":"신고/민원","main":"통합 민원·안내","sub":"정부 민원 안내","org":"국민권익위원회","name":"국민콜110 정부민원안내","desc":"365일 24시간, 정부 업무 전화번호 안내·상담","phone":"110","url":"https://www.110.go.kr","tags":["전화상담","24시간"],"type":"정부","stype":"상담","methods":["24시간","전화 상담","문자 상담","채팅 상담"],"keywords":["정부 전화번호 안내","어디에 물어봐","민원 상담","110","상담원","수어 상담","정부24","무료 상담"],"checklist":["문의할 상황 정리"],"tip":"365일 24시간 무료입니다. 기관 번호를 몰라도 상황을 말하면 담당 기관을 찾아 연결해 줍니다.","compare":[]},{"id":"gov24","menu":"신고/민원","main":"통합 민원·안내","sub":"증명서·민원 신청","org":"행정안전부","name":"정부24","desc":"주민등록등본 등 증명서 발급과 온라인 민원 신청","phone":"110","url":"https://www.gov.kr","tags":["증명서","민원신청"],"type":"정부","stype":"발급","methods":["온라인 발급","전화 상담"],"keywords":["주민등록등본","증명서 발급","민원 신청","정부 서비스","전입신고","건강보험 자격득실","가족관계증명서","민원24"],"checklist":["본인 인증 수단(휴대폰·공동인증서)"],"tip":"증명서 발급·민원 신청은 정부24, 어느 기관에 물어볼지 모르면 110입니다.","compare":[]},{"id":"acrc-clean","menu":"신고/민원","main":"통합 민원·안내","sub":"부패·공익신고","org":"국민권익위원회","name":"청렴포털 부패·공익신고","desc":"공직자 부패, 공익침해, 청탁금지법 위반, 보조금 부정수급 신고","phone":"1398","url":"https://www.clean.go.kr","tags":["부패신고","공익신고","온라인신고"],"type":"정부","stype":"신고","methods":["온라인 접수","전화 상담"],"keywords":["부패신고","부패 신고","공무원 비리","공직자 비리","뇌물","금품 수수","청탁금지법","김영란법","공익신고","공익 침해","내부고발","내부 고발","신고자 보호","보상금","보조금 부정수급","복지 부정수급","공공재정 부정청구","채용비리","공공기관 채용","공직자 갑질","공무원 갑질","횡령","예산 낭비","비리 제보"],"checklist":["신고 대상 공직자·기관과 직위","일시·장소와 구체적 행위","증빙(문서·사진·녹취·계좌내역)","신분 공개 여부 결정"],"tip":"부패·공익신고 상담은 1398(평일 9~18시, 무료), 국민콜 110은 24시간입니다. 신고자 신원은 비밀로 보장되고 변호사를 통한 비실명 대리신고도 됩니다. 단순한 행정 불편이나 위법·부당한 처분의 시정은 국민신문고 고충민원으로 접수하세요.","compare":[{"case":"공무원·공공기관의 부패·비리","go":"청렴포털 1398"},{"case":"행정 처분·담당 공무원 대응이 부당하다","go":"국민신문고 고충민원"},{"case":"회사·상사의 갑질·괴롭힘","go":"고용노동부 1350"}]},{"id":"nhrc-1331","menu":"신고/민원","main":"통합 민원·안내","sub":"권리구제","org":"국가인권위원회","name":"인권상담 1331 · 인권e 진정","desc":"인권 침해, 장애·성별·나이 등 차별 상담과 온라인 진정","phone":"1331","url":"https://case.humanrights.go.kr","tags":["인권","차별","진정"],"type":"정부","stype":"상담","methods":["전화 상담","온라인 접수","방문 접수"],"keywords":["인권침해","인권 침해","인권위","국가인권위원회","차별","차별 신고","차별금지","장애인 차별","장애 차별","성차별","나이 차별","고용 차별","임금 차별","학교 인권","구금시설","구치소 인권","정신병원 인권","보호시설","외국인 인권","진정","인권 상담"],"checklist":["피해자 인적사항","침해·차별을 한 기관이나 사람","일시·장소·경위","증빙(문서·사진·녹취)"],"tip":"1331은 평일 9~18시(점심 12~13시) 상담이고, 휴대전화에서는 지역번호를 붙여 걸어야 하는 경우가 있습니다. 국가기관·지자체·구금시설의 인권침해와 성별·장애·나이 등에 따른 차별이 대상이며, 진정은 접수 후 3개월 안에 처리됩니다.","compare":[{"case":"장애·성별·나이로 차별받았다","go":"국가인권위원회 1331"},{"case":"행정 처분이 위법·부당하다","go":"국민신문고 고충민원"},{"case":"직장 내 괴롭힘·성희롱","go":"고용노동부 1350"}]},{"id":"lawgo","menu":"정보검색","main":"법령·판례 조회","sub":"법령","org":"법제처","name":"국가법령정보센터","desc":"법령, 판례, 결정례, 법령해석 조회","phone":"-","url":"https://www.law.go.kr","tags":["법령","판례"],"type":"정부","stype":"검색","methods":["온라인 조회"],"keywords":["법령","법조문","법 찾기","판례","법령해석","개정 법률","시행일","조문","법률 원문"],"checklist":[],"tip":"법 이름을 모르면 '찾기 쉬운 생활법령정보'에서 상황으로 먼저 찾는 게 빠릅니다.","compare":[]},{"id":"glaw","menu":"정보검색","main":"법령·판례 조회","sub":"법원 판례","org":"대한민국 법원","name":"종합법률정보","desc":"대법원 판례 등 종합법률정보 검색","phone":"-","url":"https://glaw.scourt.go.kr","tags":["판례"],"type":"정부","stype":"검색","methods":["온라인 조회"],"keywords":["판례","대법원 판결","법원 판례","결정례","사건 검색","판결문"],"checklist":[],"tip":"","compare":[]},{"id":"easylaw","menu":"정보검색","main":"법령·판례 조회","sub":"생활 법령","org":"법제처","name":"찾기 쉬운 생활법령정보","desc":"상황별로 풀어 쓴 생활밀착형 법령 해설","phone":"-","url":"https://easylaw.go.kr","tags":["생활법령"],"type":"정부","stype":"검색","methods":["온라인 조회"],"keywords":["생활법령","상속","이혼","전세","월세","보증금","근로","교통사고","쇼핑 환불","임대차","연차","해고","상속 순위"],"checklist":[],"tip":"조문보다 '내 상황에 어떤 법이 적용되는지'가 궁금할 때 먼저 보세요.","compare":[]},{"id":"ipnavi","menu":"정보검색","main":"법령·판례 조회","sub":"지식재산 판례","org":"한국지식재산보호원","name":"지식재산권 판례","desc":"특허·상표·저작권 관련 판례 조회","phone":"-","url":"https://www.ip-navi.or.kr","tags":["지식재산권","판례"],"type":"공공","stype":"검색","methods":["온라인 조회"],"keywords":["지식재산","특허 판례","상표 판례","저작권 판례","디자인 판례"],"checklist":[],"tip":"","compare":[]},{"id":"nlrc","menu":"정보검색","main":"법령·판례 조회","sub":"노동 판정례","org":"중앙노동위원회","name":"노동위원회 판정·결정례","desc":"부당해고 등 노동위원회 판정·결정례 조회","phone":"-","url":"https://www.nlrc.go.kr","tags":["노동","판정례"],"type":"정부","stype":"검색","methods":["온라인 조회"],"keywords":["부당해고 구제신청","판정례","노동위원회","부당노동행위","구제신청","해고 무효"],"checklist":[],"tip":"비슷한 해고 사건이 어떻게 판정됐는지 보면 구제신청 가능성을 가늠할 수 있습니다.","compare":[]},{"id":"itkc","menu":"정보검색","main":"고전·문헌정보","sub":"한국 고전","org":"한국고전번역원","name":"한국고전종합DB","desc":"한국고전 원문과 번역문 검색","phone":"-","url":"https://db.itkc.or.kr","tags":["고전","한국학"],"type":"공공","stype":"검색","methods":["온라인 조회"],"keywords":["고전","한국학","고문헌","조선","번역","한문 원문","실록","문집"],"checklist":[],"tip":"","compare":[]},{"id":"cyberseodang","menu":"정보검색","main":"고전·문헌정보","sub":"동양 고전","org":"전통문화연구회","name":"동양고전종합DB","desc":"동양 고전 원문과 번역문 검색","phone":"-","url":"https://db.cyberseodang.or.kr","tags":["고전","동양학"],"type":"민간","stype":"검색","methods":["온라인 조회"],"keywords":["동양고전","논어","맹자","사기","한문","고전 번역","장자","주역"],"checklist":[],"tip":"","compare":[]},{"id":"mediclassics","menu":"정보검색","main":"고전·문헌정보","sub":"한의학 고전","org":"한국한의학연구원","name":"한의학고전DB","desc":"동의보감 등 한의학 고전 원문·번역 검색","phone":"-","url":"https://mediclassics.kr","tags":["고전","한의학"],"type":"공공","stype":"검색","methods":["온라인 조회"],"keywords":["한의학","동의보감","한방","고전","처방","본초","침구","한약"],"checklist":[],"tip":"","compare":[]},{"id":"kostma","menu":"정보검색","main":"고전·문헌정보","sub":"한국학 자료","org":"한국학중앙연구원","name":"한국학자료포털","desc":"한국학 관련 고문서·자료 검색","phone":"-","url":"https://kostma.aks.ac.kr","tags":["한국학"],"type":"공공","stype":"검색","methods":["온라인 조회"],"keywords":["한국학","고문서","족보","옛 지도","자료 검색","향토사"],"checklist":[],"tip":"","compare":[]},{"id":"riss","menu":"정보검색","main":"학술정보","sub":"논문 검색","org":"한국교육학술정보원","name":"RISS","desc":"국내외 학술논문·학위논문 검색","phone":"-","url":"https://www.riss.kr","tags":["논문"],"type":"공공","stype":"검색","methods":["온라인 조회"],"keywords":["논문","학술논문","학위논문","원문","인용","레퍼런스"],"checklist":[],"tip":"원문이 막혀 있으면 소속 도서관이나 국회도서관 원문 서비스를 함께 확인하세요.","compare":[]},{"id":"dbpia","menu":"정보검색","main":"학술정보","sub":"논문 검색","org":"누리미디어","name":"DBpia","desc":"국내 학술논문 검색·열람","phone":"-","url":"https://www.dbpia.co.kr","tags":["논문"],"type":"민간","stype":"검색","methods":["온라인 조회"],"keywords":["논문","국내 논문","학술지","원문","논문 다운로드"],"checklist":[],"tip":"","compare":[]},{"id":"kci","menu":"정보검색","main":"학술정보","sub":"학술지 인용색인","org":"한국연구재단","name":"KCI","desc":"학술지 인용색인·등재지 조회","phone":"-","url":"https://www.kci.go.kr","tags":["학술지","인용"],"type":"공공","stype":"검색","methods":["온라인 조회"],"keywords":["학술지","인용색인","등재지","논문","KCI 등재"],"checklist":[],"tip":"","compare":[]},{"id":"ntis","menu":"정보검색","main":"학술정보","sub":"연구과제·보고서","org":"과학기술정보통신부","name":"NTIS 국가과학기술지식정보서비스","desc":"국가 연구개발 과제·보고서 검색","phone":"-","url":"https://www.ntis.go.kr","tags":["연구","보고서"],"type":"정부","stype":"검색","methods":["온라인 조회"],"keywords":["연구과제","국가 R\u0026D","보고서","정부 과제","연구비"],"checklist":[],"tip":"","compare":[]},{"id":"datago","menu":"정보검색","main":"공공데이터·통계","sub":"공공데이터","org":"행정안전부","name":"공공데이터포털","desc":"공공데이터 통합 검색·다운로드·API","phone":"-","url":"https://www.data.go.kr","tags":["공공데이터"],"type":"정부","stype":"검색","methods":["온라인 조회"],"keywords":["공공데이터","데이터 다운로드","API","개방 데이터","오픈데이터"],"checklist":[],"tip":"","compare":[]},{"id":"kosis","menu":"정보검색","main":"공공데이터·통계","sub":"국가 통계","org":"국가데이터처","name":"국가통계포털(KOSIS)","desc":"인구·물가·고용 등 국가 통계 조회","phone":"-","url":"https://kosis.kr","tags":["통계"],"type":"정부","stype":"검색","methods":["온라인 조회"],"keywords":["통계","인구","물가","고용","통계 조회","지표","통계청"],"checklist":[],"tip":"","compare":[]},{"id":"ecos","menu":"정보검색","main":"공공데이터·통계","sub":"경제·금융 통계","org":"한국은행","name":"경제통계시스템(ECOS)","desc":"금리·환율·GDP 등 경제·금융 통계","phone":"-","url":"https://ecos.bok.or.kr","tags":["통계","금융"],"type":"공공","stype":"검색","methods":["온라인 조회"],"keywords":["경제통계","금리","환율","GDP","물가","기준금리"],"checklist":[],"tip":"","compare":[]},{"id":"vworld","menu":"정보검색","main":"공공데이터·통계","sub":"지도·공간정보","org":"국토교통부","name":"브이월드","desc":"공간정보·지도·항공사진·용도지역 조회","phone":"-","url":"https://www.vworld.kr","tags":["공간정보","지도"],"type":"정부","stype":"검색","methods":["온라인 조회"],"keywords":["지도","공간정보","항공사진","용도지역","토지","지적도"],"checklist":[],"tip":"","compare":[]}]}</script>
+
 <script>
-const DATA = [
-  {menu:"신고/민원",main:"인터넷/디지털 정보 신고",sub:"불법유해정보",org:"방송미디어통신심의위원회",name:"인터넷 불법·유해정보 신고",desc:"인터넷상 불법·유해정보 신고",phone:"1377",url:"https://report.kocsc.or.kr/report/auth/illegalInfo",tags:["인터넷","불법정보"],type:"공공",stype:"신고"},
-  {menu:"신고/민원",main:"인터넷/디지털 정보 신고",sub:"디지털성범죄",org:"방송미디어통신심의위원회",name:"디지털 성범죄정보 신고",desc:"디지털 성범죄 정보 신고",phone:"1377",url:"https://report.kocsc.or.kr/report/auth/digitalSexualAssault",tags:["디지털성범죄"],type:"공공",stype:"신고"},
-  {menu:"신고/민원",main:"인터넷/디지털 정보 신고",sub:"인터넷 피해구제",org:"방송미디어통신심의위원회",name:"인터넷 피해구제",desc:"명예훼손, 모욕 등 인터넷 피해구제",phone:"1377",url:"https://remedy.kocsc.or.kr",tags:["명예훼손","피해구제"],type:"공공",stype:"신고"},
-  {menu:"신고/민원",main:"인터넷/디지털 정보 신고",sub:"개인정보·해킹",org:"한국인터넷진흥원",name:"118 사이버민원센터",desc:"해킹, 개인정보침해, 불법스팸 신고",phone:"118",url:"https://www.kisa.or.kr/118",tags:["해킹","개인정보"],type:"공공",stype:"신고"},
-  {menu:"신고/민원",main:"인터넷/디지털 정보 신고",sub:"불법복제물",org:"한국저작권보호원",name:"인터넷 불법복제물 신고",desc:"인터넷 불법복제물 신고",phone:"1666-0011",url:"https://portal.kcopa.or.kr/web/lay1/S1T18C27/contents.do",tags:["저작권","불법복제"],type:"공공",stype:"신고"},
+(function () {
+  'use strict';
 
-  {menu:"신고/민원",main:"아동·청소년 관련 신고",sub:"학교폭력",org:"교육부",name:"117 학교폭력 신고센터",desc:"학교폭력 신고·상담",phone:"117",url:"https://www.safe182.go.kr/pot/PotRptRegistCreateForm.do",tags:["학교폭력","24시간"],type:"정부",stype:"신고"},
-  {menu:"신고/민원",main:"아동·청소년 관련 신고",sub:"아동학대",org:"보건복지부",name:"아동학대 신고",desc:"아동학대 의심사례 신고",phone:"112",url:"https://www.korea1391.go.kr",tags:["아동학대","24시간"],type:"정부",stype:"신고"},
+  var DATA = null, ITEMS = [], BY_ID = {};
+  var FAVS = [], PREFS = { crossTab: true };
+  var LS_FAV = 'singo.favs.v1', LS_DRAFT = 'singo.draft.v1', LS_PREF = 'singo.prefs.v1';
+  var SMS_OK = { '112': '경찰 112 문자신고', '117': '117 문자 상담', '110': '110 문자 상담' };
+  var METHOD_CLASS = { '24시간': 'm-24', '전용 앱': 'm-app', '전화 상담': 'm-phone' };
 
-  {menu:"신고/민원",main:"금융피해 신고",sub:"불법사금융",org:"금융감독원",name:"불법사금융피해신고센터",desc:"불법채권추심, 고금리, 대출사기 신고",phone:"1332",url:"https://www.fss.or.kr",tags:["불법사금융"],type:"공공",stype:"신고"},
-  {menu:"신고/민원",main:"금융피해 신고",sub:"보이스피싱",org:"금융감독원",name:"보이스피싱 피해 연락처",desc:"보이스피싱 피해 신고·지급정지",phone:"1332",url:"https://www.fss.or.kr",tags:["보이스피싱"],type:"공공",stype:"신고"},
-  {menu:"신고/민원",main:"금융피해 신고",sub:"증권·투자",org:"금융감독원",name:"증권불공정거래 신고",desc:"시세조종, 미공개정보 이용 등 신고",phone:"1332",url:"https://www.fss.or.kr",tags:["투자사기","증권"],type:"공공",stype:"신고"},
-  {menu:"신고/민원",main:"금융피해 신고",sub:"보험",org:"금융감독원",name:"보험사기 신고센터",desc:"보험사기, 보험모집질서 위반 신고",phone:"1332",url:"https://www.fss.or.kr",tags:["보험사기"],type:"공공",stype:"신고"},
+  var state = {
+    menu: '신고/민원',
+    main: null,
+    sub: null,
+    tags: [],
+    q: '',
+    favOnly: false,
+    tree: false,
+    showFallback: false,
+    autoFallback: false
+  };
 
-  {menu:"신고/민원",main:"사기범죄 신고",sub:"온라인사기",org:"경찰청 사이버수사국",name:"사이버범죄 신고시스템(ECRM)",desc:"온라인 사기, 사이버범죄 신고·상담",phone:"112",url:"https://ecrm.police.go.kr",tags:["온라인신고","24시간"],type:"정부",stype:"신고"},
-  {menu:"신고/민원",main:"사기범죄 신고",sub:"사기 피해사례 조회",org:"더치트",name:"사기 피해사례 조회",desc:"사기 피해사례(계좌, 전화번호) 조회",phone:"-",url:"https://www.thecheat.co.kr",tags:["사기","조회"],type:"민간",stype:"조회"},
-  {menu:"신고/민원",main:"사기범죄 신고",sub:"해외직구·쇼핑몰",org:"공정거래위원회(소비자24)",name:"해외직구 사기의심사이트",desc:"해외직구 사기의심사이트·민원다발 쇼핑몰 조회",phone:"1372",url:"https://www.consumer.go.kr",tags:["해외직구","조회"],type:"공공",stype:"조회"},
+  var lastFocus = null;
 
-  {menu:"신고/민원",main:"불법 식의약 신고",sub:"온라인 불법유통",org:"식품의약품안전처",name:"온라인 불법유통 신고",desc:"의약품·식품·화장품 등 온라인 불법유통·허위광고 신고",phone:"110",url:"https://www.mfds.go.kr",tags:["식의약"],type:"정부",stype:"신고"},
-  {menu:"신고/민원",main:"불법 식의약 신고",sub:"부정·불량식품",org:"식품안전나라",name:"부정·불량식품 신고",desc:"부정·불량식품 신고",phone:"1399",url:"https://www.foodsafetykorea.go.kr",tags:["식품","위생"],type:"정부",stype:"신고"},
-  {menu:"신고/민원",main:"불법 식의약 신고",sub:"의약품 불법행위",org:"식품의약품안전처",name:"의약품 클린신고센터",desc:"의약품 제조·품질 불법행위 신고",phone:"110",url:"https://www.mfds.go.kr",tags:["의약품"],type:"정부",stype:"신고"},
-
-  {menu:"신고/민원",main:"마약 신고",sub:"마약 범죄",org:"대검찰청",name:"마약범죄 신고",desc:"마약류 투약·매매·재배 등 범죄 신고",phone:"1301",url:"https://www.spo.go.kr",tags:["마약","형사신고"],type:"정부",stype:"신고"},
-  {menu:"신고/민원",main:"마약 신고",sub:"마약 상담",org:"한국마약퇴치운동본부",name:"마약류 오남용 예방 상담",desc:"마약 중독·오남용 예방 상담 및 신고 연계",phone:"02-2677-2245",url:"https://www.drugfree.or.kr",tags:["마약","상담"],type:"민간",stype:"신고"},
-
-  {menu:"신고/민원",main:"노동 관련 신고",sub:"임금체불·부당해고",org:"고용노동부",name:"고용노동부 민원마당",desc:"임금체불, 부당해고 신고·진정",phone:"1350",url:"https://minwon.moel.go.kr",tags:["노동","임금체불"],type:"정부",stype:"신고"},
-  {menu:"신고/민원",main:"노동 관련 신고",sub:"산업안전",org:"안전보건공단",name:"산업안전 신고센터",desc:"산업안전 위반, 중대재해 신고",phone:"1644-0001",url:"https://www.kosha.or.kr",tags:["산업안전"],type:"공공",stype:"신고"},
-
-  {menu:"신고/민원",main:"특허·저작권 침해 신고",sub:"저작권",org:"한국저작권보호원",name:"저작권 침해 신고센터",desc:"불법복제, 콘텐츠 무단유포 신고",phone:"1666-0011",url:"https://www.kcopa.or.kr",tags:["저작권"],type:"공공",stype:"신고"},
-  {menu:"신고/민원",main:"특허·저작권 침해 신고",sub:"특허·상표",org:"특허청",name:"특허·상표 침해 신고",desc:"위조상품, 상표권 침해 신고",phone:"1544-8080",url:"https://www.kipo.go.kr",tags:["특허","위조상품"],type:"정부",stype:"신고"},
-
-  {menu:"신고/민원",main:"생활불편 신고",sub:"도로·시설",org:"국민안전처",name:"안전신문고",desc:"불법주정차, 도로파손 등 생활불편 신고",phone:"110",url:"https://www.safetyreport.go.kr",tags:["생활불편"],type:"정부",stype:"신고"},
-  {menu:"신고/민원",main:"생활불편 신고",sub:"환경·소음",org:"환경부",name:"환경신고센터",desc:"환경오염, 악취, 소음 신고",phone:"128",url:"https://www.me.go.kr",tags:["환경","소음"],type:"정부",stype:"신고"},
-  {menu:"신고/민원",main:"생활불편 신고",sub:"소비자 피해",org:"한국소비자원",name:"1372 소비자상담센터",desc:"부당요금, 환불 거부 등 소비자 피해 상담",phone:"1372",url:"https://www.kca.go.kr",tags:["소비자","환불"],type:"공공",stype:"신고"},
-
-  {menu:"정보검색",main:"법령·판례 조회",sub:"법령",org:"법제처",name:"국가법령정보센터",desc:"법령, 판례, 결정례, 법령해석 조회",phone:"-",url:"https://www.law.go.kr",tags:["법령","판례"],type:"정부",stype:"조회"},
-  {menu:"정보검색",main:"법령·판례 조회",sub:"법원 판례",org:"대한민국 법원",name:"종합법률정보",desc:"판례 등 종합법률정보 검색",phone:"-",url:"https://glaw.scourt.go.kr",tags:["판례"],type:"정부",stype:"조회"},
-  {menu:"정보검색",main:"법령·판례 조회",sub:"생활 법령",org:"법제처",name:"찾기 쉬운 생활법령정보",desc:"생활밀착형 법령 해설",phone:"-",url:"https://easylaw.go.kr",tags:["생활법령"],type:"정부",stype:"조회"},
-  {menu:"정보검색",main:"법령·판례 조회",sub:"지식재산 판례",org:"한국지식재산보호원",name:"지식재산권 판례",desc:"지식재산권 관련 판례 조회",phone:"-",url:"https://www.ip-navi.or.kr",tags:["지식재산권","판례"],type:"공공",stype:"조회"},
-  {menu:"정보검색",main:"법령·판례 조회",sub:"노동 판정례",org:"중앙노동위원회",name:"노동위원회 판정·결정례",desc:"노동위원회 판정·결정례 조회",phone:"-",url:"https://www.nlrc.go.kr",tags:["노동","판정례"],type:"정부",stype:"조회"},
-
-  {menu:"정보검색",main:"고전·문헌정보",sub:"한국 고전",org:"한국고전번역원",name:"한국고전종합DB",desc:"한국고전 원문, 번역문 검색",phone:"-",url:"https://db.itkc.or.kr",tags:["고전","한국학"],type:"공공",stype:"검색"},
-  {menu:"정보검색",main:"고전·문헌정보",sub:"동양 고전",org:"전통문화연구회",name:"동양고전종합DB",desc:"동양 고전 원문, 번역문 검색",phone:"-",url:"https://db.cyberseodang.or.kr",tags:["고전","동양학"],type:"민간",stype:"검색"},
-  {menu:"정보검색",main:"고전·문헌정보",sub:"한의학 고전",org:"한국의학연구원",name:"한의학고전DB",desc:"한의학 고전 자료 검색",phone:"-",url:"https://mediclassics.kr",tags:["고전","한의학"],type:"공공",stype:"검색"},
-  {menu:"정보검색",main:"고전·문헌정보",sub:"한국학 자료",org:"한국학중앙연구원",name:"한국학자료포털",desc:"한국학 관련 자료 검색",phone:"-",url:"https://kostma.aks.ac.kr",tags:["한국학"],type:"공공",stype:"검색"},
-
-  {menu:"정보검색",main:"학술정보",sub:"논문 검색",org:"한국교육학술정보원",name:"RISS",desc:"국내외 학술논문 검색",phone:"-",url:"https://www.riss.kr",tags:["논문"],type:"공공",stype:"검색"},
-  {menu:"정보검색",main:"학술정보",sub:"논문 검색",org:"누리미디어",name:"DBpia",desc:"국내 학술논문 검색",phone:"-",url:"https://www.dbpia.co.kr",tags:["논문"],type:"민간",stype:"검색"},
-  {menu:"정보검색",main:"학술정보",sub:"학술지 인용색인",org:"한국연구재단",name:"KCI",desc:"학술지 인용색인 조회",phone:"-",url:"https://www.kci.go.kr",tags:["학술지","인용"],type:"공공",stype:"검색"},
-  {menu:"정보검색",main:"학술정보",sub:"연구과제·보고서",org:"과학기술정보통신부",name:"NTIS 국가과학기술지식정보서비스",desc:"국가 연구개발 과제·보고서 검색",phone:"-",url:"https://www.ntis.go.kr",tags:["연구","보고서"],type:"정부",stype:"검색"},
-
-  {menu:"정보검색",main:"공공데이터·통계",sub:"공공데이터",org:"행정안전부",name:"공공데이터포털",desc:"공공데이터 통합 검색·다운로드",phone:"-",url:"https://www.data.go.kr",tags:["공공데이터"],type:"정부",stype:"검색"},
-  {menu:"정보검색",main:"공공데이터·통계",sub:"국가 통계",org:"통계청",name:"국가통계포털(KOSIS)",desc:"국가 통계 데이터 조회",phone:"-",url:"https://kosis.kr",tags:["통계"],type:"정부",stype:"검색"},
-  {menu:"정보검색",main:"공공데이터·통계",sub:"경제·금융 통계",org:"한국은행",name:"경제통계시스템(ECOS)",desc:"금융·경제 통계 데이터 제공",phone:"-",url:"https://ecos.bok.or.kr",tags:["통계","금융"],type:"공공",stype:"검색"},
-  {menu:"정보검색",main:"공공데이터·통계",sub:"지도·공간정보",org:"국토교통부",name:"브이월드",desc:"공간정보·지도 데이터 제공",phone:"-",url:"https://www.vworld.kr",tags:["공간정보","지도"],type:"정부",stype:"검색"}
-];
-
-const MAIN_CATS = {
-  "신고/민원":[
-    {key:"인터넷/디지털 정보 신고",icon:"ti-device-laptop"},
-    {key:"아동·청소년 관련 신고",icon:"ti-baby-carriage"},
-    {key:"금융피해 신고",icon:"ti-coin"},
-    {key:"사기범죄 신고",icon:"ti-alert-triangle"},
-    {key:"불법 식의약 신고",icon:"ti-pill"},
-    {key:"마약 신고",icon:"ti-flask"},
-    {key:"노동 관련 신고",icon:"ti-briefcase"},
-    {key:"특허·저작권 침해 신고",icon:"ti-copyright"},
-    {key:"생활불편 신고",icon:"ti-home"}
-  ],
-  "정보검색":[
-    {key:"법령·판례 조회",icon:"ti-gavel"},
-    {key:"고전·문헌정보",icon:"ti-book"},
-    {key:"학술정보",icon:"ti-school"},
-    {key:"공공데이터·통계",icon:"ti-database"}
-  ]
-};
-
-let currentMenu="신고/민원", activeTags=new Set(), activeMain=null, searchQuery="", treeOpen=false;
-
-function uniqueSubs(menu,main){return[...new Set(DATA.filter(d=>d.menu===menu&&d.main===main).map(d=>d.sub))];}
-
-function switchMenu(menu,btn){
-  currentMenu=menu;
-  document.querySelectorAll('.nav-btn').forEach(b=>{b.classList.toggle('active',b.dataset.menu===menu);});
-  document.getElementById('heroTabReport').classList.toggle('active',menu==='신고/민원');
-  document.getElementById('heroTabInfo').classList.toggle('active',menu==='정보검색');
-  activeMain=null; activeTags.clear(); searchQuery='';
-  document.getElementById('searchInput').value='';
-  document.getElementById('wizardStep2').style.display='none';
-  if(treeOpen)toggleTree();
-  renderMainChips(); renderTagChips(); renderGrid();
-}
-
-function renderMainChips(){
-  const el=document.getElementById('mainChips');
-  document.getElementById('wizardQ').textContent=currentMenu==='신고/민원'?'어떤 문제인가요?':'무엇을 찾으시나요?';
-  el.innerHTML=MAIN_CATS[currentMenu].map(c=>`
-    <button class="chip-main" data-main="${c.key}" onclick="selectMain('${c.key}')">
-      <i class="ti ${c.icon}"></i>${c.key}
-    </button>`).join('');
-}
-
-function selectMain(main){
-  activeMain=main;
-  document.querySelectorAll('.chip-main').forEach(b=>b.classList.toggle('selected',b.dataset.main===main));
-  const subs=uniqueSubs(currentMenu,main);
-  document.getElementById('subChips').innerHTML=subs.map(s=>`<button class="chip-sub" onclick="selectSub('${s}')">${s}</button>`).join('');
-  document.getElementById('wizardStep2').style.display='block';
-  activeTags.clear(); searchQuery=''; document.getElementById('searchInput').value='';
-  renderTagChips(); renderGrid();
-}
-
-function selectSub(sub){
-  activeTags.clear(); searchQuery=''; document.getElementById('searchInput').value='';
-  const filtered=DATA.filter(d=>d.menu===currentMenu&&d.main===activeMain&&d.sub===sub);
-  renderCards(filtered); renderTagChips();
-}
-
-function backStep(){
-  document.getElementById('wizardStep2').style.display='none';
-  document.querySelectorAll('.chip-main').forEach(b=>b.classList.remove('selected'));
-  activeMain=null; activeTags.clear(); renderTagChips(); renderGrid();
-}
-
-function allTags(){return[...new Set(DATA.filter(d=>d.menu===currentMenu).flatMap(d=>d.tags))];}
-
-function renderTagChips(){
-  const el=document.getElementById('tagChips');
-  const tags=allTags();
-  el.innerHTML=`<button class="tag-chip${activeTags.size===0?' active':''}" onclick="clearTags()">전체</button>`
-    +tags.map(t=>`<button class="tag-chip${activeTags.has(t)?' active':''}" onclick="toggleTag('${t}')">#${t}</button>`).join('');
-}
-
-function toggleTag(t){
-  if(activeTags.has(t))activeTags.delete(t);else activeTags.add(t);
-  renderTagChips(); renderGrid();
-}
-function clearTags(){ activeTags.clear(); renderTagChips(); renderGrid(); }
-
-function matchFilter(d){
-  if(d.menu!==currentMenu) return false;
-  if(activeMain && d.main!==activeMain) return false;
-  if(activeTags.size>0 && !d.tags.some(t=>activeTags.has(t))) return false;
-  if(searchQuery){
-    const q=searchQuery.toLowerCase();
-    if(![d.org,d.name,d.desc,...d.tags].some(x=>x.toLowerCase().includes(q))) return false;
+  /* ── 저장소 ── */
+  function readLS(key, fallback) {
+    try {
+      var raw = window.localStorage.getItem(key);
+      if (!raw) return fallback;
+      var v = JSON.parse(raw);
+      return v == null ? fallback : v;
+    } catch (e) { return fallback; }
   }
-  return true;
-}
+  function writeLS(key, value) {
+    try { window.localStorage.setItem(key, JSON.stringify(value)); } catch (e) {}
+  }
 
-function onSearch(v){ searchQuery=v; renderGrid(); }
-function headerSearch(v){ searchQuery=v; document.getElementById('searchInput').value=v; renderGrid(); }
-function resetAll(){ activeTags.clear(); searchQuery=''; activeMain=null; document.getElementById('searchInput').value=''; document.getElementById('wizardStep2').style.display='none'; document.querySelectorAll('.chip-main').forEach(b=>b.classList.remove('selected')); renderTagChips(); renderGrid(); }
+  /* ── 문자열 도구 ── */
+  function esc(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  }
+  function norm(s) {
+    return String(s == null ? '' : s).toLowerCase()
+      .replace(/[\s\u00b7\u30fb\-_.,()[\]{}'"~\u2018\u2019\u201c\u201d!?\/\\:+]/g, '');
+  }
+  function tokens(q) {
+    return String(q || '').trim().split(/\s+/).filter(function (t) { return t.length > 0; });
+  }
+  function digits(s) { return String(s || '').replace(/[^0-9+]/g, ''); }
 
-function cardHTML(d){
-  const badgeClass=d.type==='정부'?'badge-gov':d.type==='공공'?'badge-pub':'badge-priv';
-  const isLookup=d.stype!=='신고';
-  const footer=d.phone&&d.phone!=='-'
-    ?`<span class="card-phone"><i class="ti ti-phone"></i>${d.phone}</span>`
-    :`<span style="font-size:12px;color:var(--text-muted);">${d.stype}형 서비스</span>`;
-  return`<div class="card">
-    <div class="card-top">
-      <span class="badge ${badgeClass}">${d.type}</span>
-      <button class="fav-btn" aria-label="즐겨찾기" title="즐겨찾기"><i class="ti ti-star"></i></button>
-    </div>
-    <div>
-      <div class="card-name">${d.name}</div>
-      <div class="card-org">${d.org}</div>
-    </div>
-    <div class="card-desc">${d.desc}</div>
-    <div class="card-tags">${d.tags.map(t=>`<span class="card-tag">#${t}</span>`).join('')}</div>
-    <div class="card-footer">
-      ${footer}
-      <a class="card-link${isLookup?' lookup':''}" href="${d.url}" target="_blank" rel="noopener">
-        ${isLookup?'조회·검색':'바로가기'}<i class="ti ti-external-link"></i>
-      </a>
-    </div>
-  </div>`;
-}
+  function haystack(d) {
+    var parts = [d.name, d.org, d.desc, d.main, d.sub, d.menu, d.stype, d.tip]
+      .concat(d.tags || [], d.keywords || [], d.methods || []);
+    (d.compare || []).forEach(function (c) { parts.push(c.case, c.go); });
+    return norm(parts.join(' '));
+  }
 
-function renderCards(list){
-  const grid=document.getElementById('cardGrid'), empty=document.getElementById('emptyState');
-  if(list.length===0){grid.style.display='none';empty.style.display='block';}
-  else{grid.style.display='grid';empty.style.display='none';grid.innerHTML=list.map(cardHTML).join('');}
-}
+  function matchQuery(d, q) {
+    var hay = d._hay || (d._hay = haystack(d));
+    var whole = norm(q);
+    if (whole && hay.indexOf(whole) > -1) return true;
+    return tokens(q).every(function (t) {
+      var n = norm(t);
+      return !n || hay.indexOf(n) > -1;
+    });
+  }
 
-function renderGrid(){ renderCards(DATA.filter(matchFilter)); }
+  function highlight(text, q) {
+    var safe = esc(text);
+    var toks = tokens(q).map(function (t) { return t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); })
+      .filter(function (t) { return t.length > 0; });
+    if (!toks.length) return safe;
+    try {
+      var re = new RegExp('(' + toks.join('|') + ')', 'gi');
+      return safe.replace(re, '<mark>$1</mark>');
+    } catch (e) { return safe; }
+  }
 
-function toggleTree(){
-  treeOpen=!treeOpen;
-  document.getElementById('treeView').style.display=treeOpen?'block':'none';
-  document.getElementById('cardGrid').style.display=treeOpen?'none':'grid';
-  document.getElementById('emptyState').style.display='none';
-  document.getElementById('wizardBox').style.display=treeOpen?'none':'block';
-  document.getElementById('filterBar').style.display=treeOpen?'none':'flex';
-  const btn=document.getElementById('treeBtn');
-  btn.innerHTML=treeOpen?'<i class="ti ti-layout-grid"></i>카드 보기':'<i class="ti ti-list-tree"></i>트리 보기';
-  if(treeOpen) renderTree();
-}
+  /* ── 데이터 ── */
+  function loadData(cb) {
+    var inline = null;
+    try {
+      var el = document.getElementById('inlineData');
+      if (el && el.textContent.trim()) inline = JSON.parse(el.textContent);
+    } catch (e) { inline = null; }
 
-function renderTree(){
-  const c=document.getElementById('treeContainer');
-  c.innerHTML=Object.keys(MAIN_CATS).map(menu=>`
-    <div class="tree-section-title">${menu}</div>`
-    +MAIN_CATS[menu].map(cat=>{
-      const subs=uniqueSubs(menu,cat.key);
-      const id=`tw_${menu}_${cat.key}`.replace(/[^a-z0-9_]/gi,'_');
-      return`<button class="tree-main-btn" onclick="toggleTreeMain(this,'${id}')">
-        <span><i class="ti ${cat.icon}"></i> ${cat.key}</span>
-        <i class="ti ti-chevron-down"></i>
-      </button>
-      <div class="tree-sub-wrap" id="${id}">
-        ${subs.map(s=>`<button class="tree-sub-btn" onclick="treeSelect('${menu}','${cat.key}','${s}')">${s}</button>`).join('')}
-      </div>`;
-    }).join('')
-  ).join('');
-}
+    function use(data, source) {
+      if (!data || !Array.isArray(data.items) || !data.items.length) return false;
+      cb(data, source);
+      return true;
+    }
 
-function toggleTreeMain(btn,id){
-  const wrap=document.getElementById(id);
-  const open=wrap.style.display==='block';
-  wrap.style.display=open?'none':'block';
-  btn.classList.toggle('open',!open);
-}
+    if (!window.fetch) {
+      if (!use(inline, 'inline')) document.getElementById('bootError').hidden = false;
+      return;
+    }
+    fetch('data.json', { cache: 'no-cache' })
+      .then(function (res) {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.json();
+      })
+      .then(function (json) {
+        if (!use(json, 'data.json') && !use(inline, 'inline')) throw new Error('empty');
+      })
+      .catch(function (err) {
+        if (window.console && console.warn) console.warn('[singo] data.json을 불러오지 못해 내장 데이터를 씁니다:', err && err.message);
+        if (!use(inline, 'inline')) document.getElementById('bootError').hidden = false;
+      });
+  }
 
-function treeSelect(menu,main,sub){
-  const filtered=DATA.filter(d=>d.menu===menu&&d.main===main&&d.sub===sub);
-  const r=document.getElementById('treeResult');
-  r.className='tree-result card-grid';
-  r.innerHTML=filtered.map(cardHTML).join('');
-}
+  /* ── 검색/필터 ── */
+  function baseMatch(d) {
+    if (state.favOnly && FAVS.indexOf(d.id) === -1) return false;
+    if (state.tags.length && !(d.tags || []).some(function (t) { return state.tags.indexOf(t) > -1; })) return false;
+    if (state.q.trim() && !matchQuery(d, state.q)) return false;
+    return true;
+  }
+  function visibleItems() {
+    var q = state.q.trim();
+    var cross = !!(q && PREFS.crossTab);
+    return ITEMS.filter(function (d) {
+      if (!baseMatch(d)) return false;
+      if (cross) return true;
+      if (d.menu !== state.menu) return false;
+      if (state.main && d.main !== state.main) return false;
+      if (state.sub && d.sub !== state.sub) return false;
+      return true;
+    });
+  }
 
-switchMenu('신고/민원');
+  /* ── 렌더: SOS ── */
+  function renderSOS() {
+    var bar = document.getElementById('sosBar');
+    var html = '<span class="sos-label"><i class="ti ti-alert-triangle" aria-hidden="true"></i>긴급</span>';
+    (DATA.sos || []).forEach(function (s, i) {
+      if (i > 0) html += '<span class="sos-sep" aria-hidden="true"></span>';
+      html += '<span class="sos-chip"><span>' + esc(s.label) + '</span>';
+      if (s.url) {
+        html += '<a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.name || '바로가기') + '<i class="ti ti-external-link" aria-hidden="true"></i></a>';
+      }
+      (s.phones || []).forEach(function (p) {
+        html += '<a href="tel:' + esc(digits(p)) + '">' + esc(p) + '</a>';
+      });
+      html += '</span>';
+    });
+    bar.innerHTML = html;
+  }
+
+  /* ── 렌더: 폴백 ── */
+  function renderFallback() {
+    var grid = document.getElementById('fallbackGrid');
+    var html = '';
+    (DATA.fallback || []).forEach(function (f) {
+      html += '<div class="fb-card"><h3>' + esc(f.name) + '</h3><div class="fb-org">' + esc(f.org) + '</div>';
+      html += '<p>' + esc(f.desc) + '</p>';
+      if (f.note) html += '<div class="fb-note">' + esc(f.note) + '</div>';
+      html += '<div class="fb-actions">';
+      if (f.phone) {
+        html += '<a class="fb-phone" href="tel:' + esc(digits(f.phone)) + '"><i class="ti ti-phone" aria-hidden="true"></i> ' + esc(f.phone) + '</a>';
+      }
+      if (f.phoneText) html += '<span class="fb-phone">' + esc(f.phoneText) + '</span>';
+      if (f.url) html += '<a class="fb-more" href="' + esc(f.url) + '" target="_blank" rel="noopener">' + esc(f.linkLabel || '홈페이지') + '</a>';
+      html += '</div></div>';
+    });
+    html += '<div class="fb-card"><h3>신고 내용 정리 도우미</h3><div class="fb-org">singo.kr</div>'
+      + '<p>일시·장소·상대방·피해 내용을 적으면 신고서에 붙여 넣을 문장으로 정리해 드립니다. 어디에도 전송되지 않습니다.</p>'
+      + '<div class="fb-actions"><button class="fb-btn" data-action="draft"><i class="ti ti-notes" aria-hidden="true"></i> 정리 시작하기</button></div></div>';
+    grid.innerHTML = html;
+  }
+
+  /* ── 렌더: 마법사 ── */
+  function renderWizard() {
+    var el = document.getElementById('mainChips');
+    document.getElementById('wizardQ').textContent = state.menu === '신고/민원' ? '어떤 문제인가요?' : '무엇을 찾으시나요?';
+    var cats = (DATA.menus && DATA.menus[state.menu]) || [];
+    el.innerHTML = cats.map(function (c) {
+      var sel = state.main === c.key ? ' selected' : '';
+      return '<button class="chip-main' + sel + '" data-action="main" data-main="' + esc(c.key) + '" aria-pressed="' + (state.main === c.key) + '">'
+        + '<i class="ti ' + esc(c.icon) + '" aria-hidden="true"></i>' + esc(c.key) + '</button>';
+    }).join('');
+    renderSubChips();
+  }
+
+  function subsOf(menu, main) {
+    var out = [];
+    ITEMS.forEach(function (d) {
+      if (d.menu === menu && d.main === main && out.indexOf(d.sub) === -1) out.push(d.sub);
+    });
+    return out;
+  }
+
+  function renderSubChips() {
+    var box = document.getElementById('wizardStep2');
+    var el = document.getElementById('subChips');
+    if (!state.main) { box.style.display = 'none'; el.innerHTML = ''; return; }
+    var subs = subsOf(state.menu, state.main);
+    el.innerHTML = subs.map(function (s) {
+      var sel = state.sub === s ? ' selected' : '';
+      return '<button class="chip-sub' + sel + '" data-action="sub" data-sub="' + esc(s) + '">' + esc(s) + '</button>';
+    }).join('');
+    box.style.display = 'block';
+  }
+
+  /* ── 렌더: 태그 ── */
+  function renderTags() {
+    var el = document.getElementById('tagChips');
+    var seen = [];
+    ITEMS.forEach(function (d) {
+      if (d.menu !== state.menu) return;
+      (d.tags || []).forEach(function (t) { if (seen.indexOf(t) === -1) seen.push(t); });
+    });
+    var html = '<button class="tag-chip' + (state.tags.length === 0 ? ' active' : '') + '" data-action="clear-tags">전체</button>';
+    html += seen.map(function (t) {
+      return '<button class="tag-chip' + (state.tags.indexOf(t) > -1 ? ' active' : '') + '" data-action="tag" data-tag="' + esc(t) + '">#' + esc(t) + '</button>';
+    }).join('');
+    el.innerHTML = html;
+  }
+
+  /* ── 렌더: 카드 ── */
+  function methodHTML(d) {
+    return (d.methods || []).map(function (m) {
+      var cls = METHOD_CLASS[m] ? ' ' + METHOD_CLASS[m] : '';
+      return '<span class="m-badge' + cls + '">' + esc(m) + '</span>';
+    }).join('');
+  }
+
+  function phoneHTML(d) {
+    var p = d.phone;
+    if (!p || p === '-') return '';
+    var num = digits(p);
+    if (!num) return '';
+    var html = '<a class="tel-link" href="tel:' + esc(num) + '" title="' + esc(p) + '으로 전화"><i class="ti ti-phone" aria-hidden="true"></i>' + esc(p) + '</a>';
+    if (SMS_OK[num]) {
+      html += '<a class="sms-link" href="sms:' + esc(num) + '" title="' + esc(SMS_OK[num]) + '"><i class="ti ti-message" aria-hidden="true"></i>문자</a>';
+    }
+    return html;
+  }
+
+  function tipHTML(d, compact) {
+    if (!d.tip && !(d.compare && d.compare.length)) return '';
+    var html = '<div class="card-tip"><b><i class="ti ti-bulb" aria-hidden="true"></i>이럴 땐 여기!</b>';
+    if (d.tip) html += '<span>' + esc(d.tip) + '</span>';
+    if (d.compare && d.compare.length) {
+      html += '<ul>' + d.compare.map(function (c) {
+        return '<li>' + esc(c.case) + ' <span>→</span> <em>' + esc(c.go) + '</em></li>';
+      }).join('') + '</ul>';
+    }
+    return html + '</div>';
+  }
+
+  function cardHTML(d, opts) {
+    opts = opts || {};
+    var badgeClass = d.type === '정부' ? 'badge-gov' : d.type === '공공' ? 'badge-pub' : 'badge-priv';
+    var isFav = FAVS.indexOf(d.id) > -1;
+    var isLookup = d.stype !== '신고';
+    var q = state.q.trim();
+    var html = '<article class="card" data-card-id="' + esc(d.id) + '">';
+    html += '<div class="card-top"><div class="card-badges">';
+    html += '<span class="badge ' + badgeClass + '">' + esc(d.type) + '</span>';
+    if (opts.showMenu) html += '<span class="badge badge-menu">' + esc(d.menu) + '</span>';
+    if (isFav) html += '<span class="badge badge-fav">★ 즐겨찾기</span>';
+    html += '</div>';
+    html += '<button class="fav-btn" data-action="fav" data-id="' + esc(d.id) + '" aria-pressed="' + isFav + '" aria-label="' + esc(d.name) + ' 즐겨찾기">'
+      + '<i class="ti ' + (isFav ? 'ti-star-filled' : 'ti-star') + '" aria-hidden="true"></i></button>';
+    html += '</div>';
+    html += '<button class="card-name" data-action="detail" data-id="' + esc(d.id) + '">' + highlight(d.name, q) + '</button>';
+    html += '<div class="card-org">' + esc(d.org) + ' · ' + esc(d.stype) + '</div>';
+    html += '<p class="card-desc">' + highlight(d.desc, q) + '</p>';
+    if (d.methods && d.methods.length) html += '<div class="card-methods">' + methodHTML(d) + '</div>';
+    html += tipHTML(d, true);
+    if (d.tags && d.tags.length) {
+      html += '<div class="card-tags">' + d.tags.map(function (t) { return '<span class="card-tag">#' + esc(t) + '</span>'; }).join('') + '</div>';
+    }
+    if (d.checklist && d.checklist.length) {
+      html += '<details class="prep"><summary><i class="ti ti-checklist" aria-hidden="true"></i>신고 전 준비물 <b>' + d.checklist.length + '</b><i class="ti ti-chevron-down caret" aria-hidden="true"></i></summary><ul>'
+        + d.checklist.map(function (c) { return '<li>' + esc(c) + '</li>'; }).join('') + '</ul></details>';
+    }
+    html += '<div class="card-footer"><div class="card-phones">' + phoneHTML(d) + '</div>';
+    html += '<a class="card-link' + (isLookup ? ' lookup' : '') + '" href="' + esc(d.url) + '" target="_blank" rel="noopener">'
+      + (isLookup ? '조회·검색' : '바로가기') + '<i class="ti ti-external-link" aria-hidden="true"></i></a>';
+    html += '</div></article>';
+    return html;
+  }
+
+  function renderGrid() {
+    var list = visibleItems();
+    var grid = document.getElementById('cardGrid');
+    var empty = document.getElementById('emptyState');
+    var notice = document.getElementById('searchNotice');
+    var count = document.getElementById('resultCount');
+    var q = state.q.trim();
+    var cross = !!(q && PREFS.crossTab);
+
+    if (state.tree) { syncTreeButton(); return; }
+
+    grid.hidden = list.length === 0;
+    empty.hidden = list.length !== 0;
+
+    if (list.length === 0) {
+      state.showFallback = true;
+      state.autoFallback = true;
+    } else if (state.autoFallback) {
+      state.autoFallback = false;
+      state.showFallback = false;
+    }
+    document.getElementById('fallbackPanel').hidden = !state.showFallback;
+
+    if (list.length === 0) {
+      count.innerHTML = '<b>0</b>곳';
+    } else if (cross) {
+      var byMenu = {};
+      list.forEach(function (d) { byMenu[d.menu] = (byMenu[d.menu] || 0) + 1; });
+      count.innerHTML = '검색 결과 <b>' + list.length + '</b>곳';
+      notice.hidden = false;
+      notice.innerHTML = '<i class="ti ti-arrows-shuffle" aria-hidden="true"></i>'
+        + '전체 탭에서 찾았습니다 · ' + Object.keys(byMenu).map(function (m) { return esc(m) + ' ' + byMenu[m]; }).join(' · ')
+        + '<button data-action="cross-off">이 탭만 보기</button>';
+    } else {
+      count.innerHTML = '<b>' + list.length + '</b>곳';
+      var label = [state.main, state.sub].filter(Boolean).join(' · ');
+      if (state.favOnly) label = '★ 즐겨찾기';
+      if (label) count.innerHTML += ' <span style="color:#9AA8A2">· ' + esc(label) + '</span>';
+    }
+    if (!cross) notice.hidden = true;
+
+    grid.innerHTML = list.map(function (d) { return cardHTML(d, { showMenu: cross }); }).join('');
+  }
+
+  /* ── 렌더: 트리 ── */
+  function renderTree() {
+    var c = document.getElementById('treeContainer');
+    var html = '';
+    Object.keys(DATA.menus || {}).forEach(function (menu, mi) {
+      html += '<div class="tree-section-title" data-tree-menu="' + esc(menu) + '">' + esc(menu) + '</div>';
+      DATA.menus[menu].forEach(function (cat, ci) {
+        var id = 'tw-' + mi + '-' + ci;
+        var subs = subsOf(menu, cat.key);
+        var total = ITEMS.filter(function (d) { return d.menu === menu && d.main === cat.key; }).length;
+        html += '<button class="tree-main-btn" data-action="tree-main" data-target="' + id + '" aria-expanded="false" aria-controls="' + id + '">'
+          + '<span class="tm-label"><i class="ti ' + esc(cat.icon) + '" aria-hidden="true"></i>' + esc(cat.key)
+          + ' <span style="font-weight:400;color:#9AA8A2;font-size:11.5px">' + total + '</span></span>'
+          + '<i class="ti ti-chevron-down caret" aria-hidden="true"></i></button>';
+        html += '<div class="tree-sub-wrap" id="' + id + '">'
+          + subs.map(function (s) {
+            var n = ITEMS.filter(function (d) { return d.menu === menu && d.main === cat.key && d.sub === s; }).length;
+            return '<button class="tree-sub-btn" data-action="tree-sub" data-menu="' + esc(menu) + '" data-main="' + esc(cat.key) + '" data-sub="' + esc(s) + '">'
+              + '<span>' + esc(s) + '</span><span class="n">' + n + '</span></button>';
+          }).join('')
+          + '</div>';
+      });
+    });
+    c.innerHTML = html;
+  }
+
+  function syncTreeButton() {
+    var btn = document.getElementById('treeBtn');
+    var label = document.getElementById('treeBtnLabel');
+    btn.setAttribute('aria-pressed', String(state.tree));
+    label.textContent = state.tree ? '카드 보기' : '트리 보기';
+    btn.querySelector('i').className = 'ti ' + (state.tree ? 'ti-layout-grid' : 'ti-list-tree');
+  }
+
+  function setTree(on) {
+    state.tree = on;
+    var treeView = document.getElementById('treeView');
+    var wizard = document.getElementById('wizardBox');
+    var filterBar = document.getElementById('filterBar');
+    var grid = document.getElementById('cardGrid');
+    var empty = document.getElementById('emptyState');
+    var fallbackPanel = document.getElementById('fallbackPanel');
+    var notice = document.getElementById('searchNotice');
+    treeView.hidden = !on;
+    wizard.hidden = on;
+    filterBar.hidden = on;
+    grid.hidden = on || visibleItems().length === 0;
+    empty.hidden = on || visibleItems().length !== 0;
+    notice.hidden = on || !(state.q.trim() && PREFS.crossTab);
+    fallbackPanel.hidden = on || !state.showFallback;
+    document.getElementById('resultCount').innerHTML = on
+      ? '메뉴를 펼쳐 골라보세요'
+      : '<b>' + visibleItems().length + '</b>곳';
+    syncTreeButton();
+    if (on) {
+      renderTree();
+      document.getElementById('treeResult').innerHTML = '';
+    } else {
+      state.showFallback = false;
+      renderGrid();
+    }
+  }
+
+  /* ── 상세 모달 ── */
+  function openDetail(id) {
+    var d = BY_ID[id];
+    if (!d) return;
+    var isFav = FAVS.indexOf(id) > -1;
+    var badgeClass = d.type === '정부' ? 'badge-gov' : d.type === '공공' ? 'badge-pub' : 'badge-priv';
+    var h = '<div class="modal-head"><div><div class="modal-title" id="detailTitle">' + esc(d.name) + '</div>'
+      + '<div class="modal-org">' + esc(d.org) + ' · ' + esc(d.menu) + ' › ' + esc(d.main) + ' › ' + esc(d.sub) + '</div></div>'
+      + '<button class="modal-close" data-action="close-modal" aria-label="닫기"><i class="ti ti-x" aria-hidden="true"></i></button></div>';
+    h += '<div class="modal-body">';
+    h += '<div class="card-badges"><span class="badge ' + badgeClass + '">' + esc(d.type) + '</span>'
+      + '<span class="badge badge-menu">' + esc(d.stype) + '</span>'
+      + (d.methods || []).map(function (m) { return '<span class="m-badge' + (METHOD_CLASS[m] ? ' ' + METHOD_CLASS[m] : '') + '">' + esc(m) + '</span>'; }).join('')
+      + '</div>';
+    h += '<p class="modal-desc">' + esc(d.desc) + '</p>';
+    if (d.tip) h += '<div class="modal-tip"><b>이럴 땐 여기!</b> ' + esc(d.tip) + '</div>';
+    if (d.compare && d.compare.length) {
+      h += '<div><div class="modal-section-title">헷갈리는 경우</div><table class="cmp-table"><thead><tr><th>상황</th><th>어디로</th></tr></thead><tbody>'
+        + d.compare.map(function (c) { return '<tr><td>' + esc(c.case) + '</td><td>' + esc(c.go) + '</td></tr>'; }).join('')
+        + '</tbody></table></div>';
+    }
+    if (d.checklist && d.checklist.length) {
+      h += '<div><div class="modal-section-title">신고 전 준비물</div><ul class="modal-list">'
+        + d.checklist.map(function (c) { return '<li>' + esc(c) + '</li>'; }).join('') + '</ul></div>';
+    }
+    if (d.keywords && d.keywords.length) {
+      h += '<div><div class="modal-section-title">이런 상황에 찾습니다</div><div class="kw-chips">'
+        + d.keywords.map(function (k) { return '<button class="kw-chip" data-action="kw" data-kw="' + esc(k) + '">' + esc(k) + '</button>'; }).join('')
+        + '</div></div>';
+    }
+    h += '<div class="modal-actions">';
+    if (d.phone && d.phone !== '-') {
+      h += '<a class="btn-warm" href="tel:' + esc(digits(d.phone)) + '"><i class="ti ti-phone" aria-hidden="true"></i>' + esc(d.phone) + ' 전화</a>';
+      if (SMS_OK[digits(d.phone)]) {
+        h += '<a class="btn-secondary" href="sms:' + esc(digits(d.phone)) + '"><i class="ti ti-message" aria-hidden="true"></i>문자 보내기</a>';
+      }
+    }
+    h += '<a class="btn-primary" href="' + esc(d.url) + '" target="_blank" rel="noopener"><i class="ti ti-external-link" aria-hidden="true"></i>홈페이지 열기</a>';
+    h += '<button class="btn-secondary" data-action="fav" data-id="' + esc(id) + '" aria-pressed="' + isFav + '"><i class="ti ' + (isFav ? 'ti-star-filled' : 'ti-star') + '" aria-hidden="true"></i><span data-fav-label>' + (isFav ? '즐겨찾기 해제' : '즐겨찾기') + '</span></button>';
+    h += '</div></div>';
+    document.getElementById('detailCard').innerHTML = h;
+    openModal('detailModal');
+  }
+
+  /* ── 모달 공통 ── */
+  function openModal(id) {
+    lastFocus = document.activeElement;
+    var m = document.getElementById(id);
+    m.hidden = false;
+    document.body.classList.add('modal-open');
+    var focusable = m.querySelector('button, [href], input, textarea');
+    if (focusable) {
+      try { focusable.focus({ preventScroll: true }); } catch (e) { focusable.focus(); }
+    }
+  }
+  function closeModal(m) {
+    if (!m) return;
+    m.hidden = true;
+    if (!document.querySelector('.modal:not([hidden])')) document.body.classList.remove('modal-open');
+    if (lastFocus && lastFocus.focus) { try { lastFocus.focus({ preventScroll: true }); } catch (e) {} }
+  }
+  function anyModalOpen() { return !!document.querySelector('.modal:not([hidden])'); }
+
+  /* ── 즐겨찾기 ── */
+  function toggleFav(id) {
+    var i = FAVS.indexOf(id);
+    var added;
+    if (i > -1) { FAVS.splice(i, 1); added = false; }
+    else { FAVS.push(id); added = true; }
+    writeLS(LS_FAV, FAVS);
+    syncFavButtons();
+    renderGrid();
+    toast(added ? '★ 즐겨찾기에 저장했습니다' : '즐겨찾기에서 뺐습니다');
+  }
+  function syncFavButtons() {
+    document.getElementById('favCount').textContent = String(FAVS.length);
+    Array.prototype.forEach.call(document.querySelectorAll('[data-action="fav"]'), function (b) {
+      var on = FAVS.indexOf(b.getAttribute('data-id')) > -1;
+      b.setAttribute('aria-pressed', String(on));
+      var i = b.querySelector('i');
+      if (i) i.className = 'ti ' + (on ? 'ti-star-filled' : 'ti-star');
+      var lbl = b.querySelector('[data-fav-label]');
+      if (lbl) lbl.textContent = on ? '즐겨찾기 해제' : '즐겨찾기';
+    });
+    var fb = document.getElementById('favFilterBtn');
+    fb.setAttribute('aria-pressed', String(state.favOnly));
+  }
+
+  /* ── 초안 도우미 ── */
+  var DRAFT_FIELDS = [
+    ['when', '언제(일시)'], ['where', '어디서(장소·플랫폼)'], ['who', '누가(상대방)'],
+    ['what', '무엇을(피해 내용)'], ['how', '어떻게(경위)'], ['want', '원하는 조치'], ['proof', '증빙자료']
+  ];
+  function draftInputs() {
+    return Array.prototype.slice.call(document.querySelectorAll('[data-draft]'));
+  }
+  function draftValues() {
+    var vals = {};
+    draftInputs().forEach(function (el) { vals[el.getAttribute('data-draft')] = (el.value || '').trim(); });
+    return vals;
+  }
+  function buildDraft() {
+    var v = draftValues();
+    var lines = ['[신고 내용 정리]', ''];
+    var any = false;
+    DRAFT_FIELDS.forEach(function (f) {
+      if (v[f[0]]) { lines.push('■ ' + f[1] + ': ' + v[f[0]]); any = true; }
+    });
+    if (!any) {
+      return '[신고 내용 정리]\n\n아직 입력한 내용이 없습니다.\n위 칸에 아는 것부터 적으면 이곳에 문장으로 정리됩니다.';
+    }
+    lines.push('');
+    lines.push('※ 위 내용은 신고서 작성 참고용입니다. 해당 기관 사이트의 입력 칸에 그대로 붙여 넣어 정리하세요.');
+    return lines.join('\n');
+  }
+  function updateDraftPreview() {
+    var pre = document.getElementById('draftPreview');
+    if (pre) pre.textContent = buildDraft();
+  }
+  function saveDraft() {
+    writeLS(LS_DRAFT, draftValues());
+  }
+  function loadDraft() {
+    var v = readLS(LS_DRAFT, {}) || {};
+    draftInputs().forEach(function (el) {
+      var k = el.getAttribute('data-draft');
+      el.value = typeof v[k] === 'string' ? v[k] : '';
+    });
+    updateDraftPreview();
+  }
+  function clearDraft() {
+    draftInputs().forEach(function (el) { el.value = ''; });
+    writeLS(LS_DRAFT, {});
+    updateDraftPreview();
+    toast('입력한 내용을 지웠습니다');
+  }
+  function copyDraft() {
+    var text = buildDraft();
+    copyText(text).then(function (ok) {
+      toast(ok ? '복사했습니다. 신고서에 붙여 넣으세요.' : '복사가 막혀 있습니다. 미리보기 내용을 길게 눌러 복사하세요.');
+    });
+  }
+  function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      return navigator.clipboard.writeText(text).then(function () { return true; }).catch(function () { return legacyCopy(text); });
+    }
+    return Promise.resolve(legacyCopy(text));
+  }
+  function legacyCopy(text) {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed';
+    ta.style.top = '-1000px';
+    ta.style.left = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    var ok = false;
+    try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+    document.body.removeChild(ta);
+    return ok;
+  }
+
+  /* ── 토스트 ── */
+  var toastTimer = null;
+  function toast(msg) {
+    var t = document.getElementById('toast');
+    t.textContent = msg;
+    t.hidden = false;
+    t.classList.add('show');
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () {
+      t.classList.remove('show');
+      setTimeout(function () { t.hidden = true; }, 220);
+    }, 2400);
+  }
+
+  /* ── 검색 입력 ── */
+  function setQuery(v, opts) {
+    opts = opts || {};
+    state.q = v || '';
+    var a = document.getElementById('searchTop');
+    var b = document.getElementById('searchInput');
+    if (a && a.value !== state.q) a.value = state.q;
+    if (b && b.value !== state.q) b.value = state.q;
+    if (state.q.trim()) {
+      state.main = null;
+      state.sub = null;
+      var step2 = document.getElementById('wizardStep2');
+      if (step2) step2.style.display = 'none';
+      document.querySelectorAll('.chip-main').forEach(function (c) { c.classList.remove('selected'); c.setAttribute('aria-pressed', 'false'); });
+      if (state.tree) setTree(false);
+    }
+    if (state.tree) return;
+    renderGrid();
+  }
+
+  /* ── 메뉴 전환 ── */
+  function switchMenu(menu) {
+    state.menu = menu;
+    state.main = null;
+    state.sub = null;
+    state.tags = [];
+    state.q = '';
+    state.favOnly = false;
+    document.getElementById('searchTop').value = '';
+    document.getElementById('searchInput').value = '';
+    document.getElementById('favFilterBtn').setAttribute('aria-pressed', 'false');
+    document.querySelectorAll('.nav-btn').forEach(function (b) {
+      var on = b.getAttribute('data-menu') === menu;
+      b.classList.toggle('active', on);
+      b.setAttribute('aria-pressed', String(on));
+    });
+    document.getElementById('heroTabReport').classList.toggle('active', menu === '신고/민원');
+    document.getElementById('heroTabReport').setAttribute('aria-selected', String(menu === '신고/민원'));
+    document.getElementById('heroTabInfo').classList.toggle('active', menu === '정보검색');
+    document.getElementById('heroTabInfo').setAttribute('aria-selected', String(menu === '정보검색'));
+    var step2 = document.getElementById('wizardStep2');
+    if (step2) step2.style.display = 'none';
+    state.showFallback = false;
+    renderWizard();
+    renderTags();
+    renderGrid();
+  }
+
+  function resetFilters() {
+    state.main = null;
+    state.sub = null;
+    state.tags = [];
+    state.q = '';
+    state.favOnly = false;
+    state.showFallback = false;
+    document.getElementById('searchTop').value = '';
+    document.getElementById('searchInput').value = '';
+    document.getElementById('favFilterBtn').setAttribute('aria-pressed', 'false');
+    renderWizard();
+    renderTags();
+    renderGrid();
+  }
+
+  /* ── 클릭 위임 ── */
+  function onDocumentClick(e) {
+    var el = e.target.closest ? e.target.closest('[data-action]') : null;
+    if (!el) {
+      if (e.target.classList && e.target.classList.contains('modal')) closeModal(e.target);
+      return;
+    }
+    var action = el.getAttribute('data-action');
+    switch (action) {
+      case 'menu':
+        switchMenu(el.getAttribute('data-menu'));
+        break;
+      case 'main': {
+        var main = el.getAttribute('data-main');
+        state.main = state.main === main ? null : main;
+        state.sub = null;
+        state.q = '';
+        document.getElementById('searchTop').value = '';
+        document.getElementById('searchInput').value = '';
+        renderWizard();
+        renderGrid();
+        break;
+      }
+      case 'sub':
+        state.sub = el.getAttribute('data-sub');
+        state.q = '';
+        document.getElementById('searchTop').value = '';
+        document.getElementById('searchInput').value = '';
+        renderSubChips();
+        renderGrid();
+        break;
+      case 'back':
+        state.main = null;
+        state.sub = null;
+        renderWizard();
+        renderGrid();
+        break;
+      case 'tag': {
+        var t = el.getAttribute('data-tag');
+        var idx = state.tags.indexOf(t);
+        if (idx > -1) state.tags.splice(idx, 1); else state.tags.push(t);
+        renderTags();
+        renderGrid();
+        break;
+      }
+      case 'clear-tags':
+        state.tags = [];
+        renderTags();
+        renderGrid();
+        break;
+      case 'fav':
+        e.stopPropagation();
+        toggleFav(el.getAttribute('data-id'));
+        break;
+      case 'fav-only':
+        state.favOnly = !state.favOnly;
+        document.getElementById('favFilterBtn').setAttribute('aria-pressed', String(state.favOnly));
+        renderGrid();
+        if (state.favOnly && visibleItems().length === 0) toast('아직 즐겨찾기한 곳이 없습니다. 카드의 별을 눌러 저장하세요.');
+        break;
+      case 'detail':
+        openDetail(el.getAttribute('data-id'));
+        break;
+      case 'kw': {
+        var kw = el.getAttribute('data-kw');
+        closeModal(document.getElementById('detailModal'));
+        setQuery(kw);
+        var vb = document.querySelector('.viewbar');
+        if (vb) vb.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        break;
+      }
+      case 'cross':
+        PREFS.crossTab = !PREFS.crossTab;
+        writeLS(LS_PREF, PREFS);
+        syncCross();
+        renderGrid();
+        break;
+      case 'cross-off':
+        PREFS.crossTab = false;
+        writeLS(LS_PREF, PREFS);
+        syncCross();
+        renderGrid();
+        break;
+      case 'reset':
+        resetFilters();
+        break;
+      case 'tree':
+        setTree(!state.tree);
+        break;
+      case 'tree-main': {
+        var wrap = document.getElementById(el.getAttribute('data-target'));
+        var open = wrap.classList.toggle('open');
+        el.setAttribute('aria-expanded', String(open));
+        break;
+      }
+      case 'tree-sub': {
+        var menu = el.getAttribute('data-menu');
+        var main = el.getAttribute('data-main');
+        var sub = el.getAttribute('data-sub');
+        Array.prototype.forEach.call(document.querySelectorAll('.tree-sub-btn'), function (b) { b.classList.remove('active'); });
+        el.classList.add('active');
+        var filtered = ITEMS.filter(function (d) { return d.menu === menu && d.main === main && d.sub === sub; });
+        var res = document.getElementById('treeResult');
+        res.innerHTML = filtered.map(function (d) { return cardHTML(d, { showMenu: false }); }).join('');
+        res.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        break;
+      }
+      case 'fallback':
+        state.showFallback = true;
+        state.autoFallback = false;
+        document.getElementById('fallbackPanel').hidden = false;
+        document.getElementById('fallbackPanel').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        break;
+      case 'draft':
+        loadDraft();
+        openModal('draftModal');
+        break;
+      case 'draft-copy':
+        copyDraft();
+        break;
+      case 'draft-clear':
+        clearDraft();
+        break;
+      case 'close-modal': {
+        var m = el.closest('.modal');
+        closeModal(m);
+        break;
+      }
+      default:
+        break;
+    }
+  }
+
+  function syncCross() {
+    var btn = document.getElementById('crossToggle');
+    btn.setAttribute('aria-pressed', String(PREFS.crossTab));
+  }
+
+  /* ── 초기화 ── */
+  function init(data) {
+    DATA = data;
+    ITEMS = data.items.slice();
+    BY_ID = {};
+    ITEMS.forEach(function (d) {
+      BY_ID[d.id] = d;
+      d._hay = haystack(d);
+    });
+
+    document.getElementById('footerEmail').innerHTML = '<a href="mailto:' + esc(data.site.email) + '" style="color:inherit">' + esc(data.site.email) + '</a>';
+    document.getElementById('footerLinks').innerHTML =
+      '<a class="footer-btn" href="' + esc(data.site.repo) + '/issues/new?title=' + encodeURIComponent('[링크 오류] ') + '&amp;body=' + encodeURIComponent('어떤 항목인가요?\n\n어떤 점이 잘못됐나요? (주소 오류 / 연락처 변경 / 기관 변경)\n\n') + '" target="_blank" rel="noopener"><i class="ti ti-link-off" aria-hidden="true"></i>깨진 링크 신고</a>'
+      + '<a class="footer-btn" href="' + esc(data.site.repo) + '/issues/new?title=' + encodeURIComponent('[기관 추가 제안] ') + '&amp;body=' + encodeURIComponent('추가할 기관명:\n\n홈페이지 주소:\n\n전화번호:\n\n어떤 상황에서 필요한가요?\n\n') + '" target="_blank" rel="noopener"><i class="ti ti-plus" aria-hidden="true"></i>새 기관 제안</a>'
+      + '<a class="footer-btn" href="mailto:' + esc(data.site.email) + '?subject=' + encodeURIComponent('singo.kr 문의') + '"><i class="ti ti-mail" aria-hidden="true"></i>이메일로 보내기</a>';
+    document.getElementById('footerMeta').textContent = '기관 ' + ITEMS.length + '곳 · 자료 업데이트 ' + (data.site.updated || '') + ' · 버전 ' + (data.site.version || '');
+
+    renderSOS();
+    renderFallback();
+    renderWizard();
+    renderTags();
+    syncCross();
+    syncFavButtons();
+    renderGrid();
+    loadDraft();
+  }
+
+  /* ── 이벤트 ── */
+  document.addEventListener('click', onDocumentClick);
+
+  document.addEventListener('input', function (e) {
+    var el = e.target;
+    if (el.id === 'searchTop' || el.id === 'searchInput') {
+      setQuery(el.value);
+      return;
+    }
+    if (el.hasAttribute && el.hasAttribute('data-draft')) {
+      updateDraftPreview();
+      saveDraft();
+    }
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && anyModalOpen()) {
+      var open = document.querySelector('.modal:not([hidden])');
+      closeModal(open);
+      return;
+    }
+    if (e.key === '/' && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) {
+      e.preventDefault();
+      var s = document.getElementById('searchInput');
+      if (s && !s.closest('[hidden]')) s.focus();
+      else document.getElementById('searchTop').focus();
+    }
+  });
+
+  FAVS = readLS(LS_FAV, []) || [];
+  PREFS = Object.assign({ crossTab: true }, readLS(LS_PREF, {}) || {});
+  loadData(init);
+})();
 </script>
 </body>
 </html>
