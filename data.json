@@ -1,7 +1,7 @@
 {
   "site": {
-    "version": "2.5",
-    "updated": "2026-11-25",
+    "version": "2.6",
+    "updated": "2026-11-26",
     "name": "신고 생활정보 사이트 모음",
     "url": "https://singo.kr",
     "repo": "https://github.com/yenuri337-cpu/singo.github.io",
@@ -36,85 +36,105 @@
     "신고/민원": [
       {
         "key": "인터넷/디지털 정보 신고",
-        "icon": "ti-device-laptop"
+        "icon": "ti-device-laptop",
+        "short": "인터넷·디지털"
       },
       {
         "key": "통신·콘텐츠 분쟁",
-        "icon": "ti-device-mobile-message"
+        "icon": "ti-device-mobile-message",
+        "short": "통신·콘텐츠"
       },
       {
         "key": "아동·청소년·여성 보호",
-        "icon": "ti-heart-handshake"
+        "icon": "ti-heart-handshake",
+        "short": "아동·여성"
       },
       {
         "key": "노인·장애인 보호",
-        "icon": "ti-accessible"
+        "icon": "ti-accessible",
+        "short": "노인·장애인"
       },
       {
         "key": "의료·병원비 피해",
-        "icon": "ti-stethoscope"
+        "icon": "ti-stethoscope",
+        "short": "의료·병원비"
       },
       {
         "key": "금융피해 신고",
-        "icon": "ti-coin"
+        "icon": "ti-coin",
+        "short": "금융피해"
       },
       {
         "key": "사기범죄 신고",
-        "icon": "ti-alert-triangle"
+        "icon": "ti-alert-triangle",
+        "short": "사기범죄"
       },
       {
         "key": "부동산·임대차 분쟁",
-        "icon": "ti-building-skyscraper"
+        "icon": "ti-building-skyscraper",
+        "short": "부동산·임대차"
       },
       {
         "key": "불법 식의약 신고",
-        "icon": "ti-pill"
+        "icon": "ti-pill",
+        "short": "불법식의약"
       },
       {
         "key": "마약 신고",
-        "icon": "ti-flask"
+        "icon": "ti-flask",
+        "short": "마약 신고"
       },
       {
         "key": "노동 관련 신고",
-        "icon": "ti-briefcase"
+        "icon": "ti-briefcase",
+        "short": "노동·산재"
       },
       {
         "key": "특허·저작권 침해 신고",
-        "icon": "ti-copyright"
+        "icon": "ti-copyright",
+        "short": "특허·저작권"
       },
       {
         "key": "생활불편 신고",
-        "icon": "ti-home"
+        "icon": "ti-home",
+        "short": "생활불편"
       },
       {
         "key": "공정거래·사업자 분쟁",
-        "icon": "ti-scale"
+        "icon": "ti-scale",
+        "short": "공정거래"
       },
       {
         "key": "마음건강·생활 상담",
-        "icon": "ti-mood-heart"
+        "icon": "ti-mood-heart",
+        "short": "마음건강"
       },
       {
         "key": "통합 민원·안내",
-        "icon": "ti-building-community"
+        "icon": "ti-building-community",
+        "short": "통합민원"
       }
     ],
     "정보검색": [
       {
         "key": "법령·판례 조회",
-        "icon": "ti-gavel"
+        "icon": "ti-gavel",
+        "short": "법령·판례"
       },
       {
         "key": "고전·문헌정보",
-        "icon": "ti-book"
+        "icon": "ti-book",
+        "short": "고전·문헌"
       },
       {
         "key": "학술정보",
-        "icon": "ti-school"
+        "icon": "ti-school",
+        "short": "학술정보"
       },
       {
         "key": "공공데이터·통계",
-        "icon": "ti-database"
+        "icon": "ti-database",
+        "short": "공공데이터"
       }
     ]
   },
