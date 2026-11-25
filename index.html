@@ -680,6 +680,8 @@ footer strong { color: rgba(255,255,255,.9); }
   .tag-toggle .only-wide { display: none; }
   .tag-chips.is-collapsed {
     flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 16px), transparent);
+    mask-image: linear-gradient(to right, #000 calc(100% - 16px), transparent);
   }
   .tag-chips.is-collapsed::-webkit-scrollbar { display: none; }
   .tag-chips.is-collapsed .tag-chip { flex: 0 0 auto; }
@@ -1143,7 +1145,7 @@ footer strong { color: rgba(255,255,255,.9); }
       btn.title = '해시태그 ' + total + '개';
       btn.innerHTML = open
         ? '접기 ▴'
-        : '<span class="only-wide">전체 태그 </span>더보기 (' + total + ') ▾';
+        : '<span class="only-wide">전체 태그 </span>더보기<span class="only-wide"> (' + total + ')</span> ▾';
     }
   }
 
