@@ -7,32 +7,6 @@
     "repo": "https://github.com/yenuri337-cpu/singo.github.io",
     "description": "중고거래 사기, 임금체불, 층간소음, 스미싱, 악플… 상황으로 찾는 신고·민원·정보검색 기관 안내"
   },
-  "sos": [
-    {
-      "label": "보이스피싱",
-      "phones": [
-        "112",
-        "1332"
-      ]
-    },
-    {
-      "label": "사이버사기",
-      "name": "ECRM",
-      "url": "https://ecrm.police.go.kr"
-    },
-    {
-      "label": "해킹·개인정보",
-      "phones": [
-        "118"
-      ]
-    },
-    {
-      "label": "학교폭력",
-      "phones": [
-        "117"
-      ]
-    }
-  ],
   "fallback": [
     {
       "name": "국민신문고",
@@ -223,7 +197,7 @@
       "main": "인터넷/디지털 정보 신고",
       "sub": "인터넷 피해구제",
       "org": "방송미디어통신심의위원회",
-      "name": "인터넷 피해구제",
+      "name": "방송미디어통신심의위원회 분쟁조정부",
       "desc": "악플·명예훼손·모욕 게시글의 삭제 요청과 피해 상담",
       "phone": "1377",
       "url": "https://remedy.kocsc.or.kr",
